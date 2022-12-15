@@ -46,9 +46,9 @@ Pod::Spec.new do |s|
   s.subspec 'Feature' do |feature|
     feature.source_files = 'LNLiveModule/Classes/Feature/**/*.{h,m}'
     feature.public_header_files = 'LNLiveModule/Classes/Feature/**/*.h'
-    feature.resource_bundles = {
-      'LNLiveModule' => ['LNLiveModule/Classes/Feature/**/*.xib', 'LNLiveModule/Classes/**/*.{png,jpg,jpeg}']
-    }
+#    feature.resource_bundles = {
+#      'LNLiveModule' => ['LNLiveModule/Classes/Feature/**/*.xib', 'LNLiveModule/Classes/Resource/**/*.{png,jpg,jpeg}']
+#    }
     feature.dependency 'LNLiveModule/Common'
     feature.dependency 'LNLiveModule/Network'
   end
