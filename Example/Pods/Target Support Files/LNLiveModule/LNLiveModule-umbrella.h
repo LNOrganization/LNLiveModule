@@ -10,16 +10,14 @@
 #endif
 #endif
 
-#import "LNLiveMediatorDelegate.h"
 #import "LNLiveModule.h"
-#import "LNLiveModuleConfig.h"
 #import "LNLiveTableViewCell.h"
+#import "LNLiveRoomModel.h"
+#import "LNLiveUserModel.h"
 #import "LNLiveFocusListProvider.h"
 #import "LNLiveFocusTableViewControler.h"
 #import "LNAnchorLiveRoomViewController.h"
 #import "LNViewerLiveRoomViewController.h"
-#import "LNLiveRoomModel.h"
-#import "LNLiveUserModel.h"
 #import "LNLiveRecommendListController.h"
 #import "LNLiveRecommendListProvider.h"
 #import "LNLiveMediator.h"

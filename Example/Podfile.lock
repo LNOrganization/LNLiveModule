@@ -91,30 +91,30 @@ PODS:
     - MJRefresh (= 3.7.2)
     - SDWebImage (= 5.9.5)
   - LNLiveModule (0.1.0):
-    - LNCommonKit
+    - LNCommonKit (= 0.1.8)
     - LNLiveModule/Base (= 0.1.0)
     - LNLiveModule/Feature (= 0.1.0)
     - LNLiveModule/Mediator (= 0.1.0)
     - LNLiveModule/Network (= 0.1.0)
-    - LNModuleProtocol
+    - LNModuleProtocol (= 0.1.5)
   - LNLiveModule/Base (0.1.0):
     - AFNetworking
-    - LNCommonKit
+    - LNCommonKit (= 0.1.8)
     - LNLiveModule/Network
-    - LNModuleProtocol
+    - LNModuleProtocol (= 0.1.5)
     - MJRefresh
     - SDWebImage
   - LNLiveModule/Feature (0.1.0):
-    - LNCommonKit
+    - LNCommonKit (= 0.1.8)
     - LNLiveModule/Base
-    - LNModuleProtocol
+    - LNModuleProtocol (= 0.1.5)
   - LNLiveModule/Mediator (0.1.0):
-    - LNCommonKit
+    - LNCommonKit (= 0.1.8)
     - LNLiveModule/Feature
-    - LNModuleProtocol
+    - LNModuleProtocol (= 0.1.5)
   - LNLiveModule/Network (0.1.0):
-    - LNCommonKit
-    - LNModuleProtocol
+    - LNCommonKit (= 0.1.8)
+    - LNModuleProtocol (= 0.1.5)
   - LNModuleCore (0.1.9)
   - LNModuleProtocol (0.1.5):
     - LNModuleCore
@@ -123,20 +123,9 @@ PODS:
   - SDWebImage (5.9.5):
     - SDWebImage/Core (= 5.9.5)
   - SDWebImage/Core (5.9.5)
-  - YYKit (1.0.9):
-    - YYKit/no-arc (= 1.0.9)
-  - YYKit/no-arc (1.0.9)
 
 DEPENDENCIES:
-  - Aspects
-  - CocoaAsyncSocket
-  - LNCommonKit (from `../../LNCommonKit`)
   - LNLiveModule (from `../`)
-  - LNModuleCore (from `../../LNModuleCore`)
-  - LNModuleProtocol (from `../../LNModuleProtocol`)
-  - Masonry
-  - SDWebImage (= 5.9.5)
-  - YYKit
 
 SPEC REPOS:
   https://github.com/CocoaPods/Specs.git:
@@ -147,32 +136,28 @@ SPEC REPOS:
     - Masonry
     - MJRefresh
     - SDWebImage
-    - YYKit
+  https://github.com/NoNameOrganazation/LNSpec.git:
+    - LNCommonKit
+    - LNModuleCore
+    - LNModuleProtocol
 
 EXTERNAL SOURCES:
-  LNCommonKit:
-    :path: "../../LNCommonKit"
   LNLiveModule:
     :path: "../"
-  LNModuleCore:
-    :path: "../../LNModuleCore"
-  LNModuleProtocol:
-    :path: "../../LNModuleProtocol"
 
 SPEC CHECKSUMS:
   AFNetworking: 7864c38297c79aaca1500c33288e429c3451fdce
   Aspects: 7595ba96a6727a58ebcbfc954497fc5d2fdde546
   CocoaAsyncSocket: 065fd1e645c7abab64f7a6a2007a48038fdc6a99
   JSONModel: 02ab723958366a3fd27da57ea2af2113658762e9
-  LNCommonKit: 98aa974e88d3889bc1c59226cdea9749ee420afb
-  LNLiveModule: f33421976c3f8d6b7068ebc7e3d5516377894816
-  LNModuleCore: ffa5ef6950d7820dbdcdd163c0e29f01b6997115
-  LNModuleProtocol: 2090a650bbeca822219a998ef1ef8f034f5b099a
+  LNCommonKit: 348c5dc55afedde4a509e1831d433bc2d3f0dccd
+  LNLiveModule: 80a51c3689810d4656d822c63f717bee0cb22694
+  LNModuleCore: d37faf840963a9ccc7e6830331e1f340d86ac866
+  LNModuleProtocol: 40ae683fedbbeccf8294c064d294f98dae54a99b
   Masonry: 678fab65091a9290e40e2832a55e7ab731aad201
   MJRefresh: 30997d30b347c8e9508a4db11e3a690da0c9b85a
   SDWebImage: 0b2ba0d56479bf6a45ecddbfd5558bea93150d25
-  YYKit: 7cda43304a8dc3696c449041e2cb3107b4e236e7
 
-PODFILE CHECKSUM: 666da40d777aefc7b23a4cb4d8d0fb6b296648ea
+PODFILE CHECKSUM: 51ae6cd8a3f446ac9eaba3b759cfc948345919d4
 
 COCOAPODS: 1.11.3

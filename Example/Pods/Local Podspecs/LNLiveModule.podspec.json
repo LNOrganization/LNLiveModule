@@ -22,10 +22,10 @@
   "public_header_files": "LNLiveModule/Classes/*.h",
   "dependencies": {
     "LNModuleProtocol": [
-
+      "0.1.5"
     ],
     "LNCommonKit": [
-
+      "0.1.8"
     ]
   },
   "subspecs": [
