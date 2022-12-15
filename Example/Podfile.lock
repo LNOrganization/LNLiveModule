@@ -16,20 +16,80 @@ PODS:
     - AFNetworking/NSURLSession
   - Aspects (1.4.1)
   - CocoaAsyncSocket (7.6.5)
-  - LNCommonKit (0.1.5):
-    - LNCommonKit/BaseMVC (= 0.1.5)
-    - LNCommonKit/CustomUIKit (= 0.1.5)
-    - LNCommonKit/Foundation (= 0.1.5)
-    - LNCommonKit/Network (= 0.1.5)
-    - LNCommonKit/Router (= 0.1.5)
-  - LNCommonKit/BaseMVC (0.1.5):
-    - LNCommonKit/Network
-    - MJRefresh (= 3.7.2)
-  - LNCommonKit/CustomUIKit (0.1.5)
-  - LNCommonKit/Foundation (0.1.5)
-  - LNCommonKit/Network (0.1.5):
+  - JSONModel (1.8.0)
+  - LNCommonKit (0.1.8):
     - AFNetworking (= 4.0.1)
-  - LNCommonKit/Router (0.1.5)
+    - Aspects (= 1.4.1)
+    - CocoaAsyncSocket (= 7.6.5)
+    - JSONModel (= 1.8.0)
+    - LNCommonKit/BaseMVC (= 0.1.8)
+    - LNCommonKit/Consttant (= 0.1.8)
+    - LNCommonKit/CustomUIKit (= 0.1.8)
+    - LNCommonKit/Foundation (= 0.1.8)
+    - LNCommonKit/Log (= 0.1.8)
+    - LNCommonKit/Network (= 0.1.8)
+    - LNCommonKit/Router (= 0.1.8)
+    - Masonry (= 1.1.0)
+    - MJRefresh (= 3.7.2)
+    - SDWebImage (= 5.9.5)
+  - LNCommonKit/BaseMVC (0.1.8):
+    - AFNetworking (= 4.0.1)
+    - Aspects (= 1.4.1)
+    - CocoaAsyncSocket (= 7.6.5)
+    - JSONModel (= 1.8.0)
+    - LNCommonKit/CustomUIKit
+    - LNCommonKit/Network
+    - Masonry (= 1.1.0)
+    - MJRefresh (= 3.7.2)
+    - SDWebImage (= 5.9.5)
+  - LNCommonKit/Consttant (0.1.8):
+    - AFNetworking (= 4.0.1)
+    - Aspects (= 1.4.1)
+    - CocoaAsyncSocket (= 7.6.5)
+    - JSONModel (= 1.8.0)
+    - Masonry (= 1.1.0)
+    - MJRefresh (= 3.7.2)
+    - SDWebImage (= 5.9.5)
+  - LNCommonKit/CustomUIKit (0.1.8):
+    - AFNetworking (= 4.0.1)
+    - Aspects (= 1.4.1)
+    - CocoaAsyncSocket (= 7.6.5)
+    - JSONModel (= 1.8.0)
+    - Masonry (= 1.1.0)
+    - MJRefresh (= 3.7.2)
+    - SDWebImage (= 5.9.5)
+  - LNCommonKit/Foundation (0.1.8):
+    - AFNetworking (= 4.0.1)
+    - Aspects (= 1.4.1)
+    - CocoaAsyncSocket (= 7.6.5)
+    - JSONModel (= 1.8.0)
+    - Masonry (= 1.1.0)
+    - MJRefresh (= 3.7.2)
+    - SDWebImage (= 5.9.5)
+  - LNCommonKit/Log (0.1.8):
+    - AFNetworking (= 4.0.1)
+    - Aspects (= 1.4.1)
+    - CocoaAsyncSocket (= 7.6.5)
+    - JSONModel (= 1.8.0)
+    - Masonry (= 1.1.0)
+    - MJRefresh (= 3.7.2)
+    - SDWebImage (= 5.9.5)
+  - LNCommonKit/Network (0.1.8):
+    - AFNetworking (= 4.0.1)
+    - Aspects (= 1.4.1)
+    - CocoaAsyncSocket (= 7.6.5)
+    - JSONModel (= 1.8.0)
+    - Masonry (= 1.1.0)
+    - MJRefresh (= 3.7.2)
+    - SDWebImage (= 5.9.5)
+  - LNCommonKit/Router (0.1.8):
+    - AFNetworking (= 4.0.1)
+    - Aspects (= 1.4.1)
+    - CocoaAsyncSocket (= 7.6.5)
+    - JSONModel (= 1.8.0)
+    - Masonry (= 1.1.0)
+    - MJRefresh (= 3.7.2)
+    - SDWebImage (= 5.9.5)
   - LNLiveModule (0.1.0):
     - LNCommonKit
     - LNLiveModule/Base (= 0.1.0)
@@ -55,8 +115,8 @@ PODS:
   - LNLiveModule/Network (0.1.0):
     - LNCommonKit
     - LNModuleProtocol
-  - LNModuleCore (0.1.8)
-  - LNModuleProtocol (0.1.4):
+  - LNModuleCore (0.1.9)
+  - LNModuleProtocol (0.1.5):
     - LNModuleCore
   - Masonry (1.1.0)
   - MJRefresh (3.7.2)
@@ -83,6 +143,7 @@ SPEC REPOS:
     - AFNetworking
     - Aspects
     - CocoaAsyncSocket
+    - JSONModel
     - Masonry
     - MJRefresh
     - SDWebImage
@@ -102,10 +163,11 @@ SPEC CHECKSUMS:
   AFNetworking: 7864c38297c79aaca1500c33288e429c3451fdce
   Aspects: 7595ba96a6727a58ebcbfc954497fc5d2fdde546
   CocoaAsyncSocket: 065fd1e645c7abab64f7a6a2007a48038fdc6a99
-  LNCommonKit: c5fddc23830e25821893283524cf443c079f1878
+  JSONModel: 02ab723958366a3fd27da57ea2af2113658762e9
+  LNCommonKit: 98aa974e88d3889bc1c59226cdea9749ee420afb
   LNLiveModule: f33421976c3f8d6b7068ebc7e3d5516377894816
-  LNModuleCore: abdc94d3e428e4b73482ac920a274f371a790e81
-  LNModuleProtocol: 1ebd55c690c1c4d231144f0b402f9ab82161c82a
+  LNModuleCore: ffa5ef6950d7820dbdcdd163c0e29f01b6997115
+  LNModuleProtocol: 2090a650bbeca822219a998ef1ef8f034f5b099a
   Masonry: 678fab65091a9290e40e2832a55e7ab731aad201
   MJRefresh: 30997d30b347c8e9508a4db11e3a690da0c9b85a
   SDWebImage: 0b2ba0d56479bf6a45ecddbfd5558bea93150d25
@@ -113,4 +175,4 @@ SPEC CHECKSUMS:
 
 PODFILE CHECKSUM: 666da40d777aefc7b23a4cb4d8d0fb6b296648ea
 
-COCOAPODS: 1.10.0
+COCOAPODS: 1.11.3

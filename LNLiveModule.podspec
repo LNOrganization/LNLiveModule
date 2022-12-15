@@ -64,8 +64,8 @@ TODO: Add long description of the pod here.
     mediator.dependency 'LNLiveModule/Feature'
   end
   
-  s.dependency 'LNModuleProtocol'
-  s.dependency 'LNCommonKit'
+  s.dependency 'LNModuleProtocol', '0.1.5'
+  s.dependency 'LNCommonKit', '0.1.8'
   
   
   # s.resource_bundles = {
