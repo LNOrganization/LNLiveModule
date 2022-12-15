@@ -1,0 +1,22 @@
+{
+  "name": "LNModuleCore",
+  "version": "0.1.8",
+  "summary": "负责管理组件的集成、注册、初始化等.",
+  "description": "TODO: Add long description of the pod here.",
+  "homepage": "https://github.com/NoNameOrganazation",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "dongjianxiong": "jianxiong20090919@126.com"
+  },
+  "source": {
+    "git": "https://github.com/NoNameOrganazation/LNModuleCore.git",
+    "tag": "0.1.8"
+  },
+  "platforms": {
+    "ios": "9.0"
+  },
+  "source_files": "LNModuleCore/Classes/**/*"
+}

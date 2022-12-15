@@ -38,8 +38,8 @@
 
 /* Begin PBXFileReference section */
 		1635E6A4E5A3D46264747BCB /* Pods-LNLiveModule_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LNLiveModule_Tests.release.xcconfig"; path = "Target Support Files/Pods-LNLiveModule_Tests/Pods-LNLiveModule_Tests.release.xcconfig"; sourceTree = "<group>"; };
-		4AA176A5E56BEDA5BFEBF77C /* LNLiveModule.podspec */ = {isa = PBXFileReference; includeInIndex = 1; name = LNLiveModule.podspec; path = ../LNLiveModule.podspec; sourceTree = "<group>"; };
-		5EAD2B30C76E77A6C67C904C /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
+		4AA176A5E56BEDA5BFEBF77C /* LNLiveModule.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LNLiveModule.podspec; path = ../LNLiveModule.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		5EAD2B30C76E77A6C67C904C /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
 		6003F58A195388D20070C39A /* LNLiveModule_Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LNLiveModule_Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6003F58D195388D20070C39A /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		6003F58F195388D20070C39A /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -63,7 +63,7 @@
 		71719F9E1E33DC2100824A3D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		81C2340A7D89976002550DC4 /* Pods-LNLiveModule_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LNLiveModule_Tests.debug.xcconfig"; path = "Target Support Files/Pods-LNLiveModule_Tests/Pods-LNLiveModule_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		873B8AEA1B1F5CCA007FD442 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Main.storyboard; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		8D5F5378AE7421D4CA9FA82D /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; name = README.md; path = ../README.md; sourceTree = "<group>"; };
+		8D5F5378AE7421D4CA9FA82D /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 		A90CBAAC3E402F8298A6063C /* Pods_LNLiveModule_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LNLiveModule_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C3028B520DC57FE4AC758DDD /* Pods-LNLiveModule_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LNLiveModule_Example.release.xcconfig"; path = "Target Support Files/Pods-LNLiveModule_Example/Pods-LNLiveModule_Example.release.xcconfig"; sourceTree = "<group>"; };
 		CB52A7AA54E327C2DC5BA3E2 /* Pods-LNLiveModule_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LNLiveModule_Example.debug.xcconfig"; path = "Target Support Files/Pods-LNLiveModule_Example/Pods-LNLiveModule_Example.debug.xcconfig"; sourceTree = "<group>"; };
@@ -103,7 +103,6 @@
 				81C2340A7D89976002550DC4 /* Pods-LNLiveModule_Tests.debug.xcconfig */,
 				1635E6A4E5A3D46264747BCB /* Pods-LNLiveModule_Tests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -258,6 +257,7 @@
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
+				English,
 				en,
 				Base,
 			);
@@ -302,11 +302,31 @@
 			);
 			inputPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-LNLiveModule_Example/Pods-LNLiveModule_Example-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/AFNetworking/AFNetworking.framework",
+				"${BUILT_PRODUCTS_DIR}/Aspects/Aspects.framework",
+				"${BUILT_PRODUCTS_DIR}/CocoaAsyncSocket/CocoaAsyncSocket.framework",
+				"${BUILT_PRODUCTS_DIR}/LNCommonKit/LNCommonKit.framework",
 				"${BUILT_PRODUCTS_DIR}/LNLiveModule/LNLiveModule.framework",
+				"${BUILT_PRODUCTS_DIR}/LNModuleCore/LNModuleCore.framework",
+				"${BUILT_PRODUCTS_DIR}/LNModuleProtocol/LNModuleProtocol.framework",
+				"${BUILT_PRODUCTS_DIR}/MJRefresh/MJRefresh.framework",
+				"${BUILT_PRODUCTS_DIR}/Masonry/Masonry.framework",
+				"${BUILT_PRODUCTS_DIR}/SDWebImage/SDWebImage.framework",
+				"${BUILT_PRODUCTS_DIR}/YYKit/YYKit.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AFNetworking.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Aspects.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/CocoaAsyncSocket.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/LNCommonKit.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/LNLiveModule.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/LNModuleCore.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/LNModuleProtocol.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MJRefresh.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Masonry.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SDWebImage.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/YYKit.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;

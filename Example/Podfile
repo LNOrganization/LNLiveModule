@@ -1,13 +1,26 @@
 use_frameworks!
-
+source 'https://github.com/CocoaPods/Specs.git'
+source 'https://github.com/NoNameOrganazation/LNSpec.git'
 platform :ios, '10.0'
 
 target 'LNLiveModule_Example' do
-  pod 'LNLiveModule', :path => '../'
+  
+  pod 'SDWebImage', '5.9.5'
+  pod 'Masonry'
+  pod 'CocoaAsyncSocket'
+  pod 'Aspects'
+  pod 'YYKit'
 
+  
+  pod 'LNLiveModule', :path => '../'
+  pod 'LNModuleCore', :path => '../../LNModuleCore'
+  pod 'LNModuleProtocol', :path => '../../LNModuleProtocol'
+  pod 'LNCommonKit', :path => '../../LNCommonKit'
+  
   target 'LNLiveModule_Tests' do
     inherit! :search_paths
 
     
   end
 end
+

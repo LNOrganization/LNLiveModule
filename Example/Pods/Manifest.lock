@@ -1,0 +1,116 @@
+PODS:
+  - AFNetworking (4.0.1):
+    - AFNetworking/NSURLSession (= 4.0.1)
+    - AFNetworking/Reachability (= 4.0.1)
+    - AFNetworking/Security (= 4.0.1)
+    - AFNetworking/Serialization (= 4.0.1)
+    - AFNetworking/UIKit (= 4.0.1)
+  - AFNetworking/NSURLSession (4.0.1):
+    - AFNetworking/Reachability
+    - AFNetworking/Security
+    - AFNetworking/Serialization
+  - AFNetworking/Reachability (4.0.1)
+  - AFNetworking/Security (4.0.1)
+  - AFNetworking/Serialization (4.0.1)
+  - AFNetworking/UIKit (4.0.1):
+    - AFNetworking/NSURLSession
+  - Aspects (1.4.1)
+  - CocoaAsyncSocket (7.6.5)
+  - LNCommonKit (0.1.5):
+    - LNCommonKit/BaseMVC (= 0.1.5)
+    - LNCommonKit/CustomUIKit (= 0.1.5)
+    - LNCommonKit/Foundation (= 0.1.5)
+    - LNCommonKit/Network (= 0.1.5)
+    - LNCommonKit/Router (= 0.1.5)
+  - LNCommonKit/BaseMVC (0.1.5):
+    - LNCommonKit/Network
+    - MJRefresh (= 3.7.2)
+  - LNCommonKit/CustomUIKit (0.1.5)
+  - LNCommonKit/Foundation (0.1.5)
+  - LNCommonKit/Network (0.1.5):
+    - AFNetworking (= 4.0.1)
+  - LNCommonKit/Router (0.1.5)
+  - LNLiveModule (0.1.0):
+    - LNCommonKit
+    - LNLiveModule/Base (= 0.1.0)
+    - LNLiveModule/Feature (= 0.1.0)
+    - LNLiveModule/Mediator (= 0.1.0)
+    - LNLiveModule/Network (= 0.1.0)
+    - LNModuleProtocol
+  - LNLiveModule/Base (0.1.0):
+    - AFNetworking
+    - LNCommonKit
+    - LNLiveModule/Network
+    - LNModuleProtocol
+    - MJRefresh
+    - SDWebImage
+  - LNLiveModule/Feature (0.1.0):
+    - LNCommonKit
+    - LNLiveModule/Base
+    - LNModuleProtocol
+  - LNLiveModule/Mediator (0.1.0):
+    - LNCommonKit
+    - LNLiveModule/Feature
+    - LNModuleProtocol
+  - LNLiveModule/Network (0.1.0):
+    - LNCommonKit
+    - LNModuleProtocol
+  - LNModuleCore (0.1.8)
+  - LNModuleProtocol (0.1.4):
+    - LNModuleCore
+  - Masonry (1.1.0)
+  - MJRefresh (3.7.2)
+  - SDWebImage (5.9.5):
+    - SDWebImage/Core (= 5.9.5)
+  - SDWebImage/Core (5.9.5)
+  - YYKit (1.0.9):
+    - YYKit/no-arc (= 1.0.9)
+  - YYKit/no-arc (1.0.9)
+
+DEPENDENCIES:
+  - Aspects
+  - CocoaAsyncSocket
+  - LNCommonKit (from `../../LNCommonKit`)
+  - LNLiveModule (from `../`)
+  - LNModuleCore (from `../../LNModuleCore`)
+  - LNModuleProtocol (from `../../LNModuleProtocol`)
+  - Masonry
+  - SDWebImage (= 5.9.5)
+  - YYKit
+
+SPEC REPOS:
+  https://github.com/CocoaPods/Specs.git:
+    - AFNetworking
+    - Aspects
+    - CocoaAsyncSocket
+    - Masonry
+    - MJRefresh
+    - SDWebImage
+    - YYKit
+
+EXTERNAL SOURCES:
+  LNCommonKit:
+    :path: "../../LNCommonKit"
+  LNLiveModule:
+    :path: "../"
+  LNModuleCore:
+    :path: "../../LNModuleCore"
+  LNModuleProtocol:
+    :path: "../../LNModuleProtocol"
+
+SPEC CHECKSUMS:
+  AFNetworking: 7864c38297c79aaca1500c33288e429c3451fdce
+  Aspects: 7595ba96a6727a58ebcbfc954497fc5d2fdde546
+  CocoaAsyncSocket: 065fd1e645c7abab64f7a6a2007a48038fdc6a99
+  LNCommonKit: c5fddc23830e25821893283524cf443c079f1878
+  LNLiveModule: f33421976c3f8d6b7068ebc7e3d5516377894816
+  LNModuleCore: abdc94d3e428e4b73482ac920a274f371a790e81
+  LNModuleProtocol: 1ebd55c690c1c4d231144f0b402f9ab82161c82a
+  Masonry: 678fab65091a9290e40e2832a55e7ab731aad201
+  MJRefresh: 30997d30b347c8e9508a4db11e3a690da0c9b85a
+  SDWebImage: 0b2ba0d56479bf6a45ecddbfd5558bea93150d25
+  YYKit: 7cda43304a8dc3696c449041e2cb3107b4e236e7
+
+PODFILE CHECKSUM: 666da40d777aefc7b23a4cb4d8d0fb6b296648ea
+
+COCOAPODS: 1.10.0

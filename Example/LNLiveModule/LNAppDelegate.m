@@ -7,11 +7,19 @@
 //
 
 #import "LNAppDelegate.h"
+#import <LNModuleCore/LNModuleCore.h>
+#import <LNModuleProtocol/LNModuleProtocol.h>
 
 @implementation LNAppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
+    
+    id<LNLiveModuleProtocol> liveModule = [[LNModuleManager sharedInstance] impInstanceForProtocol:@protocol(LNLiveModuleProtocol)] ;
+    UIViewController *vc = [liveModule getRecommendListViewController];
+    UINavigationController *navi = [[UINavigationController alloc] initWithRootViewController:vc];
+    self.window.rootViewController = navi;
+    
     // Override point for customization after application launch.
     return YES;
 }

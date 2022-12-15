@@ -1,0 +1,82 @@
+{
+  "name": "LNLiveModule",
+  "version": "0.1.0",
+  "summary": "A short description of LNLiveModule.",
+  "description": "TODO: Add long description of the pod here.",
+  "homepage": "https://github.com/NoNameOrganazation/LNLiveModule",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "dongjianxiong": "jianxiong20090919@126.com"
+  },
+  "source": {
+    "git": "https://github.com/NoNameOrganazation/LNLiveModule.git",
+    "tag": "0.1.0"
+  },
+  "platforms": {
+    "ios": "10.0"
+  },
+  "source_files": "LNLiveModule/Classes/**/*",
+  "public_header_files": "LNLiveModule/Classes/*.h",
+  "dependencies": {
+    "LNModuleProtocol": [
+
+    ],
+    "LNCommonKit": [
+
+    ]
+  },
+  "subspecs": [
+    {
+      "name": "Network",
+      "source_files": "LNLiveModule/Classes/Network/**/*",
+      "public_header_files": "LNLiveModule/Classes/Network/*.h"
+    },
+    {
+      "name": "Base",
+      "source_files": "LNLiveModule/Classes/Base/**/*",
+      "public_header_files": "LNLiveModule/Classes/Base/*.h",
+      "dependencies": {
+        "LNLiveModule/Network": [
+
+        ],
+        "MJRefresh": [
+
+        ],
+        "SDWebImage": [
+
+        ],
+        "AFNetworking": [
+
+        ]
+      }
+    },
+    {
+      "name": "Feature",
+      "source_files": "LNLiveModule/Classes/Feature/**/*.{h,m}",
+      "public_header_files": "LNLiveModule/Classes/Feature/**/*.h",
+      "resource_bundles": {
+        "LNLiveModule": [
+          "LNLiveModule/Classes/Feature/**/*.xib",
+          "LNLiveModule/Classes/**/*.{png,jpg,jpeg}"
+        ]
+      },
+      "dependencies": {
+        "LNLiveModule/Base": [
+
+        ]
+      }
+    },
+    {
+      "name": "Mediator",
+      "source_files": "LNLiveModule/Classes/Mediator/**/*",
+      "dependencies": {
+        "LNLiveModule/Feature": [
+
+        ]
+      }
+    }
+  ]
+}
