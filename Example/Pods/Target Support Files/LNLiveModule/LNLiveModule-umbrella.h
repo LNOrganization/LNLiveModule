@@ -11,6 +11,8 @@
 #endif
 
 #import "LNLiveModule.h"
+#import "LNLiveMediatorDelegate.h"
+#import "LNLiveModuleConfig.h"
 #import "LNLiveTableViewCell.h"
 #import "LNLiveRoomModel.h"
 #import "LNLiveUserModel.h"

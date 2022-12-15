@@ -90,29 +90,26 @@ PODS:
     - Masonry (= 1.1.0)
     - MJRefresh (= 3.7.2)
     - SDWebImage (= 5.9.5)
-  - LNLiveModule (0.1.0):
+  - LNLiveModule (0.1.1):
     - LNCommonKit (= 0.1.8)
-    - LNLiveModule/Base (= 0.1.0)
-    - LNLiveModule/Feature (= 0.1.0)
-    - LNLiveModule/Mediator (= 0.1.0)
-    - LNLiveModule/Network (= 0.1.0)
+    - LNLiveModule/Common (= 0.1.1)
+    - LNLiveModule/Feature (= 0.1.1)
+    - LNLiveModule/Mediator (= 0.1.1)
+    - LNLiveModule/Network (= 0.1.1)
     - LNModuleProtocol (= 0.1.5)
-  - LNLiveModule/Base (0.1.0):
-    - AFNetworking
+  - LNLiveModule/Common (0.1.1):
     - LNCommonKit (= 0.1.8)
+    - LNModuleProtocol (= 0.1.5)
+  - LNLiveModule/Feature (0.1.1):
+    - LNCommonKit (= 0.1.8)
+    - LNLiveModule/Common
     - LNLiveModule/Network
     - LNModuleProtocol (= 0.1.5)
-    - MJRefresh
-    - SDWebImage
-  - LNLiveModule/Feature (0.1.0):
-    - LNCommonKit (= 0.1.8)
-    - LNLiveModule/Base
-    - LNModuleProtocol (= 0.1.5)
-  - LNLiveModule/Mediator (0.1.0):
+  - LNLiveModule/Mediator (0.1.1):
     - LNCommonKit (= 0.1.8)
     - LNLiveModule/Feature
     - LNModuleProtocol (= 0.1.5)
-  - LNLiveModule/Network (0.1.0):
+  - LNLiveModule/Network (0.1.1):
     - LNCommonKit (= 0.1.8)
     - LNModuleProtocol (= 0.1.5)
   - LNModuleCore (0.1.9)
@@ -151,7 +148,7 @@ SPEC CHECKSUMS:
   CocoaAsyncSocket: 065fd1e645c7abab64f7a6a2007a48038fdc6a99
   JSONModel: 02ab723958366a3fd27da57ea2af2113658762e9
   LNCommonKit: 348c5dc55afedde4a509e1831d433bc2d3f0dccd
-  LNLiveModule: 80a51c3689810d4656d822c63f717bee0cb22694
+  LNLiveModule: 9bc65ca70fa1243d404859becc0bbb7404755a7f
   LNModuleCore: d37faf840963a9ccc7e6830331e1f340d86ac866
   LNModuleProtocol: 40ae683fedbbeccf8294c064d294f98dae54a99b
   Masonry: 678fab65091a9290e40e2832a55e7ab731aad201

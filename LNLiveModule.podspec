@@ -9,7 +9,7 @@
 Pod::Spec.new do |s|
   s.name             = 'LNLiveModule'
   s.version          = '0.1.1'
-  s.summary          = 'A short description of LNLiveModule.'
+  s.summary          = '直播组件'
 
 # This description is used to generate tags and improve search results.
 #   * Think: What does it do? Why did you write it? What is the focus?
@@ -18,7 +18,7 @@ Pod::Spec.new do |s|
 #   * Finally, don't worry about the indent, CocoaPods strips it!
 
   s.description      = <<-DESC
-TODO: Add long description of the pod here.
+直播组件，开发和维护直播相关功能模块
                        DESC
 
   s.homepage         = 'https://github.com/NoNameOrganazation/LNLiveModule'
@@ -38,16 +38,9 @@ TODO: Add long description of the pod here.
     network.public_header_files = 'LNLiveModule/Classes/Network/*.h'
   end
   
-  s.subspec 'Base' do |base|
-    base.source_files = 'LNLiveModule/Classes/Base/**/*'
-    base.public_header_files = 'LNLiveModule/Classes/Base/*.h'
-    # 自有subspec
-    base.dependency 'LNLiveModule/Network'
-    # 公有库
-    base.dependency 'MJRefresh'
-    base.dependency 'SDWebImage'
-    base.dependency 'AFNetworking'
-    
+  s.subspec 'Common' do |base|
+    base.source_files = 'LNLiveModule/Classes/Common/**/*'
+    base.public_header_files = 'LNLiveModule/Classes/Common/*.h'
   end
   
   s.subspec 'Feature' do |feature|
@@ -56,7 +49,8 @@ TODO: Add long description of the pod here.
     feature.resource_bundles = {
       'LNLiveModule' => ['LNLiveModule/Classes/Feature/**/*.xib', 'LNLiveModule/Classes/**/*.{png,jpg,jpeg}']
     }
-    feature.dependency 'LNLiveModule/Base'
+    feature.dependency 'LNLiveModule/Common'
+    feature.dependency 'LNLiveModule/Network'
   end
   
   s.subspec 'Mediator' do |mediator|

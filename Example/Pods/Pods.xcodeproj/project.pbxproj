@@ -7,11 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		00A652AC1C5496B1B630899A8C0B70C5 /* LNLiveNetworkConfig.m in Sources */ = {isa = PBXBuildFile; fileRef = 6DE5340EAFBBB8A6845B24294ED2F814 /* LNLiveNetworkConfig.m */; };
 		00D41E2E184663CD1A6E58445C4240FC /* SDWebImagePrefetcher.m in Sources */ = {isa = PBXBuildFile; fileRef = F989C539452EB6CFC752D2A1F6094CB4 /* SDWebImagePrefetcher.m */; };
 		00E0114F52BF6F2EA6B4AFD57D43E03C /* LNMapTable.h in Headers */ = {isa = PBXBuildFile; fileRef = B835A12F52D87B1421E33216360499D3 /* LNMapTable.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		022DD7D51956425A1E5936F7187D7B7B /* LNConsttant.m in Sources */ = {isa = PBXBuildFile; fileRef = DA75C742391CC6008FBCB8B6C03870BC /* LNConsttant.m */; };
 		036F2EA91EFDAA0AEBF2B4F2D2F82FEA /* ReplaceMe.m in Sources */ = {isa = PBXBuildFile; fileRef = 07193E7568C1377EECDDED35746DC437 /* ReplaceMe.m */; };
 		03A887D9AD21D3626E8BD97A8049E14C /* SDWebImageDefine.m in Sources */ = {isa = PBXBuildFile; fileRef = 47B87A277D377D8F71FF1A2C1370F448 /* SDWebImageDefine.m */; };
+		03C4F6F09D24CEE88CBCE0857824C449 /* LNAccountModuleProtocol.h in Headers */ = {isa = PBXBuildFile; fileRef = 2FB9EB492A063222AB732EF3EEC7F2DA /* LNAccountModuleProtocol.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		04A965C9BF9A64350557BFC87F6EE725 /* Pods-LNLiveModule_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = D6396D8E9EC2C3C1F2AD2B2FA2315B99 /* Pods-LNLiveModule_Tests-dummy.m */; };
 		04C31B7D575E46A1F115E23C14CD43DC /* JSONModel+networking.m in Sources */ = {isa = PBXBuildFile; fileRef = FF95A326E0A4E55B96FFB0B96D641D20 /* JSONModel+networking.m */; };
 		06275DF23F660502FA42ADFA290B2315 /* View+MASAdditions.h in Headers */ = {isa = PBXBuildFile; fileRef = 13B00DA45B05FE42FB34F8D9E807A013 /* View+MASAdditions.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -25,8 +27,6 @@
 		0B4773A5BC98E86882EAC4F7F599497D /* SDImageIOAnimatedCoder.m in Sources */ = {isa = PBXBuildFile; fileRef = 01A08C575E368AA4316B022ADE91F2A9 /* SDImageIOAnimatedCoder.m */; };
 		0B6592F6B672330F1E219BF9D4BE3625 /* SDAnimatedImageRep.h in Headers */ = {isa = PBXBuildFile; fileRef = E45EF78200852F338DB6DC9F267C79E3 /* SDAnimatedImageRep.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		0C2A4CA52B237B4C9B70A545300F87D5 /* SDWebImageManager.h in Headers */ = {isa = PBXBuildFile; fileRef = BF100698E3ED4A29D70F82683B5836F2 /* SDWebImageManager.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		0D1F90A2DBC2FA4FB5B13EF20CC8526D /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 05103566DFB528FA2087D9BC2AEEB3F3 /* Foundation.framework */; };
-		0D29D50D3FF838735DF4DB732D8E44EA /* LNModuleManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 5D7034C43E24E29DCFB1A38A53730447 /* LNModuleManager.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		0E368F649402D525F23915D68112F21D /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 05103566DFB528FA2087D9BC2AEEB3F3 /* Foundation.framework */; };
 		0E385C69B4FDC20D5CAB4522141078BF /* LNCommonKit-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = D570C0338BAFF3E74B1585728FCA4E69 /* LNCommonKit-dummy.m */; };
 		0E7AA9AC124534B7355B70F2EA3A7831 /* SDImageGIFCoder.m in Sources */ = {isa = PBXBuildFile; fileRef = A934C4FA603725BAE016DE67A2608B22 /* SDImageGIFCoder.m */; };
@@ -34,13 +34,11 @@
 		0F361C4352ABD7D3A3FCD98D0761221E /* NSBezierPath+SDRoundedCorners.h in Headers */ = {isa = PBXBuildFile; fileRef = 152EFF58EE7E42FF61952D39266F32FA /* NSBezierPath+SDRoundedCorners.h */; settings = {ATTRIBUTES = (Private, ); }; };
 		0FC2C7300D3DE350BD73741888D9A1A8 /* AFSecurityPolicy.h in Headers */ = {isa = PBXBuildFile; fileRef = DF3496E7C655D280AA0A7A75DC75CD6A /* AFSecurityPolicy.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		10177C346C7F2F1FE054B0DD12D96076 /* UIImage+ExtendedCacheData.h in Headers */ = {isa = PBXBuildFile; fileRef = 5AD2D3B894895EE733D0F4AB657782EF /* UIImage+ExtendedCacheData.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		10490599A067B98640A716301AE56BA2 /* LNLiveModule-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 7E64197CF5E19B1118CEDD1D585B99D2 /* LNLiveModule-dummy.m */; };
-		11A4A70E99AC2A682B85C0BD198B76BF /* LNLiveUserModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 32A1CDD0551762EE22990E8CFCFBBBDA /* LNLiveUserModel.m */; };
 		1252099A549913F5A13F8DA92FCA9954 /* SDWebImageIndicator.m in Sources */ = {isa = PBXBuildFile; fileRef = 9AD57BA7373262095F1B0FA2105B8CD5 /* SDWebImageIndicator.m */; };
+		12E03265CF4D89811F9D9BB662F15691 /* LNLiveNetworkConfig.h in Headers */ = {isa = PBXBuildFile; fileRef = EA42C0AF952D1A245C6FF42814F0FFD9 /* LNLiveNetworkConfig.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		12F482FE2022286A223FFC9BFA84F83A /* CocoaAsyncSocket-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 3538AFD82D14B1C2E92B1519703C2E1D /* CocoaAsyncSocket-dummy.m */; };
 		134D463AE7CA7E1BCE89CF195BA94384 /* LNBaseTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 9543D430FEDC695DE73AD5EE7E6CE632 /* LNBaseTableViewCell.m */; };
 		13796D381E45D2376980809841060A1E /* SDWebImageCompat.m in Sources */ = {isa = PBXBuildFile; fileRef = B35E7E9119FA1346887A37493F5F8336 /* SDWebImageCompat.m */; };
-		13F4DF602F3B29F951A8277828F58584 /* LNModuleBaseProtocol.h in Headers */ = {isa = PBXBuildFile; fileRef = B91A3AFF2C2333630C2AA1F8250F5AE2 /* LNModuleBaseProtocol.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		144E6410B96686A88F36BF1BEAA865A6 /* SDImageAssetManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 4DB41C6C467FAFB2AB6300EAA6C8C732 /* SDImageAssetManager.m */; };
 		14C4116D1BF590B492A30C2346171BDE /* UIImage+Metadata.m in Sources */ = {isa = PBXBuildFile; fileRef = 0AE906891B2AF70FB656A54284F2FBE4 /* UIImage+Metadata.m */; };
 		1534407C80F96C98EAA2E016C68DC60D /* SDMemoryCache.h in Headers */ = {isa = PBXBuildFile; fileRef = FE3C88312CF0715481EC1744D207911B /* SDMemoryCache.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -49,22 +47,29 @@
 		168908D22E7273505B2A6D3264484AFC /* MJRefreshAutoGifFooter.h in Headers */ = {isa = PBXBuildFile; fileRef = 504D8008672A9C65D3EB5928D19B5296 /* MJRefreshAutoGifFooter.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		171A7A5BF3DED268F652D54376311463 /* SDWeakProxy.m in Sources */ = {isa = PBXBuildFile; fileRef = 6C9CE1001AE2285B5FA1FF142B05A6EA /* SDWeakProxy.m */; };
 		17B19D4675AE142B28AEDE5ED6C41BC2 /* UIImage+ExtendedCacheData.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C791DF680B813C8185DD7C7D809FD1F /* UIImage+ExtendedCacheData.m */; };
+		17CB24ECC985181B20E1DCCA7A75F18F /* LNAnchorLiveRoomViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 42F468B69EE7CAFAB596FFD6D2EC734E /* LNAnchorLiveRoomViewController.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		17EBF8CDEA3800547304308ECBD87857 /* UIImage+MultiFormat.m in Sources */ = {isa = PBXBuildFile; fileRef = 52AFA5AE04F974960767FA01E8DCB25A /* UIImage+MultiFormat.m */; };
-		1809272ADCB7490679D12482EFD7178E /* LNLiveNetworkConfig.h in Headers */ = {isa = PBXBuildFile; fileRef = EA42C0AF952D1A245C6FF42814F0FFD9 /* LNLiveNetworkConfig.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		18AEFCE986FB74A0B6B092B3BA2267C6 /* UIImageView+AFNetworking.m in Sources */ = {isa = PBXBuildFile; fileRef = 453C306CC9F7790E8A22BF03876C0DDA /* UIImageView+AFNetworking.m */; };
 		18E7D99502A6A01BB6E76F2F88EDE9E2 /* UIColor+SDHexString.m in Sources */ = {isa = PBXBuildFile; fileRef = E4C60C7EF1A779FB921B2AA936CBB2C1 /* UIColor+SDHexString.m */; };
+		18EE70373FB4F2E2A15F1A3F5D25423F /* LNLiveRecommendListController.m in Sources */ = {isa = PBXBuildFile; fileRef = 19786F7BD79EF22550497676232450D2 /* LNLiveRecommendListController.m */; };
+		19BF2E5DE4ABBD4573E1BCA0C91FBD2B /* LNModuleProtocol.m in Sources */ = {isa = PBXBuildFile; fileRef = 834BE3ADC1003DA3B8EF17863DED6DC4 /* LNModuleProtocol.m */; };
 		1B10B769AF010D1B684AA3F765D79AB7 /* MJRefreshAutoStateFooter.h in Headers */ = {isa = PBXBuildFile; fileRef = 0767827C0D0C5019D533AC8BC3AEF310 /* MJRefreshAutoStateFooter.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		1B6D7878EDA2B539038CE61868E7FC0C /* LNAnchorLiveRoomViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A2292914E4923422EF1A51008FD277E9 /* LNAnchorLiveRoomViewController.m */; };
 		1C7CD184D8475D989E5949DD7A4F767B /* SDWebImageTransition.h in Headers */ = {isa = PBXBuildFile; fileRef = 8972F529DC46AE2A38498A9F36EF02E9 /* SDWebImageTransition.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		1CD61F2426CE31D204DC49C82EA78406 /* LNVideoModuleProtocol.h in Headers */ = {isa = PBXBuildFile; fileRef = E45E69C3169A503E95D93B695424EA2A /* LNVideoModuleProtocol.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		1E2311EE55048E4CACF049A8C0AF30CB /* MJRefreshStateHeader.h in Headers */ = {isa = PBXBuildFile; fileRef = 19FC65EE0D7436853A79D5420CA6D094 /* MJRefreshStateHeader.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		1F52AEB46F59F69787EDB0EB59B53FB6 /* LNModuleBaseProtocol.h in Headers */ = {isa = PBXBuildFile; fileRef = B91A3AFF2C2333630C2AA1F8250F5AE2 /* LNModuleBaseProtocol.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		1F815A43C18F6B4B076F127D73F8C2E9 /* LNLiveMediator.m in Sources */ = {isa = PBXBuildFile; fileRef = 61F842B5636128F6675FD6CC2A8C8730 /* LNLiveMediator.m */; };
 		1FF58169917D0E04A4E35EBAFCDEA3A0 /* NSBundle+MJRefresh.m in Sources */ = {isa = PBXBuildFile; fileRef = E75E3CE41E06E354605F2E6D4EF523D7 /* NSBundle+MJRefresh.m */; };
+		1FFEF481691C27C3386FA7CCF1CF114D /* LNFeedModuleProtocol.h in Headers */ = {isa = PBXBuildFile; fileRef = D55C7D6E78865E086899686A2B8ECF02 /* LNFeedModuleProtocol.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		218625BB7CB947DCE23EFA36448A01C6 /* LNProtocolConfig.h in Headers */ = {isa = PBXBuildFile; fileRef = D6F402B467B7272EF726B229B8297FD5 /* LNProtocolConfig.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		218AAFD4C55A074825F329C60BE86B53 /* Aspects.m in Sources */ = {isa = PBXBuildFile; fileRef = 6DA41AE1B56A288451E0F5B965B994D7 /* Aspects.m */; };
 		21BE8009B8AF77252B91698845EB8993 /* Masonry.h in Headers */ = {isa = PBXBuildFile; fileRef = AF862BB9685B70D62890F20BA8514D15 /* Masonry.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		221BAADC92EEEAC02DB299CD3155B5C6 /* MASLayoutConstraint.h in Headers */ = {isa = PBXBuildFile; fileRef = 2B8112BFAAFF16338E2F16D0A08F1B6D /* MASLayoutConstraint.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		22AD28E260EF21FECAAEF40B04E8E020 /* AFURLSessionManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 849FE213C0945D322A795E8E975D2FD3 /* AFURLSessionManager.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		235C1B3FDC65C42B130FBB6B3348910E /* LNLiveTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = DEB5D913FD80EF4D863CFB7C9DEED6C2 /* LNLiveTableViewCell.m */; };
+		237F063A7420AA6FD9332E874C3AC0FB /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 05103566DFB528FA2087D9BC2AEEB3F3 /* Foundation.framework */; };
 		23AEAF5E77D59B98AE79C57BAE746C1A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 05103566DFB528FA2087D9BC2AEEB3F3 /* Foundation.framework */; };
 		246760397123121C0EA615D7429B1251 /* SDMemoryCache.m in Sources */ = {isa = PBXBuildFile; fileRef = E7171E7FDFB13DAA2835F19C74A151D1 /* SDMemoryCache.m */; };
+		24BFBDD911E4200558C4278534C863CD /* LNViewerLiveRoomViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 31EDDD0A06A6BC7AA33D080BD23E7A0B /* LNViewerLiveRoomViewController.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		25F1D2CEB31ADE0BFA2268E7F3337CE9 /* SDWebImageIndicator.h in Headers */ = {isa = PBXBuildFile; fileRef = 98434630E047E78BBD35C61F1350764B /* SDWebImageIndicator.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		26F87A3DC73299D66231DFE835E9C13D /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 05103566DFB528FA2087D9BC2AEEB3F3 /* Foundation.framework */; };
 		274D0EF9ECE328AA06D0C72CD372D0C7 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 05103566DFB528FA2087D9BC2AEEB3F3 /* Foundation.framework */; };
@@ -76,8 +81,6 @@
 		28FDB0EBF9C6F041D1FF9C6F1D5F1A4E /* LNHTTPClient.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A8C57990EBC9E3EF06EE416FB4FC9A9 /* LNHTTPClient.m */; };
 		295EF77113B46A7804D4C832DFEB7F22 /* MJRefreshFooter.m in Sources */ = {isa = PBXBuildFile; fileRef = CEB37B6E90466B5C094F40EE047F8FC5 /* MJRefreshFooter.m */; };
 		2962DF173A7BC47ED869B47FDE499115 /* MJRefreshGifHeader.m in Sources */ = {isa = PBXBuildFile; fileRef = 7C4EA5644CDD6A14F61EEAD2E1A0C6CF /* MJRefreshGifHeader.m */; };
-		2D1D1FC6F427A54B83E0AFE33BC2F438 /* LNViewerLiveRoomViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 31EDDD0A06A6BC7AA33D080BD23E7A0B /* LNViewerLiveRoomViewController.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		2E2168E7A6082D025C929379B959AD6A /* LNLiveTableViewCell.h in Headers */ = {isa = PBXBuildFile; fileRef = 240B4755E1E1D78132E58A53E5C43A2E /* LNLiveTableViewCell.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		2E22EA613987FFE941A229771EA6D4D8 /* MASCompositeConstraint.m in Sources */ = {isa = PBXBuildFile; fileRef = CED0828DF06C7753213B238399C91A29 /* MASCompositeConstraint.m */; };
 		2EDF266529F7A35CCED588BE80C9BC29 /* NSBundle+MJRefresh.h in Headers */ = {isa = PBXBuildFile; fileRef = 7F4AA2F7147423F241E91D766FAF3DAE /* NSBundle+MJRefresh.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		3046398BCCC7DD2B29EE5D7E26BFC9CD /* SDFileAttributeHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = DADEAED3FF77028F1C46258F75D80AA5 /* SDFileAttributeHelper.m */; };
@@ -90,40 +93,38 @@
 		33A88215D5655DDBF56DEAA41CC8D8DA /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 09D8D98F5C2F5965416C556BD8DC60B8 /* CFNetwork.framework */; };
 		33B9A195FDB315F18465CB1BA24D74A9 /* AFHTTPSessionManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 15E703609A89CC3A23B638B21C06D000 /* AFHTTPSessionManager.m */; };
 		33BA44B4A5B05BAFED055F0BC5A3CC4C /* MASViewAttribute.m in Sources */ = {isa = PBXBuildFile; fileRef = 13E15D7E7DAE8FB4F86A8A1D0A59D983 /* MASViewAttribute.m */; };
-		3444C8F9B8ED96FCDBFACBB9BD56F0ED /* LNLiveRecommendListController.m in Sources */ = {isa = PBXBuildFile; fileRef = 19786F7BD79EF22550497676232450D2 /* LNLiveRecommendListController.m */; };
 		347731E8D4C4F27FC53DDFAC590481D6 /* AFAutoPurgingImageCache.h in Headers */ = {isa = PBXBuildFile; fileRef = 0B51FA9C92904052492ED377E8013595 /* AFAutoPurgingImageCache.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		34D6122E69BA8E1D024F00F852F2DA8F /* LNViewerLiveRoomViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 71DCB6C8B8E4B2D3605CD31C2891BEAF /* LNViewerLiveRoomViewController.m */; };
 		3525772E084ABFFCF0E2D1F7B975CA39 /* SDImageFrame.m in Sources */ = {isa = PBXBuildFile; fileRef = 77508699476FAC617D726A7464F976D7 /* SDImageFrame.m */; };
-		353021E7FC5C2E9486ACF16EA887A3E1 /* LNLiveMediator.m in Sources */ = {isa = PBXBuildFile; fileRef = 61F842B5636128F6675FD6CC2A8C8730 /* LNLiveMediator.m */; };
 		35F85DDC5E0321418654FA74EF3414C6 /* MJRefreshTrailer.h in Headers */ = {isa = PBXBuildFile; fileRef = 4040B5CD2E31BFF2D3B320FA34726709 /* MJRefreshTrailer.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		3795C415DED70DCEC34E4A5ED533BD72 /* SDImageTransformer.m in Sources */ = {isa = PBXBuildFile; fileRef = 04C39EAE0A2A40B9B60A5B7DAA1DC4EC /* SDImageTransformer.m */; };
 		37B0BF2484BE142772F5429AEE5CF0B1 /* GCDAsyncUdpSocket.m in Sources */ = {isa = PBXBuildFile; fileRef = 42A36C61186974B4DA560BE691C88033 /* GCDAsyncUdpSocket.m */; };
 		38CE7701688F3C1E6F56379797290084 /* SDImageIOAnimatedCoder.h in Headers */ = {isa = PBXBuildFile; fileRef = FFC574215CFC1955416F453931D2DCEF /* SDImageIOAnimatedCoder.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		392E950C64748ECEFB4C2BBB244CA702 /* SDImageCodersManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 6EF858296404E5A1A39866664FD13A0B /* SDImageCodersManager.m */; };
-		39E0557A622A11E690BB8711ED316C22 /* LNLiveMediatorDelegate.h in Headers */ = {isa = PBXBuildFile; fileRef = 342ABF9F1C5E3726513729BE2CF8CAAF /* LNLiveMediatorDelegate.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		3A782EC2615A37C865661303AED15DAE /* LNLiveModule-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 7E64197CF5E19B1118CEDD1D585B99D2 /* LNLiveModule-dummy.m */; };
 		3B83B01AE4C3DAECB65F98602C19C654 /* JSONAPI.m in Sources */ = {isa = PBXBuildFile; fileRef = FC511958445267E20DA44FE58B359242 /* JSONAPI.m */; };
+		3C02ED371BD916A811901A7FDAF8A8E5 /* LNLiveUserModel.h in Headers */ = {isa = PBXBuildFile; fileRef = F41C300B43DD5B60D789EC6EC8DF6E94 /* LNLiveUserModel.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		3DC7BE85AC1CFCA89461ABA18C5B908A /* SDWebImageDownloaderDecryptor.h in Headers */ = {isa = PBXBuildFile; fileRef = 35BF37E1FBA23A8E0E20B7C19D9B7FCB /* SDWebImageDownloaderDecryptor.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		3E7A25BCE5BAC256FBBA56106C3192CD /* UIKit+AFNetworking.h in Headers */ = {isa = PBXBuildFile; fileRef = 8562ED914948C1F786CFDF0F2C53AC15 /* UIKit+AFNetworking.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		3E975E0A44C312752550810707C01D92 /* SDImageCachesManagerOperation.h in Headers */ = {isa = PBXBuildFile; fileRef = F022703887CCE895B910B18609FF580C /* SDImageCachesManagerOperation.h */; settings = {ATTRIBUTES = (Private, ); }; };
-		3EED5F444E60DE58D168767E659EB2B5 /* LNLiveFocusTableViewControler.h in Headers */ = {isa = PBXBuildFile; fileRef = CD2B65566A2AEB3D5D57A9CCFA64AEC6 /* LNLiveFocusTableViewControler.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		3F7FEFBDC15AC5A7247F2300AFA92556 /* NSImage+Compatibility.h in Headers */ = {isa = PBXBuildFile; fileRef = FDC112E8E230A032902892DA8522051E /* NSImage+Compatibility.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		3FAE1444F2A0917891D7A39C5260908C /* SDDeviceHelper.h in Headers */ = {isa = PBXBuildFile; fileRef = 27D47558AF97495303CD9422744DA9C7 /* SDDeviceHelper.h */; settings = {ATTRIBUTES = (Private, ); }; };
 		406CBEA656F77222DE43AC9B9C0484D9 /* MJRefreshGifHeader.h in Headers */ = {isa = PBXBuildFile; fileRef = 17C763FDB8A28C42666E026E28C10843 /* MJRefreshGifHeader.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		416B43CE7E9A8CFC293C661DE8A1649A /* LNCustomViewAdaptor.h in Headers */ = {isa = PBXBuildFile; fileRef = 2184F7ABBAFF835C29F25B9322935D32 /* LNCustomViewAdaptor.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		41F7EACF73AEC34F9331A069563B5C77 /* LNBaseTableViewCell.h in Headers */ = {isa = PBXBuildFile; fileRef = CEE6EF16B3751237E7933F034BB8D6D4 /* LNBaseTableViewCell.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		422580FEBD08C3A0ACD4F1E17BB33121 /* SDWebImageError.m in Sources */ = {isa = PBXBuildFile; fileRef = 4AFB15DC586E631881BE224CCDCE5931 /* SDWebImageError.m */; };
-		431DB55DB78F95B4E3102C197CA95BD7 /* LNLiveMediator.h in Headers */ = {isa = PBXBuildFile; fileRef = D55EE80BC70969DBDD908747DCB53511 /* LNLiveMediator.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		42C052526F272B6301A1FDABAE64A509 /* LNLiveRoomModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 0DA36CCCEBB1D63ED64F8940D8F8AE3F /* LNLiveRoomModel.m */; };
+		42CA40B25C3C6FF8AF848D85032C0AAD /* LNModuleManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E5345DF3DB9915B073297BACDDE9070 /* LNModuleManager.m */; };
 		43CB6D57465E4D0BE857E29451C6396E /* SDImageCoder.h in Headers */ = {isa = PBXBuildFile; fileRef = 9D46D5BA259DA02502CEA6BB6EFF91F7 /* SDImageCoder.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		44CE08CCA6FCD4EBD8A15F017796BDF4 /* UIImage+MemoryCacheCost.h in Headers */ = {isa = PBXBuildFile; fileRef = BF3B22B6E5E5328AD252CC8C29166201 /* UIImage+MemoryCacheCost.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		44DA850CCBE28F37C00523293DC946A9 /* LNLiveFocusListProvider.m in Sources */ = {isa = PBXBuildFile; fileRef = 81A209780F26332CA1FED9C9AE5480AA /* LNLiveFocusListProvider.m */; };
 		4566CEFF90F194E32214BD0337010624 /* SDWebImageDownloaderRequestModifier.m in Sources */ = {isa = PBXBuildFile; fileRef = EE20A8C4E1B375CEA9382B6C4896CCAF /* SDWebImageDownloaderRequestModifier.m */; };
 		4602C7C0A035A793B499022087D4BC76 /* MJRefreshStateHeader.m in Sources */ = {isa = PBXBuildFile; fileRef = 231973D710BFB45938881DB63DEAA75F /* MJRefreshStateHeader.m */; };
 		468AE3B00BDB03713244D3B3B4D23733 /* SDWeakProxy.h in Headers */ = {isa = PBXBuildFile; fileRef = 3A9E15A6F2CAF71F262EAF5829AF0CED /* SDWeakProxy.h */; settings = {ATTRIBUTES = (Private, ); }; };
+		469C66A56E6D7BBB4D6FB848E4F9CEB9 /* LNLiveTableViewCell.h in Headers */ = {isa = PBXBuildFile; fileRef = 240B4755E1E1D78132E58A53E5C43A2E /* LNLiveTableViewCell.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		46C4DFB79B3A117B86492FF06B047083 /* SDAnimatedImage.m in Sources */ = {isa = PBXBuildFile; fileRef = DBA6F42761B7BC4EA87EEBADEB97E2A0 /* SDAnimatedImage.m */; };
+		46C720F5CBA8D642858116783A40EDF0 /* LNLiveModuleConfig.h in Headers */ = {isa = PBXBuildFile; fileRef = 29AB0AA9491AF5E3DFE622AB6406E0F0 /* LNLiveModuleConfig.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		488D60E40E9ED0E79F30565891477B9F /* ViewController+MASAdditions.h in Headers */ = {isa = PBXBuildFile; fileRef = E79E35FB0DFAEAB41616920A3DF1002E /* ViewController+MASAdditions.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		497B1EDF94029BE6C0A9ED8C50C788D7 /* SDDiskCache.h in Headers */ = {isa = PBXBuildFile; fileRef = 41E2BC994CC8E7C4C33A7DCBC512BBE6 /* SDDiskCache.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		49DC1E5A1385030E22FCE55168A17DB7 /* SDAnimatedImageView.m in Sources */ = {isa = PBXBuildFile; fileRef = 73136F6D072F1949E8C3DA27BD385D04 /* SDAnimatedImageView.m */; };
-		4B94C90BF8B073A72F1E1922AB653F68 /* LNAnchorLiveRoomViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 42F468B69EE7CAFAB596FFD6D2EC734E /* LNAnchorLiveRoomViewController.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		4C10E3F44263A18AFA7BB7CAA23BA07B /* UIImageView+HighlightedWebCache.h in Headers */ = {isa = PBXBuildFile; fileRef = 1CBE74229D9C8496BA314415014557BB /* UIImageView+HighlightedWebCache.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		4D5A89B27F40B28CB3544148CB0129B5 /* SDAnimatedImageView.h in Headers */ = {isa = PBXBuildFile; fileRef = FD069412CD8DF2FC26C093D9CD0928B5 /* SDAnimatedImageView.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		4DCB59DE84A69063E9485E4D8BF8C637 /* AFNetworking-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 2467CA5D7FBBBFB2331F5090253CC1FA /* AFNetworking-dummy.m */; };
@@ -131,7 +132,7 @@
 		4FC2272F4C11472C903CFCC6A101313E /* GCDAsyncSocket.m in Sources */ = {isa = PBXBuildFile; fileRef = 2DAFD37FCD5E8E2F1FD449196378645B /* GCDAsyncSocket.m */; };
 		4FE8BFDBACD24DDDFBA81FC2797FD9D9 /* SDWebImageOptionsProcessor.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B6809B888F7C97C3C443C0DF8940721 /* SDWebImageOptionsProcessor.m */; };
 		501B6CEDCFD8CEF072B9AEABB849E330 /* MASViewAttribute.h in Headers */ = {isa = PBXBuildFile; fileRef = CCB546ED9128A90A1D5FC004A2CB729C /* MASViewAttribute.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		50289401ADA9912CC6F9649818703129 /* LNModuleCore.h in Headers */ = {isa = PBXBuildFile; fileRef = E72C1DA907C50C8BC43BD5C723A0A47B /* LNModuleCore.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		502CD023E458BB261B45811060E18D02 /* LNModuleCore-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = C95C9FF400F212223CFDDA128CCCE1AE /* LNModuleCore-dummy.m */; };
 		504E3C074811E4FEBE000B9C978EAA44 /* UIImage+MultiFormat.h in Headers */ = {isa = PBXBuildFile; fileRef = 5C768AAE4C9BDB7BCC8CB1FFAE85DB4D /* UIImage+MultiFormat.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		509FFB1025865D31BC806DB30D390A80 /* SDImageCachesManagerOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 662A65A06C19AC719A5683DFCF689148 /* SDImageCachesManagerOperation.m */; };
 		5114CC04DB5113B914256609A65FE1B0 /* SDInternalMacros.h in Headers */ = {isa = PBXBuildFile; fileRef = 24BB00943E746A75401221A50969B92C /* SDInternalMacros.h */; settings = {ATTRIBUTES = (Private, ); }; };
@@ -140,16 +141,16 @@
 		535251A0BC5CF54566B6C67D23D116F7 /* UIColor+SDHexString.h in Headers */ = {isa = PBXBuildFile; fileRef = EC769C61FAAD1B8BD8D13A295213C3BC /* UIColor+SDHexString.h */; settings = {ATTRIBUTES = (Private, ); }; };
 		53A6888892BEA33E0D761C2CE8151CFD /* SDAnimatedImageView+WebCache.h in Headers */ = {isa = PBXBuildFile; fileRef = 3363EBB986C400D661C68CDF45E19968 /* SDAnimatedImageView+WebCache.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		53B5F590B90885699ADB83E3808E72D6 /* MJRefreshBackFooter.h in Headers */ = {isa = PBXBuildFile; fileRef = 9CBBF3E2D229E80925B8D618FA9EBA5B /* MJRefreshBackFooter.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		544A83AA82EEE1B93208217BB3A1EAAC /* LNModuleManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E5345DF3DB9915B073297BACDDE9070 /* LNModuleManager.m */; };
+		55367CEB1AE36A3BFDD18C9032EDF595 /* LNModuleProtocol-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = FA8596EDFED67CC054C0A29DCE4B62D7 /* LNModuleProtocol-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		554185F230BB131BAF8A5AB4DFD5ACBF /* MJRefreshConst.m in Sources */ = {isa = PBXBuildFile; fileRef = 6307E0A187F7D5ADED789804F36BE877 /* MJRefreshConst.m */; };
 		5571D1E33E8CFBD6EFB2A158E107989E /* SDImageAWebPCoder.h in Headers */ = {isa = PBXBuildFile; fileRef = E24E8002B7FB14FCB05623E7E3C805A8 /* SDImageAWebPCoder.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		56BA8EBF5BDF3FD1FD6D992AB238A582 /* LNLiveRecommendListController.h in Headers */ = {isa = PBXBuildFile; fileRef = 8439605B776C00D8D9B127DCAA1C483D /* LNLiveRecommendListController.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		56CFD9B2951E99B60ACBEEE1DA0EAAE4 /* NSObject+LNKVO.m in Sources */ = {isa = PBXBuildFile; fileRef = 26005D04449CD0EF58E911D29B9141C9 /* NSObject+LNKVO.m */; };
+		576CA7E3055377B02E226AF500F8DC2D /* ReplaceMe.m in Sources */ = {isa = PBXBuildFile; fileRef = A8A6FD27A80545B8061D9E73ADF477F6 /* ReplaceMe.m */; };
 		57744CA757400E7183DFC0D37EFB5214 /* WKWebView+AFNetworking.h in Headers */ = {isa = PBXBuildFile; fileRef = 7D3CAA8C395ABDF8916953A299388E4E /* WKWebView+AFNetworking.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		584233A4CEC7C9AA382A1A43C26B87EE /* AFHTTPSessionManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 6F85947466183E5FABB2F1AAF79370AE /* AFHTTPSessionManager.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		5920EB523A4DFEBE06A87711F18EE517 /* UIImageView+WebCache.h in Headers */ = {isa = PBXBuildFile; fileRef = BFAFB0D80796A51EF5BB5601AEC6E77C /* UIImageView+WebCache.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		59FCF23C58B5324E9283F448347DD5B1 /* LNBaseDataProvider.h in Headers */ = {isa = PBXBuildFile; fileRef = 53F6587B495D490A6320ACA1DCD15977 /* LNBaseDataProvider.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		5B0B25D83A7FE375BBD6B22ED8BFA4F2 /* LNModuleProtocol.h in Headers */ = {isa = PBXBuildFile; fileRef = AFDC4985C783F24A5C22A2099199E817 /* LNModuleProtocol.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		5B28A2616B4F7B4D4BFC1897C7DFC6B9 /* LNUserCenterModuleProtocol.h in Headers */ = {isa = PBXBuildFile; fileRef = A8735931A4CA44E012536B985BF1D105 /* LNUserCenterModuleProtocol.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		5BA851722B868CD2AB4CE12B51294581 /* SDImageLoadersManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 53A945E2B0A33AC500C166B2239DFE3F /* SDImageLoadersManager.m */; };
 		5BE27AF46E2DE81F61752081EDB7E52B /* AFSecurityPolicy.m in Sources */ = {isa = PBXBuildFile; fileRef = B67BDD3ECAF5DDDFC7926B14FCDFE599 /* AFSecurityPolicy.m */; };
 		5BF93F7987DFA59DD44ACB0EA53FF2DB /* LNBaseModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 92A797B8B3268D5098BA68137368A8A3 /* LNBaseModel.m */; };
@@ -158,11 +159,11 @@
 		5EC44F7D296349EB42C2851C5330AB74 /* UIScrollView+MJRefresh.h in Headers */ = {isa = PBXBuildFile; fileRef = EF5E696A3CAA62A1B9B368D3C9D98906 /* UIScrollView+MJRefresh.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		5F641644ADD4FAAE1819B5EB2FD022D6 /* LNBaseDataProvider.m in Sources */ = {isa = PBXBuildFile; fileRef = C97E33D308CC64E59A33A2631C8CE7E0 /* LNBaseDataProvider.m */; };
 		5F674AFC00BF1DB40AD0E8E1A71F494A /* LNFoundationKit.h in Headers */ = {isa = PBXBuildFile; fileRef = 24B28D4B9C89E4E206C4715226949CAE /* LNFoundationKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		5FC9124C16DF6658C8D90A1E8B33C306 /* LNLiveModule.h in Headers */ = {isa = PBXBuildFile; fileRef = F7E1DAA993055873F1EDDC4FE6030779 /* LNLiveModule.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		602B7BAF0B433B7FDF76447270614940 /* SDImageCoder.m in Sources */ = {isa = PBXBuildFile; fileRef = 0B29673FC7D965F869F8DF24B86FB794 /* SDImageCoder.m */; };
 		60FF5046AC590672263F504FFF22211A /* MJRefreshFooter.h in Headers */ = {isa = PBXBuildFile; fileRef = E0E5B95565CE02888877573219D590D7 /* MJRefreshFooter.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		610E990BE32CB4AADDD03A77B78D411C /* UIImage+GIF.h in Headers */ = {isa = PBXBuildFile; fileRef = 7629F707D49100EF62F4D8B523CDCBF5 /* UIImage+GIF.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		61247D441394883990909A48CF29D59A /* SDWebImageDownloaderResponseModifier.m in Sources */ = {isa = PBXBuildFile; fileRef = C4C2AE113E2CF20FF6A4CC7CBBF547EB /* SDWebImageDownloaderResponseModifier.m */; };
-		61E0D96A59CFF875CC4AA5A5331F82AD /* ReplaceMe.m in Sources */ = {isa = PBXBuildFile; fileRef = 1993D5D07EA115C9A54AB38C79B3A8C3 /* ReplaceMe.m */; };
 		6295B1D0A453146E23CE7865471E60D1 /* MJRefreshConfig.m in Sources */ = {isa = PBXBuildFile; fileRef = 955EA7011DB29D27DCC145502A7853C9 /* MJRefreshConfig.m */; };
 		62A25673C29C4D22285596F7C060254A /* UIScreen+LNUIKit.m in Sources */ = {isa = PBXBuildFile; fileRef = 2DF5931544C499976B16AECD36C1C484 /* UIScreen+LNUIKit.m */; };
 		62B04D51F2CB913879F49E5139A8EA6D /* MJRefresh-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = AC1609C5E780610137A6ABE9D721B7CF /* MJRefresh-dummy.m */; };
@@ -172,6 +173,7 @@
 		63C3A14D23219808198F3959792B20B5 /* LNRequestConfig.m in Sources */ = {isa = PBXBuildFile; fileRef = A5CBEFCBE8099A5D43A8A0050E716881 /* LNRequestConfig.m */; };
 		6410D7BF084CC87FBC19A679AF987AE0 /* MJRefreshHeader.m in Sources */ = {isa = PBXBuildFile; fileRef = 8AA65E609C3E3C086208924AADFD2D37 /* MJRefreshHeader.m */; };
 		6456D026EEE566C5490CAAD509763ABF /* MJRefreshAutoStateFooter.m in Sources */ = {isa = PBXBuildFile; fileRef = 15AE8B0D37060BF244B4A62FFC026C69 /* MJRefreshAutoStateFooter.m */; };
+		646D03E4C2D15E73E73C758CA7EC2CF0 /* ReplaceMe.m in Sources */ = {isa = PBXBuildFile; fileRef = FEC1D92254D75D236113AC1711AE12FD /* ReplaceMe.m */; };
 		65163D7E6539C8A1D65F5FCBA0E6EFD2 /* UIRefreshControl+AFNetworking.h in Headers */ = {isa = PBXBuildFile; fileRef = A96C95CED5D9C62C76AE704DC1CE73EA /* UIRefreshControl+AFNetworking.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		6562F225243029F3999748FD361C6735 /* LNHTTPCustomClient.m in Sources */ = {isa = PBXBuildFile; fileRef = 9318228D48D48D3E67102BE821961867 /* LNHTTPCustomClient.m */; };
 		657D596F7ED1260403D4E064E6BF8CD1 /* WKWebView+AFNetworking.m in Sources */ = {isa = PBXBuildFile; fileRef = DC84CC8B4160FCA863E47365FAB34709 /* WKWebView+AFNetworking.m */; };
@@ -182,24 +184,24 @@
 		6A2A010011758D371DADF0C69A55DF97 /* SDWebImageTransition.m in Sources */ = {isa = PBXBuildFile; fileRef = D3623CDA8628CA7B9293FF9C7669D442 /* SDWebImageTransition.m */; };
 		6A3C2E454FEDB7C588C505F108D40296 /* SDAssociatedObject.m in Sources */ = {isa = PBXBuildFile; fileRef = AEE89816B6D5623DFFF67EA77B3D28F7 /* SDAssociatedObject.m */; };
 		6AE486895FC78491156202632D440774 /* Aspects-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 02C469877D4B591E1229C74111A790B8 /* Aspects-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		6B6529A54A2191D47719342F7877D0F7 /* LNLiveModule-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = DCF03B920CF840C2BF57FF2D39FEDBCF /* LNLiveModule-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		6C239323DE74D9551EB571A31A24EC1E /* UIProgressView+AFNetworking.m in Sources */ = {isa = PBXBuildFile; fileRef = 39147345E91508923593462040E46F64 /* UIProgressView+AFNetworking.m */; };
 		6C7D409A4DB0390B170AD388CAC4D7FE /* LNGCDTimer.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C95822CDB3D571ACFD83986D5727DE8 /* LNGCDTimer.m */; };
 		6CA626A2729E59357C3C38631966FE09 /* MJRefreshBackFooter.m in Sources */ = {isa = PBXBuildFile; fileRef = B93FC097305644F594FC9F4F19EE0B77 /* MJRefreshBackFooter.m */; };
 		6CDD6FAD1C4E9FA7BF22BF827C326A96 /* SDImageCacheDefine.m in Sources */ = {isa = PBXBuildFile; fileRef = BC3BF6C29807A0B01A258A555261009A /* SDImageCacheDefine.m */; };
-		6D51E760EB1C12F76B0E8B225EA50BA6 /* LNModuleAppDelegate.h in Headers */ = {isa = PBXBuildFile; fileRef = 0F3C29C0FBFEFA56DF4B90BED327121B /* LNModuleAppDelegate.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		6D75AE9B92BB0FF4C3058451E7058063 /* SDImageCache.h in Headers */ = {isa = PBXBuildFile; fileRef = 2A03B2B9B66CD2A99C2B87A7C79C21C1 /* SDImageCache.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		6DB244706298D81730C5537279B7B635 /* AFNetworking-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 1D2384313925B22EFDD20B1C6D80619E /* AFNetworking-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		6E4DC236874B562D2F118DF0E51C9D98 /* SDWebImageDownloader.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D8CB7BA56398AB836B115CD94E7DE4F /* SDWebImageDownloader.m */; };
+		6EE38B139ED211174B1C59D771E97975 /* ReplaceMe.m in Sources */ = {isa = PBXBuildFile; fileRef = 1993D5D07EA115C9A54AB38C79B3A8C3 /* ReplaceMe.m */; };
 		6F8C3705C0BD1FD9138A43C65A91D802 /* LNBaseViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 0BD024CFE5C0A2AA2DD432C740EF598D /* LNBaseViewController.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		70AB8EEB3E5DBA31200E7475BEDAC8E2 /* SDImageLoader.h in Headers */ = {isa = PBXBuildFile; fileRef = 5AB44201EDE015106D71C6ADE87CF941 /* SDImageLoader.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		70ACB3A4E53350598854B4C3C79F7F9A /* LNHashTable.h in Headers */ = {isa = PBXBuildFile; fileRef = DA51B5C911A69159B9C4A4296C8B292D /* LNHashTable.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		7159C40E7D2F7BE37C1750A35BD9149F /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 05103566DFB528FA2087D9BC2AEEB3F3 /* Foundation.framework */; };
 		72A7A9EC091E96F91984822B3C101A72 /* MASViewConstraint.h in Headers */ = {isa = PBXBuildFile; fileRef = D65C11ACA0FE52696123B68795EAE4FE /* MASViewConstraint.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		72CA1F2E5CCDAC7673E073B5FECC0AF7 /* SDImageCacheConfig.h in Headers */ = {isa = PBXBuildFile; fileRef = 17CD7564FFD915F19B43316E25FE1689 /* SDImageCacheConfig.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		72CAD26DC86BDDD5AE05CA3C4D9A0C8C /* JSONValueTransformer.m in Sources */ = {isa = PBXBuildFile; fileRef = FAA3E232FEB84557CC7675D8751842C8 /* JSONValueTransformer.m */; };
 		734369A644B7618518071B60B3B393D2 /* NSData+ImageContentType.h in Headers */ = {isa = PBXBuildFile; fileRef = 724DA95422DA00083719E9FA784A46F2 /* NSData+ImageContentType.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		734CC770A9E4CFD1705CEAF77982DA98 /* LNLiveModule.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CC363AFC6690461E20EFE014334CD87 /* LNLiveModule.m */; };
 		738FA441853E803E3725070AC73F4370 /* MJRefreshBackGifFooter.m in Sources */ = {isa = PBXBuildFile; fileRef = 794C734AF867F269DC7A9FA036FA5547 /* MJRefreshBackGifFooter.m */; };
+		73D419B8D4A569432F0490B49B4E56B8 /* LNLiveFocusListProvider.m in Sources */ = {isa = PBXBuildFile; fileRef = 81A209780F26332CA1FED9C9AE5480AA /* LNLiveFocusListProvider.m */; };
 		73FC474EF63D71DC31AFF46C46B10965 /* SDWebImageError.h in Headers */ = {isa = PBXBuildFile; fileRef = DFBF322EB18766C66BEDAC2A1AD64475 /* SDWebImageError.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		73FC5EF007AF957D717CDA0A55326280 /* LNHTTPRequest.h in Headers */ = {isa = PBXBuildFile; fileRef = C088B0E5B1A303E727B339CA71C0AAB0 /* LNHTTPRequest.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		74E79FC9F20E8202B8E317C6605830DC /* MJRefreshAutoFooter.h in Headers */ = {isa = PBXBuildFile; fileRef = 6CD7EB1C2E7BEAAC3D23D4B6F5EC2559 /* MJRefreshAutoFooter.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -209,10 +211,8 @@
 		76DEF608E5FCE1D74D1DBEA2D642E92F /* LNCustomUIKit.h in Headers */ = {isa = PBXBuildFile; fileRef = 7A2D080E1DCAAD56D9620C5D67389912 /* LNCustomUIKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		77A36842C81ED69DD6EECD2E5CF99189 /* LNNetworkConst.h in Headers */ = {isa = PBXBuildFile; fileRef = C8B2B9F5C0DF5B3429B3560A62968739 /* LNNetworkConst.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		77E49FCD099EA8E586D3F47119AD7CDF /* SDImageGraphics.h in Headers */ = {isa = PBXBuildFile; fileRef = 7555C5BA60A7A7874CB8E8B26DFCBE45 /* SDImageGraphics.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		78AE8F0C389CE14948B7C381CEB71F4F /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 05103566DFB528FA2087D9BC2AEEB3F3 /* Foundation.framework */; };
 		7936C8771D8882A886E11827025E211D /* UIButton+WebCache.m in Sources */ = {isa = PBXBuildFile; fileRef = 77C258378FECB977D597795F9BD1F4B3 /* UIButton+WebCache.m */; };
 		795FD5AA076D9C10BB68EC406B3F74E1 /* MJRefreshAutoFooter.m in Sources */ = {isa = PBXBuildFile; fileRef = 32E9D77BC7D363E43CF6A9FBD2DBDB73 /* MJRefreshAutoFooter.m */; };
-		79A138B8B812C24C0F4F5A8D6F2048FA /* LNModuleCore-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = FC61538B9351AEEBC1A553D7392D819C /* LNModuleCore-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		7C1DD31A3A7A0FBBA1A9C88A92CAA28C /* CocoaAsyncSocket-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 822178C74595FDABA48418E63AE34C89 /* CocoaAsyncSocket-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		7CD5E78691A9617E7BC92764A4930B2A /* LNBaseTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 52BBDCD01477BFD27E79590D9B49E3F7 /* LNBaseTableViewController.m */; };
 		7DBC4C40863F0EB491884122CCE09B98 /* LNBaseModel.h in Headers */ = {isa = PBXBuildFile; fileRef = 2A93797FE55E8E36E9E559369D6BD5E1 /* LNBaseModel.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -220,7 +220,6 @@
 		7EABFA90CBEFA1269EAB27E50583E3FD /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 05103566DFB528FA2087D9BC2AEEB3F3 /* Foundation.framework */; };
 		7ECC63FA745F6D8B5621D6D4ED5A8329 /* LNBaseMVC.h in Headers */ = {isa = PBXBuildFile; fileRef = 325C98FF626314363CF375EA476B5FF3 /* LNBaseMVC.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		7F82CE9F2C1D771726E8E32E784CFD97 /* MASConstraint+Private.h in Headers */ = {isa = PBXBuildFile; fileRef = C54B9CABD2D2B96F3D3F72CFA1CAF0A1 /* MASConstraint+Private.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		7F964993AE9A4218324C5EB3B51AB450 /* LNModuleProtocol-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 3EADBFF8D3BFA9C51E3EE5A8C18D0999 /* LNModuleProtocol-dummy.m */; };
 		7F9A70C0F354ACDF90FDF1EF3AE6FA4E /* MJRefreshStateTrailer.h in Headers */ = {isa = PBXBuildFile; fileRef = 3356CE40D540E100894DDF502C1A77A0 /* MJRefreshStateTrailer.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		7FF47D38364CB3CCB2280CD2A3EC6AEC /* SDAsyncBlockOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = BF5E5B3CA34EF3EF90D0EBA771D06AE1 /* SDAsyncBlockOperation.m */; };
 		80003F11C6F2225FE936BFCA89CF2717 /* JSONHTTPClient.h in Headers */ = {isa = PBXBuildFile; fileRef = 804B01F800A7CDE4E0F86E85182DDB28 /* JSONHTTPClient.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -233,35 +232,35 @@
 		84479092159C8C0B87A1A1F66D6D2441 /* LNWeakProxy.h in Headers */ = {isa = PBXBuildFile; fileRef = BBF421133D9E55BADD836B36AB1F6647 /* LNWeakProxy.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		849B62B380596A5196BA5635258FD28C /* LNBaseCollectionViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 8F6CD34356BDBAF581962D4D18D13830 /* LNBaseCollectionViewController.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		852B8FD255F2C4D99A56D06EF573DF9E /* SDWebImageCacheSerializer.m in Sources */ = {isa = PBXBuildFile; fileRef = 1BA30C83D22F061983FEAC76CEBC2CD5 /* SDWebImageCacheSerializer.m */; };
-		8710330D37141A1FDAADAD739BA04D25 /* LNAccountModuleProtocol.h in Headers */ = {isa = PBXBuildFile; fileRef = 2FB9EB492A063222AB732EF3EEC7F2DA /* LNAccountModuleProtocol.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		8737D03099DF1689F0C3AA160D3BC571 /* MJRefreshBackStateFooter.h in Headers */ = {isa = PBXBuildFile; fileRef = 3983037F9ED663BA3D7052F11A26107F /* MJRefreshBackStateFooter.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		8774FEFCFFF90B5170184F76FA33F285 /* ImageIO.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FB2D4ED85C126F2AE02F64C1063ED9C0 /* ImageIO.framework */; };
 		87D8AA665B3C068137629D60222A0DD7 /* SDImageTransformer.h in Headers */ = {isa = PBXBuildFile; fileRef = C7DAC6A8151CA71891A7E378EC2871CF /* SDImageTransformer.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		87DFED0CA00428E61F42BD3B74B5E0F8 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 05103566DFB528FA2087D9BC2AEEB3F3 /* Foundation.framework */; };
 		8861DA09219E12C0A1DBA07EB1CEB94A /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 96273F118EE8210B498ADA2041DDDCDE /* Security.framework */; };
 		8881B1704EFC93DDE7E58DEC14E00978 /* MJRefresh.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 45D926781F7FED1EA56F5AD913382005 /* MJRefresh.bundle */; };
+		897E03F88A0FCFC261BC7E598B6EBD37 /* LNLiveFocusListProvider.h in Headers */ = {isa = PBXBuildFile; fileRef = 67FBB9F7A3AECECC8E0F96822649FE72 /* LNLiveFocusListProvider.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		8995498E3EAB7873FC5CB4F1DB0FC7CF /* JSONModel.h in Headers */ = {isa = PBXBuildFile; fileRef = 9E07037C8D6360FF67020A2F34938C91 /* JSONModel.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		89D7B4AB1E65E11697607611C417203E /* LNBaseListDataProvider.h in Headers */ = {isa = PBXBuildFile; fileRef = EDCAD18469E970F7766981F6B379EB2D /* LNBaseListDataProvider.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		89F4DB1A99C6556F1AE0C400440FC6D4 /* LNLiveUserModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 32A1CDD0551762EE22990E8CFCFBBBDA /* LNLiveUserModel.m */; };
+		8AF1DA05932C22D836A491EBE3CA5609 /* LNViewerLiveRoomViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 71DCB6C8B8E4B2D3605CD31C2891BEAF /* LNViewerLiveRoomViewController.m */; };
 		8BCE236F6473664C8A16AB73C1183D7B /* SDImageAPNGCoder.m in Sources */ = {isa = PBXBuildFile; fileRef = 96F9B32C4510B238EB25DF78A7B55BDC /* SDImageAPNGCoder.m */; };
-		8C1A3754178CEEF843636F5684EE7706 /* LNLiveUserModel.h in Headers */ = {isa = PBXBuildFile; fileRef = F41C300B43DD5B60D789EC6EC8DF6E94 /* LNLiveUserModel.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		8C22C2AC1238A248456E8C1F241CA656 /* LNModuleProtocol-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = FA8596EDFED67CC054C0A29DCE4B62D7 /* LNModuleProtocol-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		8CD142608DA8D4FE71E6068471E25C81 /* LNProtocolConfig.h in Headers */ = {isa = PBXBuildFile; fileRef = D6F402B467B7272EF726B229B8297FD5 /* LNProtocolConfig.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		8F4908D1BC6A81C7F25517F6045A4F49 /* LNLiveMediatorDelegate.h in Headers */ = {isa = PBXBuildFile; fileRef = 342ABF9F1C5E3726513729BE2CF8CAAF /* LNLiveMediatorDelegate.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		9162CDAE05B7B4CC17D8FA74D6D53B8C /* LNLiveModule-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = DCF03B920CF840C2BF57FF2D39FEDBCF /* LNLiveModule-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		918AD88A49B79CD1B13BAD5415FE5621 /* AFURLRequestSerialization.h in Headers */ = {isa = PBXBuildFile; fileRef = CD6C6657B3E79B6E9DA68B6A9327A483 /* AFURLRequestSerialization.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		924B28123A778803DE6C07A0AC3ED593 /* LNLiveRecommendListProvider.m in Sources */ = {isa = PBXBuildFile; fileRef = BE53F3CFB3DEA6B7A0DE300409A078FC /* LNLiveRecommendListProvider.m */; };
+		92C32EBEB26A8E0DF49E12247076F24A /* LNModuleCore.h in Headers */ = {isa = PBXBuildFile; fileRef = E72C1DA907C50C8BC43BD5C723A0A47B /* LNModuleCore.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		93B72DDA735854CC928EEE045DE81B0A /* SDImageIOCoder.h in Headers */ = {isa = PBXBuildFile; fileRef = 874FA36078C0A2D188003D8F1FB44701 /* SDImageIOCoder.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		943D0DF6C8FD397626F25CE8AE526159 /* SDAssociatedObject.h in Headers */ = {isa = PBXBuildFile; fileRef = 1FFE36DDB434FEF14AD6C8218D3590FC /* SDAssociatedObject.h */; settings = {ATTRIBUTES = (Private, ); }; };
 		944EAF72DBE781A614AC05C74AF2B058 /* SDFileAttributeHelper.h in Headers */ = {isa = PBXBuildFile; fileRef = 9A93C26DB605252780C46DFE390B06A9 /* SDFileAttributeHelper.h */; settings = {ATTRIBUTES = (Private, ); }; };
 		9587759B2EC417CFDF72D0E1E9479A74 /* LNBaseListDataProvider.m in Sources */ = {isa = PBXBuildFile; fileRef = 2DB9223659B24DEA41E3C8C9B8E50B5A /* LNBaseListDataProvider.m */; };
 		967CC234162E5386C95ABED7F2F4F94D /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 05103566DFB528FA2087D9BC2AEEB3F3 /* Foundation.framework */; };
 		978E9FE67203E469FF07299355B512AA /* MJRefresh-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = D53030325C47880ABAA87CEE285624C6 /* MJRefresh-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		97D8B990B9B62C177092930AD582EA8B /* LNUserCenterModuleProtocol.h in Headers */ = {isa = PBXBuildFile; fileRef = A8735931A4CA44E012536B985BF1D105 /* LNUserCenterModuleProtocol.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		97EB8976E78AA2C17544A6453BC1EF04 /* AFURLResponseSerialization.m in Sources */ = {isa = PBXBuildFile; fileRef = FE644EC017F4ED2BD681C336A808BD6F /* AFURLResponseSerialization.m */; };
 		980CC0C3C1236D05EBBD4AEA163F872B /* JSONKeyMapper.h in Headers */ = {isa = PBXBuildFile; fileRef = 073268F1875B85A6B98C36777517ECAF /* JSONKeyMapper.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		98D74886732C9CE5C1EB2EEA8DD5DD39 /* MASConstraintMaker.h in Headers */ = {isa = PBXBuildFile; fileRef = C3C5FE593A9107383F6C631693D0E845 /* MASConstraintMaker.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		99390A40A2F3331AB8B1C0AC5F6CB85D /* MASViewConstraint.m in Sources */ = {isa = PBXBuildFile; fileRef = E4260B148EFB134AC6FE3CFC0F2E95A7 /* MASViewConstraint.m */; };
 		99635A64F6470E0573348B858CAA4BEC /* LNHTTPCustomClient.h in Headers */ = {isa = PBXBuildFile; fileRef = 25234A2EA0B8F355BF8200EDF3252FD5 /* LNHTTPCustomClient.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		9A9930B25442E73ED6FFF3DEF1476CA8 /* UIView+MJExtension.h in Headers */ = {isa = PBXBuildFile; fileRef = 7B2DE53BD77C2BAE61FFD7EA40E5089D /* UIView+MJExtension.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		9C4941AB8E081889ECD538D64D681610 /* LNFeedModuleProtocol.h in Headers */ = {isa = PBXBuildFile; fileRef = D55C7D6E78865E086899686A2B8ECF02 /* LNFeedModuleProtocol.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		9C8DAB199338EE8300E68A6D60894E46 /* LNModuleAppDelegate.h in Headers */ = {isa = PBXBuildFile; fileRef = 0F3C29C0FBFEFA56DF4B90BED327121B /* LNModuleAppDelegate.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		9D6BA26EF89E0A72DA6EB85A8EE92627 /* UIImage+Transform.h in Headers */ = {isa = PBXBuildFile; fileRef = AD0A7B5A78BEC92721E791C052885A49 /* UIImage+Transform.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		9DAC5D89310154D8A2AC3C3567619246 /* LNImageCircleScrollView.h in Headers */ = {isa = PBXBuildFile; fileRef = 52CD018781C174E69DCDE3246EF997F5 /* LNImageCircleScrollView.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		9ECCD29323C7AC920CDC4166318241CB /* SDWebImageOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F6B0FB0432022ABA870FC73B5914D81 /* SDWebImageOperation.m */; };
@@ -272,22 +271,23 @@
 		A198E02201B25535F64A94BCF8D0D7B0 /* MASLayoutConstraint.m in Sources */ = {isa = PBXBuildFile; fileRef = BF5342DBA8C4A8D5536F90A96DDDA5A8 /* MASLayoutConstraint.m */; };
 		A2057BDF751B89994F75E68E6A1506C6 /* UIImage+Metadata.h in Headers */ = {isa = PBXBuildFile; fileRef = CBC7333A7DDBB330EBBE11CBA07DB902 /* UIImage+Metadata.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		A4158782AC78229C77EE9428A5889E5E /* MJRefreshTrailer.m in Sources */ = {isa = PBXBuildFile; fileRef = 264ED74AF3B335570CB2E8F1061F4054 /* MJRefreshTrailer.m */; };
-		A417440222DB0CBD384CB58801715060 /* ReplaceMe.m in Sources */ = {isa = PBXBuildFile; fileRef = A8A6FD27A80545B8061D9E73ADF477F6 /* ReplaceMe.m */; };
 		A48E0AC20CF0F3E74E0B10ECB51AF6D6 /* NSArray+MASAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 12395A775EA06898A7D704243C0539D5 /* NSArray+MASAdditions.m */; };
 		A4E37D745B98A8D275465AB14238EBDB /* UIImage+Transform.m in Sources */ = {isa = PBXBuildFile; fileRef = 9889667CFCDB3B9D4AF98F0236AB67C2 /* UIImage+Transform.m */; };
 		A589BB2CC69B08446F24CE8F6FAFCC14 /* SDWebImageOperation.h in Headers */ = {isa = PBXBuildFile; fileRef = 540A60D4FE8FD7F1ACB39437F2C675E3 /* SDWebImageOperation.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		A6FAF74931A26E76774C1083CF131A9C /* UIImage+ForceDecode.h in Headers */ = {isa = PBXBuildFile; fileRef = CC7891F3B08781D8EAF6EF7A09F29776 /* UIImage+ForceDecode.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		A7C12BAE5645CABBCD0439625CA6E331 /* LNBaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 24850B3F156E1D53720A275BA51AF422 /* LNBaseViewController.m */; };
 		A7D32D62916BDC00ABC2A817CCE2C754 /* SDDisplayLink.m in Sources */ = {isa = PBXBuildFile; fileRef = F8D5302BE15C9FFA1EF40337CC910E62 /* SDDisplayLink.m */; };
+		A858DDE69C40EBA3B19E4A73B7A655C3 /* LNLiveRecommendListProvider.h in Headers */ = {isa = PBXBuildFile; fileRef = 38E6E5769C76188ECAA3BAC6214812A6 /* LNLiveRecommendListProvider.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		A87A03A7A04476CB349E652E2A2C760E /* SDImageAWebPCoder.m in Sources */ = {isa = PBXBuildFile; fileRef = E37CB1C4F738ECDEB2634FD7A1AE8936 /* SDImageAWebPCoder.m */; };
 		A9FE052FB48E362F4E696E680AD218C7 /* SDWebImage-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 03574A55C0E4DCCAFDA07572D3548B06 /* SDWebImage-dummy.m */; };
 		AA17764B9A4EF9D197843EA25B65B1C2 /* SDWebImageDownloaderOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C7C023438D352B43FEFCA6D39B9C28F /* SDWebImageDownloaderOperation.m */; };
 		AAEC63F0054E2D1A3E219E8C55435286 /* LNRequestConfig.h in Headers */ = {isa = PBXBuildFile; fileRef = 837A0EF146EF3EB6C5626BA9A6C1B483 /* LNRequestConfig.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		AB90AD03CDBCA586FC9E1C21CE660FB8 /* LNProtocolConfig.m in Sources */ = {isa = PBXBuildFile; fileRef = B41F70437995E63468325C83BBA451AF /* LNProtocolConfig.m */; };
+		AB92B0F09D0A048EB6AC379E4E91F35B /* LNProtocolConfig.m in Sources */ = {isa = PBXBuildFile; fileRef = B41F70437995E63468325C83BBA451AF /* LNProtocolConfig.m */; };
 		AC1F833C819E0098C14116BA6A10F4CE /* LNHTTPClient.h in Headers */ = {isa = PBXBuildFile; fileRef = 1A963850B3CD9A0AAB18250B3E422924 /* LNHTTPClient.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		AC29EE5318026D0BAF479C904536378F /* UIRefreshControl+AFNetworking.m in Sources */ = {isa = PBXBuildFile; fileRef = 90C433C5E88608EFB249A2E38A5CB2B6 /* UIRefreshControl+AFNetworking.m */; };
 		AD4A42B9307C5B7C371B1342115DA1C9 /* MASConstraintMaker.m in Sources */ = {isa = PBXBuildFile; fileRef = 01A6D4D248E7031940C8ECBBB072F6BF /* MASConstraintMaker.m */; };
 		AD6158AF5746E99C7136F3ECA9423C63 /* UIActivityIndicatorView+AFNetworking.m in Sources */ = {isa = PBXBuildFile; fileRef = 63C003455922490F11D8017900865026 /* UIActivityIndicatorView+AFNetworking.m */; };
+		AD7F13C07FCAE0E29E787696EC1CDE67 /* LNLiveModuleProtocol.h in Headers */ = {isa = PBXBuildFile; fileRef = 5A614D544146535A4F73FC403411D201 /* LNLiveModuleProtocol.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		AE0034BE1E5521E59FF776329AEE19B9 /* SDImageGIFCoder.h in Headers */ = {isa = PBXBuildFile; fileRef = 9DAA1F186CD884C35C0C7B5813912E66 /* SDImageGIFCoder.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		AE3DA9D9EEBE273E965178A34260614A /* SDImageGraphics.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A4C6469C0A3A3CA3D15E8C3B992EBAF /* SDImageGraphics.m */; };
 		B00065BD59C9FE7A1FB9D04284F623D6 /* NSObject+LNKVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 26C17481C52F3F02A82DA232B7CB0556 /* NSObject+LNKVC.m */; };
@@ -295,6 +295,8 @@
 		B26003467B7B4712A811AA7790C99F11 /* SDWebImageDownloaderConfig.h in Headers */ = {isa = PBXBuildFile; fileRef = DC2C9659AF9E0573B4802458A67E2F09 /* SDWebImageDownloaderConfig.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		B28174FEE2BD03C1DB2B0CA8DBD8CE28 /* MASUtilities.h in Headers */ = {isa = PBXBuildFile; fileRef = 7049086CE8B2DAD903E377F0A562AB71 /* MASUtilities.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		B2CC5EC5A50E0A6A7179E4C2F4D6557F /* SDWebImageCompat.h in Headers */ = {isa = PBXBuildFile; fileRef = 2495F9716566AA05E5BF2C99429124DA /* SDWebImageCompat.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B2F8A4BDF71F5E6CB771E9C6D0D46A13 /* LNModuleProtocol.h in Headers */ = {isa = PBXBuildFile; fileRef = AFDC4985C783F24A5C22A2099199E817 /* LNModuleProtocol.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B323F4164A95B5EF90D9F57C12C05DC9 /* LNLiveRecommendListController.h in Headers */ = {isa = PBXBuildFile; fileRef = 8439605B776C00D8D9B127DCAA1C483D /* LNLiveRecommendListController.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		B3420C995E72600F01A8C0066DB4B790 /* NSLayoutConstraint+MASDebugAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 23D64915FC55DDA9722CCEB678EAC08D /* NSLayoutConstraint+MASDebugAdditions.m */; };
 		B394665DD7E5390B5E82E91C09AB4AFC /* MJRefreshHeader.h in Headers */ = {isa = PBXBuildFile; fileRef = 1399F818C1F3881C5CA82C98A4E3EF97 /* MJRefreshHeader.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		B3AC7D37106E6C5DD3156FE30C271F44 /* SDWebImageCacheKeyFilter.m in Sources */ = {isa = PBXBuildFile; fileRef = 7161988824B8D5E8460FE3BCE0FBE8EF /* SDWebImageCacheKeyFilter.m */; };
@@ -310,17 +312,20 @@
 		B74029E4F72F1601B24DB83A9375E4EE /* SDImageAssetManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 86A67C2525C7ABB356E77F78B2809843 /* SDImageAssetManager.h */; settings = {ATTRIBUTES = (Private, ); }; };
 		B7C85583A6589D1A6E09190A6737138F /* LNMapTable.m in Sources */ = {isa = PBXBuildFile; fileRef = B35F6159925BE1E7A0FF42294BAB2FBF /* LNMapTable.m */; };
 		B7DA5AE2EE8808176A31F845A204C190 /* UIButton+AFNetworking.m in Sources */ = {isa = PBXBuildFile; fileRef = 22E7368E2D25E83F9FE9995A85B681E7 /* UIButton+AFNetworking.m */; };
-		B8842B275A92FDBD0F96B89B1550A067 /* LNLiveModule.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CC363AFC6690461E20EFE014334CD87 /* LNLiveModule.m */; };
+		B81CB054ADDF18A2F2007E8074DFDC23 /* LNLiveMediator.h in Headers */ = {isa = PBXBuildFile; fileRef = D55EE80BC70969DBDD908747DCB53511 /* LNLiveMediator.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		B8A944311BAD7B9490640832319033BF /* MJRefreshNormalTrailer.m in Sources */ = {isa = PBXBuildFile; fileRef = 5F6C3E19E7C954D4052BC9BD46C9D48F /* MJRefreshNormalTrailer.m */; };
 		B8AD58C4501F99461CB07AC05DCB8705 /* UIActivityIndicatorView+AFNetworking.h in Headers */ = {isa = PBXBuildFile; fileRef = A5475EDC99FA553681F083DF32E0D1A8 /* UIActivityIndicatorView+AFNetworking.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		B8B4A245FEFA2CE20339CA8CA8BE68EC /* UIProgressView+AFNetworking.h in Headers */ = {isa = PBXBuildFile; fileRef = 6DEA0D3AFD9A46D95632AC8D44951F05 /* UIProgressView+AFNetworking.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		B93E637FABBBB7017E5865C90D8A9CA2 /* LNBaseNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 39DADCB76332C7CDC7BA326FF4CD7AF9 /* LNBaseNavigationController.m */; };
 		B97066D7F3D3B180F232540429277901 /* SDImageAPNGCoder.h in Headers */ = {isa = PBXBuildFile; fileRef = 001B66B85E99F0B20359E3074636EEF4 /* SDImageAPNGCoder.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		BA154604A6C12620902672034E30CF54 /* LNLiveTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = DEB5D913FD80EF4D863CFB7C9DEED6C2 /* LNLiveTableViewCell.m */; };
 		BA524C79C4951BBB138DE42CBE778185 /* SDAnimatedImagePlayer.m in Sources */ = {isa = PBXBuildFile; fileRef = C35C23FB3C7DD4221174C4239B43B61F /* SDAnimatedImagePlayer.m */; };
+		BA85C0BD22D8AB0DCBCAAD59EB44F4B8 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 05103566DFB528FA2087D9BC2AEEB3F3 /* Foundation.framework */; };
 		BAB08D6748C698A6AA6DC7D6A2BFFE49 /* AFNetworkActivityIndicatorManager.m in Sources */ = {isa = PBXBuildFile; fileRef = CCDFC953F0C85222221918DE534C8515 /* AFNetworkActivityIndicatorManager.m */; };
 		BB23CD148031383A750A8C699EAAB977 /* SDWebImageDownloaderResponseModifier.h in Headers */ = {isa = PBXBuildFile; fileRef = 9CE999499A463F5C01D41479AF983075 /* SDWebImageDownloaderResponseModifier.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		BBD966320D9207822768A5C6A3267A2F /* UIImage+GIF.m in Sources */ = {isa = PBXBuildFile; fileRef = F4696408410DD4191EA8B2AF1A3F140E /* UIImage+GIF.m */; };
 		BCD200C62F27CDD1442CA4DFD7226B6D /* JSONModelClassProperty.m in Sources */ = {isa = PBXBuildFile; fileRef = C2315519ABC6A22D69AA583D5D6DE766 /* JSONModelClassProperty.m */; };
+		BDAEC220522500C3E24654E4AA1A5C4B /* LNLiveFocusTableViewControler.h in Headers */ = {isa = PBXBuildFile; fileRef = CD2B65566A2AEB3D5D57A9CCFA64AEC6 /* LNLiveFocusTableViewControler.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		BE126D75C98E7BEA4F97F1BCD9D37C4F /* LNSafeMutableArray.h in Headers */ = {isa = PBXBuildFile; fileRef = 465D6BFD7C0AB7AC49C3DE52B90D21CF /* LNSafeMutableArray.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		BE46EFFF64378098DB3DC18CB82B4EC2 /* View+MASAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 5F8F9F51BB06071A8A76B18F77C17B17 /* View+MASAdditions.m */; };
 		BE982E45A057C62BE019C4CD14EB8632 /* NSButton+WebCache.h in Headers */ = {isa = PBXBuildFile; fileRef = 4ABB682D07E66CEC0CC58DEA7C98B0C9 /* NSButton+WebCache.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -333,14 +338,12 @@
 		C503478959602C70CAACC2CDD2E2B310 /* LNBaseCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 624D4FFAF65935DE3F69608D05AC8C60 /* LNBaseCollectionViewCell.m */; };
 		C532616929A9C911A380CE85D4BE963E /* JSONModel-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 3092C051931832F9845958008179DEDE /* JSONModel-dummy.m */; };
 		C5C9D6A92478052632D63A100F4F8A27 /* SDWebImageDownloaderOperation.h in Headers */ = {isa = PBXBuildFile; fileRef = C81CA68314DC7C132B73C956F918B9D8 /* SDWebImageDownloaderOperation.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		C73E026C81E76C54A66CF277BCB92030 /* LNLiveModuleProtocol.h in Headers */ = {isa = PBXBuildFile; fileRef = 5A614D544146535A4F73FC403411D201 /* LNLiveModuleProtocol.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C66503080DBB7F480757DCBC1C68E660 /* LNModuleAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 420E4DBB11F137B9B3CD3FFD33EB17E7 /* LNModuleAppDelegate.m */; };
 		C7F909EB475CD8D7367D9CDBC7321D0B /* SDImageCacheDefine.h in Headers */ = {isa = PBXBuildFile; fileRef = FD5A62BDA142E0840BE9CE3D2405C859 /* SDImageCacheDefine.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		C892935D016AB0F0CAE15B238F7F9160 /* JSONModelClassProperty.h in Headers */ = {isa = PBXBuildFile; fileRef = 65ABB371B8D70D4230250D6C52F3954B /* JSONModelClassProperty.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		C8CBBFC9C4C86AABD9FB234FEFE9F02A /* UIColor+Custom.m in Sources */ = {isa = PBXBuildFile; fileRef = AA90C28DA9953B2D397516AB9710321B /* UIColor+Custom.m */; };
 		C8E9E0F39EEACA6D59EFBC6586964642 /* MJRefreshNormalHeader.m in Sources */ = {isa = PBXBuildFile; fileRef = 8BEDEBFA2ECB236691681290D6B0A523 /* MJRefreshNormalHeader.m */; };
-		C91D63F33CAB8069278AE0FE6B7EE470 /* LNLiveNetworkConfig.m in Sources */ = {isa = PBXBuildFile; fileRef = 6DE5340EAFBBB8A6845B24294ED2F814 /* LNLiveNetworkConfig.m */; };
 		C94168895CD84CA196FA1A2D8A9F8091 /* NSBezierPath+SDRoundedCorners.m in Sources */ = {isa = PBXBuildFile; fileRef = D9EC41C0AD0924A7CBCCDEB6E3BE19DF /* NSBezierPath+SDRoundedCorners.m */; };
-		C96CB0A0203DE5F2FCA818C0767DCA5F /* LNLiveRoomModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 0DA36CCCEBB1D63ED64F8940D8F8AE3F /* LNLiveRoomModel.m */; };
 		C988472EEB87ACEE4462CC99E57A2F68 /* UIView+WebCacheOperation.h in Headers */ = {isa = PBXBuildFile; fileRef = 6419DA33075E986CC3068093CA8D285E /* UIView+WebCacheOperation.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		C997DA8F8600B018B71312D6782CDEB3 /* UIScrollView+MJExtension.h in Headers */ = {isa = PBXBuildFile; fileRef = 40C171438305B5440D1DE62C2BAFD113 /* UIScrollView+MJExtension.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		C9D7994FC904B5EE0C1799CFDCC09961 /* SDWebImageDownloaderConfig.m in Sources */ = {isa = PBXBuildFile; fileRef = 4F33E5A6E0E69100D5B042A858BB9606 /* SDWebImageDownloaderConfig.m */; };
@@ -349,27 +352,26 @@
 		CB01C64E318453E9F35F16AA8BE1E1BF /* LNRequestManager.m in Sources */ = {isa = PBXBuildFile; fileRef = AC7388CD9E1CE1B21D87D6BE4A223E3A /* LNRequestManager.m */; };
 		CBA495C5F3CD7A371C10E900A485B48C /* SDAnimatedImage.h in Headers */ = {isa = PBXBuildFile; fileRef = 3179B63B19DD0E0793454A2992D1C3BE /* SDAnimatedImage.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		CBAA152EF3A183A503F73ED4A630E2DA /* LNGCDTimer.h in Headers */ = {isa = PBXBuildFile; fileRef = BC5E6E7783D6A36846946F1C3C7EBF2B /* LNGCDTimer.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		CC3400843F52B83B98F10F80655FB1E9 /* LNModuleCore-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = FC61538B9351AEEBC1A553D7392D819C /* LNModuleCore-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		CC6585C5A577B2AFDC3420D0E8C089F1 /* SDWebImageTransitionInternal.h in Headers */ = {isa = PBXBuildFile; fileRef = 7A5E5C7862503D4B40E5C277765A3D6B /* SDWebImageTransitionInternal.h */; settings = {ATTRIBUTES = (Private, ); }; };
 		CC6BE082854E8D5926F0E16DDACEA2E5 /* UIView+WebCache.h in Headers */ = {isa = PBXBuildFile; fileRef = 0C39A65B3EEBE94734FE40064067D750 /* UIView+WebCache.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		CD3A67804AEDFAB8E561E787741F054A /* LNLiveModuleConfig.m in Sources */ = {isa = PBXBuildFile; fileRef = A3213AFDA2C113209C4B89EB25CD7CAE /* LNLiveModuleConfig.m */; };
-		CD9A85603DA5DDD0CB80A636665DBEEF /* LNLiveFocusListProvider.h in Headers */ = {isa = PBXBuildFile; fileRef = 67FBB9F7A3AECECC8E0F96822649FE72 /* LNLiveFocusListProvider.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		CDAB400B3F9724C72792DFB267DCCA14 /* SDWebImageCacheKeyFilter.h in Headers */ = {isa = PBXBuildFile; fileRef = CF9D1A3D05BD4FCB70793DA46E8371C6 /* SDWebImageCacheKeyFilter.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		CDC5BAC6A5E34249ACF9D3D55B59508F /* LNVideoModuleProtocol.h in Headers */ = {isa = PBXBuildFile; fileRef = E45E69C3169A503E95D93B695424EA2A /* LNVideoModuleProtocol.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		CDEF12A353FEBC8FE4E2EA0D3FFAC615 /* AFURLRequestSerialization.m in Sources */ = {isa = PBXBuildFile; fileRef = 2B7087BEBE6CD31542F1BC2D261860F5 /* AFURLRequestSerialization.m */; };
 		CE62C5158758117C6EF2BD0EDB68A6E5 /* UIScrollView+MJExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = C345FE5F17D96D1CC2F139D4C41D7B9C /* UIScrollView+MJExtension.m */; };
 		CE9B65E680402D2511668F786752383D /* Masonry-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 9B06949E1F97FFD883F17CBA05B65761 /* Masonry-dummy.m */; };
 		D096A50FFA46E6123B969651C94D7D76 /* SDWebImageDownloaderRequestModifier.h in Headers */ = {isa = PBXBuildFile; fileRef = A8EB4930FC4DFC7BF17B5F9817079C98 /* SDWebImageDownloaderRequestModifier.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		D1487BDA475C46868E02EE257C1839B3 /* LNLiveModule-LNLiveModule in Resources */ = {isa = PBXBuildFile; fileRef = F2895DA29A7FEF17B1395DC2A3FB0B42 /* LNLiveModule-LNLiveModule */; };
 		D155BD132635FD6ACAAE13150AD12D65 /* SDWebImageDownloaderDecryptor.m in Sources */ = {isa = PBXBuildFile; fileRef = 8C8993488C3AD767306B6C901DE0675B /* SDWebImageDownloaderDecryptor.m */; };
 		D1805ADDD4498A3D71AF9158EF653372 /* SDImageIOCoder.m in Sources */ = {isa = PBXBuildFile; fileRef = 0BF0A0DF2E23425C305B7F3321F44B35 /* SDImageIOCoder.m */; };
 		D1FC13DE03FA4ABF2B73B13861A1C1EC /* MJRefreshAutoNormalFooter.h in Headers */ = {isa = PBXBuildFile; fileRef = F92F5DB9A3B473C9BF9D26461BE10B85 /* MJRefreshAutoNormalFooter.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		D29F67AF121017B8555F93BBD4838922 /* LNHTTPRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 8D70056EA23249DC7866B23494F7F3B6 /* LNHTTPRequest.m */; };
 		D3CE5E75AB05E720B6BA9A150C5A1F36 /* SDImageHEICCoder.m in Sources */ = {isa = PBXBuildFile; fileRef = BC137AEF89C19256750936FCAE971226 /* SDImageHEICCoder.m */; };
+		D4EA8B44CED1A3472E77E9E10A60BC4F /* LNModuleProtocol-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 3EADBFF8D3BFA9C51E3EE5A8C18D0999 /* LNModuleProtocol-dummy.m */; };
 		D50261E4BCE22460A50B2C4E3FBCD01F /* SDImageLoader.m in Sources */ = {isa = PBXBuildFile; fileRef = 7F749EEF56A857D7F04DDBC17F2F39BC /* SDImageLoader.m */; };
 		D5BBD1CFB4AC76610BE37A4B33DFFED7 /* UIImage+MemoryCacheCost.m in Sources */ = {isa = PBXBuildFile; fileRef = 021B9323E17AC12B1BCEEE0F6CA0D461 /* UIImage+MemoryCacheCost.m */; };
 		D5FF1F6DAAD82B36FC47FDAD020BD1CE /* NSLayoutConstraint+MASDebugAdditions.h in Headers */ = {isa = PBXBuildFile; fileRef = 334939305B96DB6F6A45555D6C492D9E /* NSLayoutConstraint+MASDebugAdditions.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		D606DCDA7AFC4A42C93CFF9125697BBF /* NSButton+WebCache.m in Sources */ = {isa = PBXBuildFile; fileRef = F802AA0A86C1268273A5D3E6B1AB2B58 /* NSButton+WebCache.m */; };
 		D62F65D5AD7384A01C20581DE241FACA /* LNSafeMutableDictionary.m in Sources */ = {isa = PBXBuildFile; fileRef = 7F215746C1C0BF49B712D6C7ACA786F9 /* LNSafeMutableDictionary.m */; };
+		D63CA48EF15057D9E3BAE67B75290E37 /* LNLiveModuleConfig.m in Sources */ = {isa = PBXBuildFile; fileRef = A3213AFDA2C113209C4B89EB25CD7CAE /* LNLiveModuleConfig.m */; };
 		D645B213927415A00BAD7CBE43A00F0F /* SDmetamacros.h in Headers */ = {isa = PBXBuildFile; fileRef = 977B0C18FAA2905F8A4A316E6EEF6BF6 /* SDmetamacros.h */; settings = {ATTRIBUTES = (Private, ); }; };
 		D652DD5B3FD746C40EC526131D3FBFBD /* SDWebImageDefine.h in Headers */ = {isa = PBXBuildFile; fileRef = 427A56B8C0DB052E14773D41ADD289AA /* SDWebImageDefine.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		D6F323E812735C1BFC5A01D0C427073B /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F96C1ED9F73DD49D2C770E3D41BD053F /* UIKit.framework */; };
@@ -386,15 +388,13 @@
 		E194E2B5E368473ECCB9B26F68104F33 /* SDImageFrame.h in Headers */ = {isa = PBXBuildFile; fileRef = 1655DA22FBB363B361622CD437E25C6E /* SDImageFrame.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		E215A01778A3DF5EF7B522CE5262A0DF /* JSONAPI.h in Headers */ = {isa = PBXBuildFile; fileRef = 80A86C38EE9A7E48EDDF2EC028A575A7 /* JSONAPI.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		E226423922109F06A68B7A33714B290A /* MJRefresh.h in Headers */ = {isa = PBXBuildFile; fileRef = 1ECE60BCF8DB0A3D1CE63580E067C8EA /* MJRefresh.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		E24565CFD885130295C0C32A8266DD2D /* ReplaceMe.m in Sources */ = {isa = PBXBuildFile; fileRef = FEC1D92254D75D236113AC1711AE12FD /* ReplaceMe.m */; };
-		E26501B47485DD65415263AD07CB4D71 /* LNLiveModule.h in Headers */ = {isa = PBXBuildFile; fileRef = F7E1DAA993055873F1EDDC4FE6030779 /* LNLiveModule.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E279978791E7E124C3A783220AE8F0F7 /* LNLiveFocusTableViewControler.m in Sources */ = {isa = PBXBuildFile; fileRef = 77C44408AD6D22C7A4FCDFD3A2DB9EE6 /* LNLiveFocusTableViewControler.m */; };
 		E358420A093739B18EE898277A4F2F61 /* LNSafeMutableDictionary.h in Headers */ = {isa = PBXBuildFile; fileRef = 6E4DAFD20803D138CBC64A14D79B648A /* LNSafeMutableDictionary.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		E39D9092B7A1A80EDED07AA48C6083D6 /* UIViewController+Router.h in Headers */ = {isa = PBXBuildFile; fileRef = 47B943C1222F5FC1603CEEE3899CAD63 /* UIViewController+Router.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		E3A41F9538887DE8A83E5FE2110F17C3 /* JSONModelError.h in Headers */ = {isa = PBXBuildFile; fileRef = 7EA9C5C9AC792316616AC285E2B23942 /* JSONModelError.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		E3E54ABA5E9BD709238DC219D8659B9A /* JSONModelLib.h in Headers */ = {isa = PBXBuildFile; fileRef = 6A68C546D55809B6C6D15E0FFAD88CB6 /* JSONModelLib.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		E6A0BC3BBE24D9AA7B1097A606AABD1D /* UIScrollView+MJRefresh.m in Sources */ = {isa = PBXBuildFile; fileRef = A8CD5996EDD1DC3C329FFCA33A9DC5DD /* UIScrollView+MJRefresh.m */; };
 		E7243A122825B2588FC22B67E7844F15 /* UIView+MJExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 3D13AABFB143720F977C9D07751BEF1F /* UIView+MJExtension.m */; };
-		E803EA0700D33ED50F2832D6266B877D /* LNModuleCore-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = C95C9FF400F212223CFDDA128CCCE1AE /* LNModuleCore-dummy.m */; };
 		E8372DA8FDA0830EF5FF160493C0B37A /* AFImageDownloader.h in Headers */ = {isa = PBXBuildFile; fileRef = C454BB526A0624E9495FEDAE698BE91E /* AFImageDownloader.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		E83FB87D72FE4354F82A8678F4D488DD /* Masonry-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 4648B99609DEAB7DD3E542974DD1221B /* Masonry-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		E8880068C5554F093265410655ED3B48 /* LNRouter.m in Sources */ = {isa = PBXBuildFile; fileRef = 9E10AA4ED2A6BF5F4B5EA70D17812C94 /* LNRouter.m */; };
@@ -408,17 +408,15 @@
 		ED0B81FF1DEC0B138947EA93D22E5A4E /* AFNetworkActivityIndicatorManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 5D31D22046DF8F8F3289796C98E562EA /* AFNetworkActivityIndicatorManager.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		ED9BA54E6204379E17AFFF282B643430 /* UIImage+ForceDecode.m in Sources */ = {isa = PBXBuildFile; fileRef = 604624DDE6034FEDA8372436D0F9383F /* UIImage+ForceDecode.m */; };
 		EE3B8613CDD20D58260C22D21BC61F38 /* AFCompatibilityMacros.h in Headers */ = {isa = PBXBuildFile; fileRef = FE2A4F1132DB9A61F9F1D617A48B1708 /* AFCompatibilityMacros.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		EEDDC1F1DBADD58E0402DA52F408C6D9 /* LNLiveRecommendListProvider.h in Headers */ = {isa = PBXBuildFile; fileRef = 38E6E5769C76188ECAA3BAC6214812A6 /* LNLiveRecommendListProvider.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		F05E69CA2693CB02B57F35B8F611B3AD /* LNModuleProtocol.m in Sources */ = {isa = PBXBuildFile; fileRef = 834BE3ADC1003DA3B8EF17863DED6DC4 /* LNModuleProtocol.m */; };
+		EF4E00DFE2C0CD00336320DAEA26E50B /* LNAnchorLiveRoomViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A2292914E4923422EF1A51008FD277E9 /* LNAnchorLiveRoomViewController.m */; };
 		F07A215548A3736CAC4D42C5F2179F83 /* UIImageView+WebCache.m in Sources */ = {isa = PBXBuildFile; fileRef = 1714FD5BCB143B6B5405BDB21CCA5E7E /* UIImageView+WebCache.m */; };
 		F0ABD55967B189BB354B36E1ADE95CBF /* MJRefreshComponent.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A96B3EE8F3E689C9D228672CDA3ABE7 /* MJRefreshComponent.m */; };
-		F0C7A7061E6884F7A9537B4863F2F898 /* LNModuleAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 420E4DBB11F137B9B3CD3FFD33EB17E7 /* LNModuleAppDelegate.m */; };
 		F124DF686BA9DAAFCC26D537273B0495 /* JSONKeyMapper.m in Sources */ = {isa = PBXBuildFile; fileRef = 12A446716419AA3BCFD37E54EBF428A9 /* JSONKeyMapper.m */; };
 		F1EFC0357C236119D052A8A80A126190 /* Aspects-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = DF5C08E802FB28F9C84F600971505D0F /* Aspects-dummy.m */; };
 		F292953091C90B1DBDC180026349A726 /* SDImageCoderHelper.h in Headers */ = {isa = PBXBuildFile; fileRef = 694F6332DB7B48DD34B2F806746F7C3F /* SDImageCoderHelper.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		F2AA4786899AA5C564965F76F1F29853 /* SDImageCodersManager.h in Headers */ = {isa = PBXBuildFile; fileRef = D3400069BFA45AE504825207E5A84A4F /* SDImageCodersManager.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F2E26CF42419E937D70E4625C41B6DD8 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 05103566DFB528FA2087D9BC2AEEB3F3 /* Foundation.framework */; };
 		F3E8C443ED58606AA1427BEB73B3A55B /* LNBaseCollectionViewCell.h in Headers */ = {isa = PBXBuildFile; fileRef = 392A16F8BA1F18A069573FC79D16E6AC /* LNBaseCollectionViewCell.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		F3F97E7A85D9C57E36E5BE658AC23FC3 /* LNLiveModuleConfig.h in Headers */ = {isa = PBXBuildFile; fileRef = 29AB0AA9491AF5E3DFE622AB6406E0F0 /* LNLiveModuleConfig.h */; settings = {ATTRIBUTES = (Project, ); }; };
 		F40E7B5C69B9DE58A3FF81AABAD81286 /* LNBaseTableViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 6937AC675DE6B4C0B70CE724F8CC5981 /* LNBaseTableViewController.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		F45F715E6DE1612CF71EC3F4CC7D6B10 /* LNCommonKit.h in Headers */ = {isa = PBXBuildFile; fileRef = A46112672A9B96F848E63BF1A0E77BAB /* LNCommonKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		F59254EB515BDAC8F870E57734730B73 /* MJRefreshNormalHeader.h in Headers */ = {isa = PBXBuildFile; fileRef = F85598BA77CC86FB0855E60F203FCF1E /* MJRefreshNormalHeader.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -432,10 +430,12 @@
 		FA17FD5BD331D63BEDAE3716B8194963 /* LNLogger.m in Sources */ = {isa = PBXBuildFile; fileRef = C0C0FE6BC11DF7AF46EF31CE5B3E3225 /* LNLogger.m */; };
 		FA57C7B9116769DBBCAEE173060683A3 /* AFImageDownloader.m in Sources */ = {isa = PBXBuildFile; fileRef = 8F797C2811A6271ED425878393E355E6 /* AFImageDownloader.m */; };
 		FBC597A6BEC9FE80820135BAC24CC528 /* SDImageCache.m in Sources */ = {isa = PBXBuildFile; fileRef = 72132400DFA8435807C655A76E0DA42A /* SDImageCache.m */; };
-		FD0634D0B9796B7D34A2F5ECB5590B9D /* LNLiveRoomModel.h in Headers */ = {isa = PBXBuildFile; fileRef = 129A1D0999B81FA897DB0AE5CC17E51F /* LNLiveRoomModel.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		FCE013F657024D68C22678E0CA999531 /* LNLiveRecommendListProvider.m in Sources */ = {isa = PBXBuildFile; fileRef = BE53F3CFB3DEA6B7A0DE300409A078FC /* LNLiveRecommendListProvider.m */; };
 		FE44620E43FD28A73EF2A8735D97879E /* LNRequestManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 5639AD75BF0B7EDD952BE0F20AC12C5B /* LNRequestManager.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		FE478A9688C6EED9C1D2418BE6D80C01 /* LNLiveRoomModel.h in Headers */ = {isa = PBXBuildFile; fileRef = 129A1D0999B81FA897DB0AE5CC17E51F /* LNLiveRoomModel.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		FE7328E785F9EB05919154182615907F /* LNModuleManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 5D7034C43E24E29DCFB1A38A53730447 /* LNModuleManager.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		FEC51B5150D3FAD984046DF7B178A77A /* SDDisplayLink.h in Headers */ = {isa = PBXBuildFile; fileRef = EE3A0BD4C432FA465D1F6B919E99EE0C /* SDDisplayLink.h */; settings = {ATTRIBUTES = (Private, ); }; };
-		FF59AE16A75C83EF0F560751CC302CD2 /* LNLiveFocusTableViewControler.m in Sources */ = {isa = PBXBuildFile; fileRef = 77C44408AD6D22C7A4FCDFD3A2DB9EE6 /* LNLiveFocusTableViewControler.m */; };
+		FF4686A2B8487D6011925A21C1A10431 /* LNLiveModule-LNLiveModule in Resources */ = {isa = PBXBuildFile; fileRef = F2895DA29A7FEF17B1395DC2A3FB0B42 /* LNLiveModule-LNLiveModule */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -474,12 +474,26 @@
 			remoteGlobalIDString = C6539905C4D50932B36244650B93C79B;
 			remoteInfo = Aspects;
 		};
+		307C00DAD87A697A6405ABA5ADF2CF0B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 91A29DC8D32830C5C4112FA44227AFC1;
+			remoteInfo = LNCommonKit;
+		};
 		31CBAB93F3F641D3F787C50580B5E678 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = 3847153A6E5EEFB86565BA840768F429;
 			remoteInfo = SDWebImage;
+		};
+		36658648E050C4109ADF7A3971CD0B45 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 7AF6DB08ADAAF0D3833CBA620DABC7D7;
+			remoteInfo = "LNLiveModule-LNLiveModule";
 		};
 		3EC21FEEA583B57F3671E719ADC9CF52 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -509,14 +523,7 @@
 			remoteGlobalIDString = 6868056D761E163D10FDAF8CF1C4D9B8;
 			remoteInfo = MJRefresh;
 		};
-		6BA7E966369337E8E6264AED9C88C0F7 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = B511A198B66B7E7BA8B4C5C6E4D7E3BB;
-			remoteInfo = LNModuleCore;
-		};
-		70F1306A9AD713F021BBBDB3B366F6C8 /* PBXContainerItemProxy */ = {
+		5ABDBD2112DDE218961E3956E20870E5 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
 			proxyType = 1;
@@ -530,26 +537,12 @@
 			remoteGlobalIDString = 55AF53E6C77A10ED4985E04D74A8878E;
 			remoteInfo = Masonry;
 		};
-		97456D4F82FA30E0AC26C69CEECADCA4 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 0130B3724283586C0E9D2A112D4F2AA1;
-			remoteInfo = AFNetworking;
-		};
 		A924459173A5F47D222E71AEF9A2E290 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = 0130B3724283586C0E9D2A112D4F2AA1;
 			remoteInfo = AFNetworking;
-		};
-		B5F1977C2C70341D9C8DAEF2CD58C14F /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 3847153A6E5EEFB86565BA840768F429;
-			remoteInfo = SDWebImage;
 		};
 		B752CA0780B7A6D754567746D05E466E /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -579,13 +572,6 @@
 			remoteGlobalIDString = 5880EA10AEDED14F9DE44E283E30277E;
 			remoteInfo = "Pods-LNLiveModule_Example";
 		};
-		C1C3C800E7B643583C43C2FC65F1ED48 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 7AF6DB08ADAAF0D3833CBA620DABC7D7;
-			remoteInfo = "LNLiveModule-LNLiveModule";
-		};
 		C647A00F53564AB23E3BF400A7F30DF3 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
@@ -600,13 +586,6 @@
 			remoteGlobalIDString = C6539905C4D50932B36244650B93C79B;
 			remoteInfo = Aspects;
 		};
-		CE2855C8EE01D82E6584CC8EC358AC85 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 91A29DC8D32830C5C4112FA44227AFC1;
-			remoteInfo = LNCommonKit;
-		};
 		D8967F37C4006B10CF656B2E2A6F74AD /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
@@ -614,12 +593,12 @@
 			remoteGlobalIDString = E0EAF4371C6E4B30A1779D513CB4355B;
 			remoteInfo = JSONModel;
 		};
-		F7D30775C3F28DEC18829CB22EF235F8 /* PBXContainerItemProxy */ = {
+		FC1DAD7114818FC6BD48180394BBCBDB /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 6868056D761E163D10FDAF8CF1C4D9B8;
-			remoteInfo = MJRefresh;
+			remoteGlobalIDString = B511A198B66B7E7BA8B4C5C6E4D7E3BB;
+			remoteInfo = LNModuleCore;
 		};
 /* End PBXContainerItemProxy section */
 
@@ -1129,6 +1108,14 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		09962E2562A08A322885A912F4F61B59 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BA85C0BD22D8AB0DCBCAAD59EB44F4B8 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		34AF9537046B1FA484E26E148DFEBC03 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -1163,6 +1150,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		64A993AFFBE59606905705C8DCE6ADCA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				237F063A7420AA6FD9332E874C3AC0FB /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		77C3B4399728E0AD3106AA3DE62F6621 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -1171,15 +1166,15 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		88C38830EF6B4173A9FB2091786D696D /* Frameworks */ = {
+		828B2370947DF9710EC6251763C6673F /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7159C40E7D2F7BE37C1750A35BD9149F /* Foundation.framework in Frameworks */,
+				F2E26CF42419E937D70E4625C41B6DD8 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		915E826315601788D7B41D4A6A81799F /* Frameworks */ = {
+		A61DCFF4CFA52E9D3550F4190036AA33 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -1192,22 +1187,6 @@
 			files = (
 				75BE1377E6DE654EB08535E5AED14E7F /* Foundation.framework in Frameworks */,
 				D6F323E812735C1BFC5A01D0C427073B /* UIKit.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		A8F83B99DCECD0F03839592EED7C4E80 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				0D1F90A2DBC2FA4FB5B13EF20CC8526D /* Foundation.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		B028E32D58903A33DF86B89E23250BE3 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				78AE8F0C389CE14948B7C381CEB71F4F /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -2287,18 +2266,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		52B181577BA1439F7EEBB4D7AEF1FA5E /* Headers */ = {
-			isa = PBXHeadersBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				6D51E760EB1C12F76B0E8B225EA50BA6 /* LNModuleAppDelegate.h in Headers */,
-				13F4DF602F3B29F951A8277828F58584 /* LNModuleBaseProtocol.h in Headers */,
-				50289401ADA9912CC6F9649818703129 /* LNModuleCore.h in Headers */,
-				79A138B8B812C24C0F4F5A8D6F2048FA /* LNModuleCore-umbrella.h in Headers */,
-				0D29D50D3FF838735DF4DB732D8E44EA /* LNModuleManager.h in Headers */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		611427CBC37B16A455BA30DDD0F9104D /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
@@ -2357,6 +2324,21 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		68ACF16C2BE65E265E0CD474722720D7 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				03C4F6F09D24CEE88CBCE0857824C449 /* LNAccountModuleProtocol.h in Headers */,
+				1FFEF481691C27C3386FA7CCF1CF114D /* LNFeedModuleProtocol.h in Headers */,
+				AD7F13C07FCAE0E29E787696EC1CDE67 /* LNLiveModuleProtocol.h in Headers */,
+				B2F8A4BDF71F5E6CB771E9C6D0D46A13 /* LNModuleProtocol.h in Headers */,
+				55367CEB1AE36A3BFDD18C9032EDF595 /* LNModuleProtocol-umbrella.h in Headers */,
+				218625BB7CB947DCE23EFA36448A01C6 /* LNProtocolConfig.h in Headers */,
+				5B28A2616B4F7B4D4BFC1897C7DFC6B9 /* LNUserCenterModuleProtocol.h in Headers */,
+				1CD61F2426CE31D204DC49C82EA78406 /* LNVideoModuleProtocol.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		7526E79C2C6C091FA3B1ECAA7C8E5AEB /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
@@ -2394,43 +2376,6 @@
 				06275DF23F660502FA42ADFA290B2315 /* View+MASAdditions.h in Headers */,
 				C0B4CB4DD275BA39E4F0AA997415C42C /* View+MASShorthandAdditions.h in Headers */,
 				488D60E40E9ED0E79F30565891477B9F /* ViewController+MASAdditions.h in Headers */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		7FEE60F8A558E43E8EECE0D38FF11D9D /* Headers */ = {
-			isa = PBXHeadersBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				8710330D37141A1FDAADAD739BA04D25 /* LNAccountModuleProtocol.h in Headers */,
-				9C4941AB8E081889ECD538D64D681610 /* LNFeedModuleProtocol.h in Headers */,
-				C73E026C81E76C54A66CF277BCB92030 /* LNLiveModuleProtocol.h in Headers */,
-				5B0B25D83A7FE375BBD6B22ED8BFA4F2 /* LNModuleProtocol.h in Headers */,
-				8C22C2AC1238A248456E8C1F241CA656 /* LNModuleProtocol-umbrella.h in Headers */,
-				8CD142608DA8D4FE71E6068471E25C81 /* LNProtocolConfig.h in Headers */,
-				97D8B990B9B62C177092930AD582EA8B /* LNUserCenterModuleProtocol.h in Headers */,
-				CDC5BAC6A5E34249ACF9D3D55B59508F /* LNVideoModuleProtocol.h in Headers */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		8F739B4DE3D1E2AC18CC0800C51E6086 /* Headers */ = {
-			isa = PBXHeadersBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				4B94C90BF8B073A72F1E1922AB653F68 /* LNAnchorLiveRoomViewController.h in Headers */,
-				CD9A85603DA5DDD0CB80A636665DBEEF /* LNLiveFocusListProvider.h in Headers */,
-				3EED5F444E60DE58D168767E659EB2B5 /* LNLiveFocusTableViewControler.h in Headers */,
-				431DB55DB78F95B4E3102C197CA95BD7 /* LNLiveMediator.h in Headers */,
-				39E0557A622A11E690BB8711ED316C22 /* LNLiveMediatorDelegate.h in Headers */,
-				E26501B47485DD65415263AD07CB4D71 /* LNLiveModule.h in Headers */,
-				6B6529A54A2191D47719342F7877D0F7 /* LNLiveModule-umbrella.h in Headers */,
-				F3F97E7A85D9C57E36E5BE658AC23FC3 /* LNLiveModuleConfig.h in Headers */,
-				1809272ADCB7490679D12482EFD7178E /* LNLiveNetworkConfig.h in Headers */,
-				56BA8EBF5BDF3FD1FD6D992AB238A582 /* LNLiveRecommendListController.h in Headers */,
-				EEDDC1F1DBADD58E0402DA52F408C6D9 /* LNLiveRecommendListProvider.h in Headers */,
-				FD0634D0B9796B7D34A2F5ECB5590B9D /* LNLiveRoomModel.h in Headers */,
-				2E2168E7A6082D025C929379B959AD6A /* LNLiveTableViewCell.h in Headers */,
-				8C1A3754178CEEF843636F5684EE7706 /* LNLiveUserModel.h in Headers */,
-				2D1D1FC6F427A54B83E0AFE33BC2F438 /* LNViewerLiveRoomViewController.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -2531,12 +2476,46 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		DD82C0482B5D4806F2B517AAE3FC7D69 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9C8DAB199338EE8300E68A6D60894E46 /* LNModuleAppDelegate.h in Headers */,
+				1F52AEB46F59F69787EDB0EB59B53FB6 /* LNModuleBaseProtocol.h in Headers */,
+				92C32EBEB26A8E0DF49E12247076F24A /* LNModuleCore.h in Headers */,
+				CC3400843F52B83B98F10F80655FB1E9 /* LNModuleCore-umbrella.h in Headers */,
+				FE7328E785F9EB05919154182615907F /* LNModuleManager.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		E81A70E4EE8ED07986F016E7EC9765D1 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				32CD7A2F475F049A6D089B7CE044D11F /* Aspects.h in Headers */,
 				6AE486895FC78491156202632D440774 /* Aspects-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EB1622B68592CC184FF9A75D43438A03 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				17CB24ECC985181B20E1DCCA7A75F18F /* LNAnchorLiveRoomViewController.h in Headers */,
+				897E03F88A0FCFC261BC7E598B6EBD37 /* LNLiveFocusListProvider.h in Headers */,
+				BDAEC220522500C3E24654E4AA1A5C4B /* LNLiveFocusTableViewControler.h in Headers */,
+				B81CB054ADDF18A2F2007E8074DFDC23 /* LNLiveMediator.h in Headers */,
+				8F4908D1BC6A81C7F25517F6045A4F49 /* LNLiveMediatorDelegate.h in Headers */,
+				5FC9124C16DF6658C8D90A1E8B33C306 /* LNLiveModule.h in Headers */,
+				9162CDAE05B7B4CC17D8FA74D6D53B8C /* LNLiveModule-umbrella.h in Headers */,
+				46C720F5CBA8D642858116783A40EDF0 /* LNLiveModuleConfig.h in Headers */,
+				12E03265CF4D89811F9D9BB662F15691 /* LNLiveNetworkConfig.h in Headers */,
+				B323F4164A95B5EF90D9F57C12C05DC9 /* LNLiveRecommendListController.h in Headers */,
+				A858DDE69C40EBA3B19E4A73B7A655C3 /* LNLiveRecommendListProvider.h in Headers */,
+				FE478A9688C6EED9C1D2418BE6D80C01 /* LNLiveRoomModel.h in Headers */,
+				469C66A56E6D7BBB4D6FB848E4F9CEB9 /* LNLiveTableViewCell.h in Headers */,
+				3C02ED371BD916A811901A7FDAF8A8E5 /* LNLiveUserModel.h in Headers */,
+				24BFBDD911E4200558C4278534C863CD /* LNViewerLiveRoomViewController.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -2664,11 +2643,11 @@
 		};
 		7AF6DB08ADAAF0D3833CBA620DABC7D7 /* LNLiveModule-LNLiveModule */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 647B1CDAE14BCB053DF52D7FC4A3D115 /* Build configuration list for PBXNativeTarget "LNLiveModule-LNLiveModule" */;
+			buildConfigurationList = B18D086A34C988437AFC1D263C0B8019 /* Build configuration list for PBXNativeTarget "LNLiveModule-LNLiveModule" */;
 			buildPhases = (
-				A3D736768DD4611D6EBD92D81BC9A196 /* Sources */,
-				915E826315601788D7B41D4A6A81799F /* Frameworks */,
-				8A5FCD3BD1D0ECF230B7F935B8FDC568 /* Resources */,
+				3E1167F0FE887DAA3BD7B65116FB0FFE /* Sources */,
+				A61DCFF4CFA52E9D3550F4190036AA33 /* Frameworks */,
+				D62A9B5C582EE1F9F990D516C00A2694 /* Resources */,
 			);
 			buildRules = (
 			);
@@ -2706,22 +2685,19 @@
 		};
 		B0441395D541E45028B07090DF14C333 /* LNLiveModule */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 6EAD2C9F10D7F5A52E20985C7804EB2A /* Build configuration list for PBXNativeTarget "LNLiveModule" */;
+			buildConfigurationList = 8AD03034B28B90F173834AFFA5332E5E /* Build configuration list for PBXNativeTarget "LNLiveModule" */;
 			buildPhases = (
-				8F739B4DE3D1E2AC18CC0800C51E6086 /* Headers */,
-				8E96A7295D5C7DE6EF188217FCC6A281 /* Sources */,
-				A8F83B99DCECD0F03839592EED7C4E80 /* Frameworks */,
-				B01EED09AA5687C2B14ACE734966B63C /* Resources */,
+				EB1622B68592CC184FF9A75D43438A03 /* Headers */,
+				C7B88EB8EAF62E81E524B3FFF3DFB0FA /* Sources */,
+				64A993AFFBE59606905705C8DCE6ADCA /* Frameworks */,
+				AED5E9F07705D4C95A3CCFF657A743B9 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				777E8E62E5F086045F9359D621E54C6F /* PBXTargetDependency */,
-				BE9835E7EC63B5512A2CAA6EAF6E8999 /* PBXTargetDependency */,
-				DB1C55465A055C0F49B84C8EFC246096 /* PBXTargetDependency */,
-				809FE7EE2F16FD3D4EC6008E03DAA9E1 /* PBXTargetDependency */,
-				E12060801EA01E27D82DA91F191D9F46 /* PBXTargetDependency */,
-				7BB4CA1D29949DC0DADAFB1DAAFF4297 /* PBXTargetDependency */,
+				F7B01CD1E5E5245C16659C8694D92113 /* PBXTargetDependency */,
+				7FCBCCC90C7AE13209EC152BA6C1E2F2 /* PBXTargetDependency */,
+				23C6E487A569ED45DBA910C117F1DBE8 /* PBXTargetDependency */,
 			);
 			name = LNLiveModule;
 			productName = LNLiveModule;
@@ -2730,12 +2706,12 @@
 		};
 		B511A198B66B7E7BA8B4C5C6E4D7E3BB /* LNModuleCore */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 208B84C1BD524848B1786D3B9ED05AB2 /* Build configuration list for PBXNativeTarget "LNModuleCore" */;
+			buildConfigurationList = BAEAFF63C9ECDC5593CD13596566FF46 /* Build configuration list for PBXNativeTarget "LNModuleCore" */;
 			buildPhases = (
-				52B181577BA1439F7EEBB4D7AEF1FA5E /* Headers */,
-				38CB37C6F0ABA2AE7E61D5E7332E110E /* Sources */,
-				B028E32D58903A33DF86B89E23250BE3 /* Frameworks */,
-				EEEBBE276E7193943B2EF4EDBE7AE2B5 /* Resources */,
+				DD82C0482B5D4806F2B517AAE3FC7D69 /* Headers */,
+				F884FD7AB42F10049265F0AD01BE1E48 /* Sources */,
+				09962E2562A08A322885A912F4F61B59 /* Frameworks */,
+				6D15241C8D04306EE07E3279A303D110 /* Resources */,
 			);
 			buildRules = (
 			);
@@ -2748,17 +2724,17 @@
 		};
 		C2E7C1A83CBAA97A83FFE3E7B609B44A /* LNModuleProtocol */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 75ECC4402280CD9A3785CCD8E5DE84E7 /* Build configuration list for PBXNativeTarget "LNModuleProtocol" */;
+			buildConfigurationList = 5ED1504952A441F120F8D104B0236F9C /* Build configuration list for PBXNativeTarget "LNModuleProtocol" */;
 			buildPhases = (
-				7FEE60F8A558E43E8EECE0D38FF11D9D /* Headers */,
-				13F0F9E136191A590A4CFBC87150713E /* Sources */,
-				88C38830EF6B4173A9FB2091786D696D /* Frameworks */,
-				4E1C53D3ABF944E0D3B860E382E5FE42 /* Resources */,
+				68ACF16C2BE65E265E0CD474722720D7 /* Headers */,
+				7116CA5B5A72E523FCC2A5DCF419C7D7 /* Sources */,
+				828B2370947DF9710EC6251763C6673F /* Frameworks */,
+				3B471113E26FBCA239F5B3C9300FA010 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				1C4148A4A30D2F1FF9D1D5D53BF37C66 /* PBXTargetDependency */,
+				1849CCC43D169E8D7FA76B0F30F5AF75 /* PBXTargetDependency */,
 			);
 			name = LNModuleProtocol;
 			productName = LNModuleProtocol;
@@ -2868,14 +2844,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		3D473FD104BFCD98C99B267430355524 /* Resources */ = {
+		3B471113E26FBCA239F5B3C9300FA010 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		4E1C53D3ABF944E0D3B860E382E5FE42 /* Resources */ = {
+		3D473FD104BFCD98C99B267430355524 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -2889,14 +2865,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		8A190A17F289F99ECE07124E97ED74B2 /* Resources */ = {
+		6D15241C8D04306EE07E3279A303D110 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		8A5FCD3BD1D0ECF230B7F935B8FDC568 /* Resources */ = {
+		8A190A17F289F99ECE07124E97ED74B2 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -2925,11 +2901,11 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		B01EED09AA5687C2B14ACE734966B63C /* Resources */ = {
+		AED5E9F07705D4C95A3CCFF657A743B9 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D1487BDA475C46868E02EE257C1839B3 /* LNLiveModule-LNLiveModule in Resources */,
+				FF4686A2B8487D6011925A21C1A10431 /* LNLiveModule-LNLiveModule in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -2947,14 +2923,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		D8C53EA2DD5A9B8ACFB6580E75E1CCFE /* Resources */ = {
+		D62A9B5C582EE1F9F990D516C00A2694 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		EEEBBE276E7193943B2EF4EDBE7AE2B5 /* Resources */ = {
+		D8C53EA2DD5A9B8ACFB6580E75E1CCFE /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -2969,17 +2945,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				04A965C9BF9A64350557BFC87F6EE725 /* Pods-LNLiveModule_Tests-dummy.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		13F0F9E136191A590A4CFBC87150713E /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				F05E69CA2693CB02B57F35B8F611B3AD /* LNModuleProtocol.m in Sources */,
-				7F964993AE9A4218324C5EB3B51AB450 /* LNModuleProtocol-dummy.m in Sources */,
-				AB90AD03CDBCA586FC9E1C21CE660FB8 /* LNProtocolConfig.m in Sources */,
-				E24565CFD885130295C0C32A8266DD2D /* ReplaceMe.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -3039,14 +3004,10 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		38CB37C6F0ABA2AE7E61D5E7332E110E /* Sources */ = {
+		3E1167F0FE887DAA3BD7B65116FB0FFE /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F0C7A7061E6884F7A9537B4863F2F898 /* LNModuleAppDelegate.m in Sources */,
-				E803EA0700D33ED50F2832D6266B877D /* LNModuleCore-dummy.m in Sources */,
-				544A83AA82EEE1B93208217BB3A1EAAC /* LNModuleManager.m in Sources */,
-				A417440222DB0CBD384CB58801715060 /* ReplaceMe.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -3058,25 +3019,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		8E96A7295D5C7DE6EF188217FCC6A281 /* Sources */ = {
+		7116CA5B5A72E523FCC2A5DCF419C7D7 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1B6D7878EDA2B539038CE61868E7FC0C /* LNAnchorLiveRoomViewController.m in Sources */,
-				44DA850CCBE28F37C00523293DC946A9 /* LNLiveFocusListProvider.m in Sources */,
-				FF59AE16A75C83EF0F560751CC302CD2 /* LNLiveFocusTableViewControler.m in Sources */,
-				353021E7FC5C2E9486ACF16EA887A3E1 /* LNLiveMediator.m in Sources */,
-				B8842B275A92FDBD0F96B89B1550A067 /* LNLiveModule.m in Sources */,
-				10490599A067B98640A716301AE56BA2 /* LNLiveModule-dummy.m in Sources */,
-				CD3A67804AEDFAB8E561E787741F054A /* LNLiveModuleConfig.m in Sources */,
-				C91D63F33CAB8069278AE0FE6B7EE470 /* LNLiveNetworkConfig.m in Sources */,
-				3444C8F9B8ED96FCDBFACBB9BD56F0ED /* LNLiveRecommendListController.m in Sources */,
-				924B28123A778803DE6C07A0AC3ED593 /* LNLiveRecommendListProvider.m in Sources */,
-				C96CB0A0203DE5F2FCA818C0767DCA5F /* LNLiveRoomModel.m in Sources */,
-				235C1B3FDC65C42B130FBB6B3348910E /* LNLiveTableViewCell.m in Sources */,
-				11A4A70E99AC2A682B85C0BD198B76BF /* LNLiveUserModel.m in Sources */,
-				34D6122E69BA8E1D024F00F852F2DA8F /* LNViewerLiveRoomViewController.m in Sources */,
-				61E0D96A59CFF875CC4AA5A5331F82AD /* ReplaceMe.m in Sources */,
+				19BF2E5DE4ABBD4573E1BCA0C91FBD2B /* LNModuleProtocol.m in Sources */,
+				D4EA8B44CED1A3472E77E9E10A60BC4F /* LNModuleProtocol-dummy.m in Sources */,
+				AB92B0F09D0A048EB6AC379E4E91F35B /* LNProtocolConfig.m in Sources */,
+				646D03E4C2D15E73E73C758CA7EC2CF0 /* ReplaceMe.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -3086,13 +3036,6 @@
 			files = (
 				218AAFD4C55A074825F329C60BE86B53 /* Aspects.m in Sources */,
 				F1EFC0357C236119D052A8A80A126190 /* Aspects-dummy.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		A3D736768DD4611D6EBD92D81BC9A196 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -3134,6 +3077,28 @@
 				12F482FE2022286A223FFC9BFA84F83A /* CocoaAsyncSocket-dummy.m in Sources */,
 				4FC2272F4C11472C903CFCC6A101313E /* GCDAsyncSocket.m in Sources */,
 				37B0BF2484BE142772F5429AEE5CF0B1 /* GCDAsyncUdpSocket.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C7B88EB8EAF62E81E524B3FFF3DFB0FA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EF4E00DFE2C0CD00336320DAEA26E50B /* LNAnchorLiveRoomViewController.m in Sources */,
+				73D419B8D4A569432F0490B49B4E56B8 /* LNLiveFocusListProvider.m in Sources */,
+				E279978791E7E124C3A783220AE8F0F7 /* LNLiveFocusTableViewControler.m in Sources */,
+				1F815A43C18F6B4B076F127D73F8C2E9 /* LNLiveMediator.m in Sources */,
+				734CC770A9E4CFD1705CEAF77982DA98 /* LNLiveModule.m in Sources */,
+				3A782EC2615A37C865661303AED15DAE /* LNLiveModule-dummy.m in Sources */,
+				D63CA48EF15057D9E3BAE67B75290E37 /* LNLiveModuleConfig.m in Sources */,
+				00A652AC1C5496B1B630899A8C0B70C5 /* LNLiveNetworkConfig.m in Sources */,
+				18EE70373FB4F2E2A15F1A3F5D25423F /* LNLiveRecommendListController.m in Sources */,
+				FCE013F657024D68C22678E0CA999531 /* LNLiveRecommendListProvider.m in Sources */,
+				42C052526F272B6301A1FDABAE64A509 /* LNLiveRoomModel.m in Sources */,
+				BA154604A6C12620902672034E30CF54 /* LNLiveTableViewCell.m in Sources */,
+				89F4DB1A99C6556F1AE0C400440FC6D4 /* LNLiveUserModel.m in Sources */,
+				8AF1DA05932C22D836A491EBE3CA5609 /* LNViewerLiveRoomViewController.m in Sources */,
+				6EE38B139ED211174B1C59D771E97975 /* ReplaceMe.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -3255,6 +3220,17 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		F884FD7AB42F10049265F0AD01BE1E48 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C66503080DBB7F480757DCBC1C68E660 /* LNModuleAppDelegate.m in Sources */,
+				502CD023E458BB261B45811060E18D02 /* LNModuleCore-dummy.m in Sources */,
+				42CA40B25C3C6FF8AF848D85032C0AAD /* LNModuleManager.m in Sources */,
+				576CA7E3055377B02E226AF500F8DC2D /* ReplaceMe.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -3270,11 +3246,11 @@
 			target = 6083682834ABE0AE7BD1CBF06CADD036 /* CocoaAsyncSocket */;
 			targetProxy = BBEDF2AF8242068A8605B3DBAC53B1AB /* PBXContainerItemProxy */;
 		};
-		1C4148A4A30D2F1FF9D1D5D53BF37C66 /* PBXTargetDependency */ = {
+		1849CCC43D169E8D7FA76B0F30F5AF75 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = LNModuleCore;
 			target = B511A198B66B7E7BA8B4C5C6E4D7E3BB /* LNModuleCore */;
-			targetProxy = 6BA7E966369337E8E6264AED9C88C0F7 /* PBXContainerItemProxy */;
+			targetProxy = FC1DAD7114818FC6BD48180394BBCBDB /* PBXContainerItemProxy */;
 		};
 		1F8C0B18C99D4A581EB92E53E813994C /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
@@ -3287,6 +3263,12 @@
 			name = Aspects;
 			target = C6539905C4D50932B36244650B93C79B /* Aspects */;
 			targetProxy = 15F205A29950AD54EFEF957794EA9FA1 /* PBXContainerItemProxy */;
+		};
+		23C6E487A569ED45DBA910C117F1DBE8 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = LNModuleProtocol;
+			target = C2E7C1A83CBAA97A83FFE3E7B609B44A /* LNModuleProtocol */;
+			targetProxy = 5ABDBD2112DDE218961E3956E20870E5 /* PBXContainerItemProxy */;
 		};
 		347C2F9C92C60D1D50ED7E5CB09B4459 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
@@ -3342,23 +3324,11 @@
 			target = 55AF53E6C77A10ED4985E04D74A8878E /* Masonry */;
 			targetProxy = 8884DEDD5451D5C153723C7537B09466 /* PBXContainerItemProxy */;
 		};
-		777E8E62E5F086045F9359D621E54C6F /* PBXTargetDependency */ = {
+		7FCBCCC90C7AE13209EC152BA6C1E2F2 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			name = AFNetworking;
-			target = 0130B3724283586C0E9D2A112D4F2AA1 /* AFNetworking */;
-			targetProxy = 97456D4F82FA30E0AC26C69CEECADCA4 /* PBXContainerItemProxy */;
-		};
-		7BB4CA1D29949DC0DADAFB1DAAFF4297 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = SDWebImage;
-			target = 3847153A6E5EEFB86565BA840768F429 /* SDWebImage */;
-			targetProxy = B5F1977C2C70341D9C8DAEF2CD58C14F /* PBXContainerItemProxy */;
-		};
-		809FE7EE2F16FD3D4EC6008E03DAA9E1 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = LNModuleProtocol;
-			target = C2E7C1A83CBAA97A83FFE3E7B609B44A /* LNModuleProtocol */;
-			targetProxy = 70F1306A9AD713F021BBBDB3B366F6C8 /* PBXContainerItemProxy */;
+			name = "LNLiveModule-LNLiveModule";
+			target = 7AF6DB08ADAAF0D3833CBA620DABC7D7 /* LNLiveModule-LNLiveModule */;
+			targetProxy = 36658648E050C4109ADF7A3971CD0B45 /* PBXContainerItemProxy */;
 		};
 		8A87EEF45A5451C74E139E066C14FC3B /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
@@ -3390,29 +3360,17 @@
 			target = 6868056D761E163D10FDAF8CF1C4D9B8 /* MJRefresh */;
 			targetProxy = 0D06347CE15FB4BC8DB9181BA0AF73B8 /* PBXContainerItemProxy */;
 		};
-		BE9835E7EC63B5512A2CAA6EAF6E8999 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = LNCommonKit;
-			target = 91A29DC8D32830C5C4112FA44227AFC1 /* LNCommonKit */;
-			targetProxy = CE2855C8EE01D82E6584CC8EC358AC85 /* PBXContainerItemProxy */;
-		};
 		C12F7C2BB505B365660D71E74C6F127E /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = SDWebImage;
 			target = 3847153A6E5EEFB86565BA840768F429 /* SDWebImage */;
 			targetProxy = 31CBAB93F3F641D3F787C50580B5E678 /* PBXContainerItemProxy */;
 		};
-		DB1C55465A055C0F49B84C8EFC246096 /* PBXTargetDependency */ = {
+		F7B01CD1E5E5245C16659C8694D92113 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			name = "LNLiveModule-LNLiveModule";
-			target = 7AF6DB08ADAAF0D3833CBA620DABC7D7 /* LNLiveModule-LNLiveModule */;
-			targetProxy = C1C3C800E7B643583C43C2FC65F1ED48 /* PBXContainerItemProxy */;
-		};
-		E12060801EA01E27D82DA91F191D9F46 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = MJRefresh;
-			target = 6868056D761E163D10FDAF8CF1C4D9B8 /* MJRefresh */;
-			targetProxy = F7D30775C3F28DEC18829CB22EF235F8 /* PBXContainerItemProxy */;
+			name = LNCommonKit;
+			target = 91A29DC8D32830C5C4112FA44227AFC1 /* LNCommonKit */;
+			targetProxy = 307C00DAD87A697A6405ABA5ADF2CF0B /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -3448,9 +3406,9 @@
 			};
 			name = Release;
 		};
-		089CDD32C8508B3D1CBA2A2CB8AD3E4E /* Debug */ = {
+		17EAF82C18BB898A84D09F0494AB1B97 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = E0EF3984FECA66363AC00BEE07DD5E8A /* LNModuleProtocol.debug.xcconfig */;
+			baseConfigurationReference = A6EF418032AA53A22C9793AA825F75C5 /* LNModuleCore.release.xcconfig */;
 			buildSettings = {
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
@@ -3460,23 +3418,24 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				GCC_PREFIX_HEADER = "Target Support Files/LNModuleProtocol/LNModuleProtocol-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/LNModuleProtocol/LNModuleProtocol-Info.plist";
+				GCC_PREFIX_HEADER = "Target Support Files/LNModuleCore/LNModuleCore-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/LNModuleCore/LNModuleCore-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/LNModuleProtocol/LNModuleProtocol.modulemap";
-				PRODUCT_MODULE_NAME = LNModuleProtocol;
-				PRODUCT_NAME = LNModuleProtocol;
+				MODULEMAP_FILE = "Target Support Files/LNModuleCore/LNModuleCore.modulemap";
+				PRODUCT_MODULE_NAME = LNModuleCore;
+				PRODUCT_NAME = LNModuleCore;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
 			};
-			name = Debug;
+			name = Release;
 		};
 		18B64526DC6D0A01DC7E7A7368E56CF2 /* Release */ = {
 			isa = XCBuildConfiguration;
@@ -3512,40 +3471,9 @@
 			};
 			name = Release;
 		};
-		28C1466368EB9570EA536D3234476D5C /* Release */ = {
+		1B671C370026CD161D950AE5E79608D3 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 6D4F734A1325C5DD31C4BB5180160FBB /* LNModuleProtocol.release.xcconfig */;
-			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				GCC_PREFIX_HEADER = "Target Support Files/LNModuleProtocol/LNModuleProtocol-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/LNModuleProtocol/LNModuleProtocol-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/LNModuleProtocol/LNModuleProtocol.modulemap";
-				PRODUCT_MODULE_NAME = LNModuleProtocol;
-				PRODUCT_NAME = LNModuleProtocol;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
-		2C824C443D0F67AABA04DBD3ED19E3DD /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 1CCE7BEAC256B341CDEF0F1C2B559883 /* LNLiveModule.release.xcconfig */;
+			baseConfigurationReference = DCD14A3EC1F550BEC1460AD34711385C /* LNLiveModule.debug.xcconfig */;
 			buildSettings = {
 				CLANG_ENABLE_OBJC_WEAK = NO;
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
@@ -3569,11 +3497,10 @@
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
 			};
-			name = Release;
+			name = Debug;
 		};
 		2DC5B75EE7449A6C345457FBD792D3BE /* Debug */ = {
 			isa = XCBuildConfiguration;
@@ -3635,6 +3562,38 @@
 			};
 			name = Debug;
 		};
+		3540632EB2EC540DE266D07C65CDBB9C /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1CCE7BEAC256B341CDEF0F1C2B559883 /* LNLiveModule.release.xcconfig */;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/LNLiveModule/LNLiveModule-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/LNLiveModule/LNLiveModule-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/LNLiveModule/LNLiveModule.modulemap";
+				PRODUCT_MODULE_NAME = LNLiveModule;
+				PRODUCT_NAME = LNLiveModule;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
 		4F520416B528063F1ABF5CD88DFB83D5 /* Release */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = A199067D2D2F2AF94C65D025D6C3A4BF /* LNCommonKit.release.xcconfig */;
@@ -3666,9 +3625,39 @@
 			};
 			name = Release;
 		};
-		5DA018C6C68B4299CDADF75EF1079004 /* Debug */ = {
+		5FE2FB99B124734700127DA08F81D286 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = DCD14A3EC1F550BEC1460AD34711385C /* LNLiveModule.debug.xcconfig */;
+			baseConfigurationReference = A7F5FCBA6F319ED1D61A736CDFDB93C7 /* LNModuleCore.debug.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/LNModuleCore/LNModuleCore-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/LNModuleCore/LNModuleCore-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/LNModuleCore/LNModuleCore.modulemap";
+				PRODUCT_MODULE_NAME = LNModuleCore;
+				PRODUCT_NAME = LNModuleCore;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		647F1DA27F0E146D98B393340CDFCFC0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1CCE7BEAC256B341CDEF0F1C2B559883 /* LNLiveModule.release.xcconfig */;
 			buildSettings = {
 				CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/LNLiveModule";
 				IBSC_MODULE = LNLiveModule;
@@ -3680,7 +3669,7 @@
 				TARGETED_DEVICE_FAMILY = "1,2";
 				WRAPPER_EXTENSION = bundle;
 			};
-			name = Debug;
+			name = Release;
 		};
 		68A2E5BA6CDC3FB069ED38A34E860F1C /* Release */ = {
 			isa = XCBuildConfiguration;
@@ -3712,36 +3701,6 @@
 				VERSION_INFO_PREFIX = "";
 			};
 			name = Release;
-		};
-		6DA0FEC107A52967C191E75F024D96AB /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = A7F5FCBA6F319ED1D61A736CDFDB93C7 /* LNModuleCore.debug.xcconfig */;
-			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				GCC_PREFIX_HEADER = "Target Support Files/LNModuleCore/LNModuleCore-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/LNModuleCore/LNModuleCore-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/LNModuleCore/LNModuleCore.modulemap";
-				PRODUCT_MODULE_NAME = LNModuleCore;
-				PRODUCT_NAME = LNModuleCore;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
 		};
 		758E99FA3C0262DF094B9DC716D144F8 /* Release */ = {
 			isa = XCBuildConfiguration;
@@ -3927,53 +3886,6 @@
 			};
 			name = Release;
 		};
-		8234EF505B8E444A57C245568BDAA78D /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = A6EF418032AA53A22C9793AA825F75C5 /* LNModuleCore.release.xcconfig */;
-			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				GCC_PREFIX_HEADER = "Target Support Files/LNModuleCore/LNModuleCore-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/LNModuleCore/LNModuleCore-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/LNModuleCore/LNModuleCore.modulemap";
-				PRODUCT_MODULE_NAME = LNModuleCore;
-				PRODUCT_NAME = LNModuleCore;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
-		8AFB8F08A8F21B338B7B0DC0AB218DC1 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 1CCE7BEAC256B341CDEF0F1C2B559883 /* LNLiveModule.release.xcconfig */;
-			buildSettings = {
-				CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/LNLiveModule";
-				IBSC_MODULE = LNLiveModule;
-				INFOPLIST_FILE = "Target Support Files/LNLiveModule/ResourceBundle-LNLiveModule-LNLiveModule-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
-				PRODUCT_NAME = LNLiveModule;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				WRAPPER_EXTENSION = bundle;
-			};
-			name = Release;
-		};
 		A3BDFA87ED3884CAFFDEE06D5891EF85 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = F78EF4E2E28F7AE6CAF76E79490E7E75 /* JSONModel.debug.xcconfig */;
@@ -4004,11 +3916,10 @@
 			};
 			name = Debug;
 		};
-		AD7BDA4E6666A189C4EC101C84051C80 /* Debug */ = {
+		AA6CC8376528D7AD42B5078AB97BF8A8 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = DCD14A3EC1F550BEC1460AD34711385C /* LNLiveModule.debug.xcconfig */;
+			baseConfigurationReference = E0EF3984FECA66363AC00BEE07DD5E8A /* LNModuleProtocol.debug.xcconfig */;
 			buildSettings = {
-				CLANG_ENABLE_OBJC_WEAK = NO;
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
@@ -4017,14 +3928,14 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				GCC_PREFIX_HEADER = "Target Support Files/LNLiveModule/LNLiveModule-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/LNLiveModule/LNLiveModule-Info.plist";
+				GCC_PREFIX_HEADER = "Target Support Files/LNModuleProtocol/LNModuleProtocol-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/LNModuleProtocol/LNModuleProtocol-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/LNLiveModule/LNLiveModule.modulemap";
-				PRODUCT_MODULE_NAME = LNLiveModule;
-				PRODUCT_NAME = LNLiveModule;
+				MODULEMAP_FILE = "Target Support Files/LNModuleProtocol/LNModuleProtocol.modulemap";
+				PRODUCT_MODULE_NAME = LNModuleProtocol;
+				PRODUCT_NAME = LNModuleProtocol;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
@@ -4191,6 +4102,22 @@
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+		D4CC48B47AF25AF896DD30B68E95C782 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = DCD14A3EC1F550BEC1460AD34711385C /* LNLiveModule.debug.xcconfig */;
+			buildSettings = {
+				CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/LNLiveModule";
+				IBSC_MODULE = LNLiveModule;
+				INFOPLIST_FILE = "Target Support Files/LNLiveModule/ResourceBundle-LNLiveModule-LNLiveModule-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				PRODUCT_NAME = LNLiveModule;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				WRAPPER_EXTENSION = bundle;
 			};
 			name = Debug;
 		};
@@ -4384,6 +4311,37 @@
 			};
 			name = Debug;
 		};
+		F3A3808B4FCD8EF76387C72B34AE39DE /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6D4F734A1325C5DD31C4BB5180160FBB /* LNModuleProtocol.release.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/LNModuleProtocol/LNModuleProtocol-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/LNModuleProtocol/LNModuleProtocol-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/LNModuleProtocol/LNModuleProtocol.modulemap";
+				PRODUCT_MODULE_NAME = LNModuleProtocol;
+				PRODUCT_NAME = LNModuleProtocol;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -4392,15 +4350,6 @@
 			buildConfigurations = (
 				C45991D9B919AEBBA90D9F261046DC2D /* Debug */,
 				806A7E7160E683F1377568433D97BB86 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		208B84C1BD524848B1786D3B9ED05AB2 /* Build configuration list for PBXNativeTarget "LNModuleCore" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				6DA0FEC107A52967C191E75F024D96AB /* Debug */,
-				8234EF505B8E444A57C245568BDAA78D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -4432,29 +4381,11 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		647B1CDAE14BCB053DF52D7FC4A3D115 /* Build configuration list for PBXNativeTarget "LNLiveModule-LNLiveModule" */ = {
+		5ED1504952A441F120F8D104B0236F9C /* Build configuration list for PBXNativeTarget "LNModuleProtocol" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				5DA018C6C68B4299CDADF75EF1079004 /* Debug */,
-				8AFB8F08A8F21B338B7B0DC0AB218DC1 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		6EAD2C9F10D7F5A52E20985C7804EB2A /* Build configuration list for PBXNativeTarget "LNLiveModule" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				AD7BDA4E6666A189C4EC101C84051C80 /* Debug */,
-				2C824C443D0F67AABA04DBD3ED19E3DD /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		75ECC4402280CD9A3785CCD8E5DE84E7 /* Build configuration list for PBXNativeTarget "LNModuleProtocol" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				089CDD32C8508B3D1CBA2A2CB8AD3E4E /* Debug */,
-				28C1466368EB9570EA536D3234476D5C /* Release */,
+				AA6CC8376528D7AD42B5078AB97BF8A8 /* Debug */,
+				F3A3808B4FCD8EF76387C72B34AE39DE /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -4464,6 +4395,15 @@
 			buildConfigurations = (
 				2DC5B75EE7449A6C345457FBD792D3BE /* Debug */,
 				E0D8353D53D88AA429482D4CFA004313 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8AD03034B28B90F173834AFFA5332E5E /* Build configuration list for PBXNativeTarget "LNLiveModule" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1B671C370026CD161D950AE5E79608D3 /* Debug */,
+				3540632EB2EC540DE266D07C65CDBB9C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -4482,6 +4422,24 @@
 			buildConfigurations = (
 				7EB696D49BFDA62EBF045C0A10971288 /* Debug */,
 				0247D858711773713777F25A7771B350 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B18D086A34C988437AFC1D263C0B8019 /* Build configuration list for PBXNativeTarget "LNLiveModule-LNLiveModule" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D4CC48B47AF25AF896DD30B68E95C782 /* Debug */,
+				647F1DA27F0E146D98B393340CDFCFC0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BAEAFF63C9ECDC5593CD13596566FF46 /* Build configuration list for PBXNativeTarget "LNModuleCore" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5FE2FB99B124734700127DA08F81D286 /* Debug */,
+				17EAF82C18BB898A84D09F0494AB1B97 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

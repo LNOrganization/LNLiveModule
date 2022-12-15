@@ -1,8 +1,8 @@
 {
   "name": "LNLiveModule",
-  "version": "0.1.0",
-  "summary": "A short description of LNLiveModule.",
-  "description": "TODO: Add long description of the pod here.",
+  "version": "0.1.1",
+  "summary": "直播组件",
+  "description": "直播组件，开发和维护直播相关功能模块",
   "homepage": "https://github.com/NoNameOrganazation/LNLiveModule",
   "license": {
     "type": "MIT",
@@ -13,7 +13,7 @@
   },
   "source": {
     "git": "https://github.com/NoNameOrganazation/LNLiveModule.git",
-    "tag": "0.1.0"
+    "tag": "0.1.1"
   },
   "platforms": {
     "ios": "10.0"
@@ -35,23 +35,9 @@
       "public_header_files": "LNLiveModule/Classes/Network/*.h"
     },
     {
-      "name": "Base",
-      "source_files": "LNLiveModule/Classes/Base/**/*",
-      "public_header_files": "LNLiveModule/Classes/Base/*.h",
-      "dependencies": {
-        "LNLiveModule/Network": [
-
-        ],
-        "MJRefresh": [
-
-        ],
-        "SDWebImage": [
-
-        ],
-        "AFNetworking": [
-
-        ]
-      }
+      "name": "Common",
+      "source_files": "LNLiveModule/Classes/Common/**/*",
+      "public_header_files": "LNLiveModule/Classes/Common/*.h"
     },
     {
       "name": "Feature",
@@ -64,7 +50,10 @@
         ]
       },
       "dependencies": {
-        "LNLiveModule/Base": [
+        "LNLiveModule/Common": [
+
+        ],
+        "LNLiveModule/Network": [
 
         ]
       }
