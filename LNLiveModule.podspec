@@ -30,7 +30,7 @@ Pod::Spec.new do |s|
 
   s.ios.deployment_target = '10.0'
 
-  s.source_files = 'LNLiveModule/Classes/**/*'
+  s.source_files = 'LNLiveModule/Classes/*'
   s.public_header_files = 'LNLiveModule/Classes/*.h'
   
   s.subspec 'Network' do |network|
@@ -58,8 +58,12 @@ Pod::Spec.new do |s|
     mediator.dependency 'LNLiveModule/Feature'
   end
   
-  s.dependency 'LNModuleProtocol', '0.1.5'
-  s.dependency 'LNCommonKit', '0.1.8'
+  #私有库
+  s.dependency 'LNModuleProtocol'
+  s.dependency 'LNCommonKit'
+  
+  #公有库
+  s.dependency 'SDWebImage', '~>5.9.0'
   
   
   # s.resource_bundles = {
