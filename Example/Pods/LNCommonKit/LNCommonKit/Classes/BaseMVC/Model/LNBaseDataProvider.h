@@ -6,7 +6,7 @@
 //
 
 #import <Foundation/Foundation.h>
-#import "LNRequestManager.h"
+#import "LNNetworkManager.h"
 
 @class LNBaseDataProvider;
 
@@ -38,10 +38,6 @@ NS_ASSUME_NONNULL_BEGIN
 + (instancetype)loadWithCreator:(LNDataProviderCreator)creator
                         success:(LNLoadSuccessBlock)success
                         failure:(LNLoadFailureBlock)failure;
-
-/** 需要子类重写*/
-- (LNHTTPRequest *)requestWithSuccess:(LNRequestSuccessBlock)success
-                              failure:(LNRequestFailureBlock)failure;
 
 /*
  * 取消请求

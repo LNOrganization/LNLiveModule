@@ -10,8 +10,8 @@
 
 @implementation LNLiveFocusListProvider
 
-- (LNHTTPRequest *)requestWithSuccess:(LNLoadSuccessBlock)success
-                              failure:(LNLoadFailureBlock)failure
+- (LNHTTPRequest *)requestWithSuccess:(LNRequestSuccessBlock)success
+                              failure:(LNRequestFailureBlock)failure
 {
     return [LNNetworkManager startRequestCreator:^(LNHTTPRequest * _Nonnull request) {
         request.urlPath = @"";

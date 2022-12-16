@@ -8,7 +8,6 @@
 #ifndef LNCustomUIKit_h
 #define LNCustomUIKit_h
 
-#import "LNImageCircleScrollView.h"
 #import "UIColor+Custom.h"
 #import "UIScreen+LNUIKit.h"
 

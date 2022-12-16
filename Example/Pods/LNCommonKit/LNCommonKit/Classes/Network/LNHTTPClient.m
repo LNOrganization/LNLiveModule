@@ -1,41 +1,20 @@
 //
-//  LNFeedHTTPClient.m
-//  LNFeedModule
+//  LNHTTPClient.m
+//  LNCommonKit
 //
-//  Created by Lenny on 2021/11/8.
+//  Created by Lenny on 2022/11/30.
 //
 
 #import "LNHTTPClient.h"
-#import <AFNetworking/AFNetworking.h>
-#import "LNNetworkConst.h"
+#import "LNHTTPRequest.h"
 
 @interface LNHTTPClient ()
 
-@property(nonatomic, strong) dispatch_queue_t completionQueue;
-@property(nonatomic, strong) AFHTTPSessionManager     *manager;
-@property(nonatomic, strong) AFHTTPResponseSerializer *jsonResponseSerializer;
-@property(nonatomic, strong) AFHTTPResponseSerializer *xmlParserResponseSerializer;
 
 @end
 
 @implementation LNHTTPClient
 
-- (instancetype)init
-{
-    self = [super init];
-    if (self) {
-        
-        _completionQueue = dispatch_queue_create("com.Lenny.HTTPClient.completion.queue", DISPATCH_QUEUE_CONCURRENT);
-        _manager = [AFHTTPSessionManager manager];
-        _manager.completionQueue = self.completionQueue;
-    }
-    return self;
-}
-
-+ (LNHTTPClient *)client
-{
-    return [[[self class] alloc] init];
-}
 
 #pragma mark - LNClientChildDelegate
 
@@ -43,187 +22,286 @@
                                      progress:(LNRequestProgressBlock)progress
                                    completion:(LNRequestCompletionBlock)completion
 {
-    NSString *httpMethod = [request method];
-    if (!httpMethod) {
-        NSDictionary *userInfo = @{NSLocalizedFailureReasonErrorKey: NSLocalizedStringFromTable(@"The `method type`  is not valid method.", NSStringFromClass([self class]), nil)};
-        [self handleResponseResult:nil
-                            object:nil
-                             error:[NSError errorWithDomain:LNRequestSerializationErrorDomain code:LNRequestLocalErrorInvalidRequestMethod userInfo:userInfo]
-                           request:request
-                        completion:completion];
-        return nil;
-    }
     if (request.requestType == LNRequestUpload) {
-        return [self _uploadTaskWithRequest:request progress:progress completion:completion];
+        return [self _uploadTaskWithRequest:request completion:completion];
     }else{
         return [self _dataTaskWithRequest:request completion:completion];
     }
 }
 
 
-#pragma mark - private method
+#pragma mark - NSURLSessionDataTask
 
-
-- (NSURLSessionDataTask *)_dataTaskWithRequest:(nonnull LNHTTPRequest *)request
+- (NSURLSessionDataTask *)_dataTaskWithRequest:(nonnull LNHTTPRequest *)requestAdapter
                                     completion:(LNRequestCompletionBlock)completion
-
 {
-    AFHTTPRequestSerializer *requestSerializer = [self requestSerializerForRequest:request];
-
-    NSError *serializationError = nil;
-    NSMutableURLRequest *urlRequest = [requestSerializer requestWithMethod:[request method]
-                                                                 URLString:request.urlPath
-                                                                parameters:request.headers
-                                                                     error:&serializationError];
-    if (serializationError) {
-        [self handleResponseResult:nil
-                            object:nil
-                             error:serializationError
-                           request:request
-                        completion:completion
-         ];
-        return nil;
-    }
-    
-    __weak __typeof(self)weakSelf = self;
-    NSURLSessionDataTask *dataTask = [_manager dataTaskWithRequest:urlRequest
-                                    uploadProgress:nil
-                                  downloadProgress:nil
-                                 completionHandler:^(NSURLResponse *response, id responseObject, NSError *error) {
-                                     __strong __typeof(weakSelf)strongSelf = weakSelf;
-                                     [strongSelf handleResponseResult:response
-                                                               object:responseObject
-                                                                error:error
-                                                              request:request
-                                                           completion:completion
-                                      ];
-                                 }];
+    NSMutableURLRequest *httpRequest = [self _requestWithAdapter:requestAdapter completion:completion];
+    NSURLSessionDataTask *dataTask = [[NSURLSession sharedSession] dataTaskWithRequest:httpRequest];
     return dataTask;
 }
 
-- (NSURLSessionDataTask *)_uploadTaskWithRequest:(nonnull LNHTTPRequest *)request
-                                        progress:(LNRequestProgressBlock)progress
+
+- (NSURLSessionDataTask *)_uploadTaskWithRequest:(nonnull LNHTTPRequest *)requestAdapter
                                       completion:(LNRequestCompletionBlock)completion
 {
-    
-    AFHTTPRequestSerializer *requestSerializer = [self requestSerializerForRequest:request];
-    __block NSError *serializationError = nil;
-    NSMutableURLRequest *urlRequest = [requestSerializer multipartFormRequestWithMethod:[request method]
-                                                                              URLString:request.urlPath
-                                                                             parameters:request.parameters
-                                                              constructingBodyWithBlock:^(id<AFMultipartFormData> formData) {
-              [request.formDatas enumerateObjectsUsingBlock:^(LNMutiFormData *obj, NSUInteger idx, BOOL *stop) {
-                  if (obj.fileData) {
-                      if (obj.fileName && obj.mimeType) {
-                          [formData appendPartWithFileData:obj.fileData name:obj.name fileName:obj.fileName mimeType:obj.mimeType];
-                      } else {
-                          [formData appendPartWithFormData:obj.fileData name:obj.name];
-                      }
-                  } else if (obj.fileURL) {
-                      NSError *fileError = nil;
-                      if (obj.fileName && obj.mimeType) {
-                          [formData appendPartWithFileURL:obj.fileURL name:obj.name fileName:obj.fileName mimeType:obj.mimeType error:&fileError];
-                      } else {
-                          [formData appendPartWithFileURL:obj.fileURL name:obj.name error:&fileError];
-                      }
-                      if (fileError) {
-                          serializationError = fileError;
-                          *stop = YES;
-                      }
-                  }
-              }];
-        } error:&serializationError];
-    
-    if (serializationError) {
-        [self handleResponseResult:nil
-                            object:nil
-                             error:serializationError
-                           request:request
-                        completion:completion];
-        return nil;
+    NSMutableURLRequest *httpRequest = [self httpUploadWithRequest:requestAdapter];
+    if (requestAdapter.headers.count > 0) {
+        [requestAdapter.headers enumerateKeysAndObjectsUsingBlock:^(id  _Nonnull key, id  _Nonnull obj, BOOL * _Nonnull stop) {
+            [httpRequest addValue:obj forHTTPHeaderField:key];
+        }];
+    }
+
+    NSURLSessionDataTask *dataTask = [[NSURLSession sharedSession] dataTaskWithRequest:httpRequest completionHandler:^(NSData * _Nullable data, NSURLResponse * _Nullable response, NSError * _Nullable error) {
+        [self handleResponse:response data:data error:error request:requestAdapter completion:completion];
+    }];
+    return dataTask;
+}
+
+
+#pragma mark - NSMutableURLRequest
+- (NSMutableURLRequest *)_requestWithAdapter:(nonnull LNHTTPRequest *)request
+                                  completion:(LNRequestCompletionBlock)completion
+
+{
+    NSMutableURLRequest *httpRequest = nil;
+
+    switch (request.requestSerializerType) {
+        case LNRequestSerializerHTTP:
+            httpRequest = [self _httpRequestWithAdapter:request completion:completion];
+            break;
+        case LNRequestSerializerJSON:
+            httpRequest = [self _httpJsonRequestWithAdapter:request completion:completion];
+            break;
+        default:
+            httpRequest = [self _httpRequestWithAdapter:request completion:completion];
+            break;
+    }
+    httpRequest.HTTPMethod = [request method];
+    httpRequest.timeoutInterval = request.timeoutInterval;
+    if (request.headers.count > 0) {
+        [request.headers enumerateKeysAndObjectsUsingBlock:^(id  _Nonnull key, id  _Nonnull obj, BOOL * _Nonnull stop) {
+            [httpRequest addValue:obj forHTTPHeaderField:key];
+        }];
+    }
+
+    return httpRequest;
+}
+
+
+- (NSMutableURLRequest *)_httpRequestWithAdapter:(nonnull LNHTTPRequest *)request
+                                      completion:(LNRequestCompletionBlock)completion
+{
+    __block NSString *parameterStr = @"";
+    NSString *urlString = request.urlPath;
+    NSDictionary *parameter = [request parameters];
+    if (parameter.count > 0) {
+        parameterStr = @"?";
+        [parameter enumerateKeysAndObjectsUsingBlock:^(id  _Nonnull key, id  _Nonnull obj, BOOL * _Nonnull stop) {
+            NSString *jsonStr = @"";
+            if ([obj isKindOfClass:[NSArray class]] || [obj isKindOfClass:[NSDictionary class]]) {
+                NSData *jsonData =  [NSJSONSerialization dataWithJSONObject:obj options:NSJSONWritingPrettyPrinted error:nil];
+                jsonStr = [[NSString alloc] initWithData:jsonData encoding:NSUTF8StringEncoding];
+                if (jsonStr) {
+                    // 去掉空格
+                    jsonStr = [self deleteAllEmptyCharFromStr:jsonStr];
+                }
+                parameterStr = [parameterStr stringByAppendingFormat:@"%@=%@&",key, jsonStr];
+            }else{
+                parameterStr = [parameterStr stringByAppendingFormat:@"%@=%@&",key, [obj description]];
+            }
+
+        }];
+        parameterStr = [parameterStr stringByReplacingCharactersInRange:NSMakeRange(parameterStr.length -1, 1) withString:@""];
     }
     
-    __weak __typeof(self)weakSelf = self;
-    NSURLSessionUploadTask *uploadTask = nil;
-    uploadTask = [_manager uploadTaskWithStreamedRequest:urlRequest
-                                                progress:^(NSProgress * _Nonnull uploadProgress) {
-        if (progress) {
-            progress(uploadProgress);
+    urlString = [urlString stringByAppendingString:parameterStr];
+    NSURL *url = [NSURL URLWithString:urlString];
+    NSMutableURLRequest *httpRequest = [NSMutableURLRequest requestWithURL:url];
+    return httpRequest;
+}
+
+
+- (NSMutableURLRequest *)_httpJsonRequestWithAdapter:(nonnull LNHTTPRequest *)request
+                                          completion:(LNRequestCompletionBlock)completion
+{
+    NSString *urlString = request.urlPath;
+    NSURL *url = [NSURL URLWithString:urlString];
+    NSMutableURLRequest *httpRequest = [NSMutableURLRequest requestWithURL:url];
+//    [httpRequest setValue:@"application/json" forHTTPHeaderField:@"Accept"];
+    if (![httpRequest valueForHTTPHeaderField:@"Content-Type"]) {
+        [httpRequest setValue:@"application/json" forHTTPHeaderField:@"Content-Type"];
+    }
+    NSDictionary *parameters = [request parameters];
+    NSError *error = nil;
+    if (parameters) {
+        if (![NSJSONSerialization isValidJSONObject:parameters]) {
+            NSDictionary *userInfo = @{NSLocalizedFailureReasonErrorKey: NSLocalizedStringFromTable(@"The `parameters` argument is not valid JSON.", NSStringFromClass([self class]), nil)};
+            error = [[NSError alloc] initWithDomain:LNRequestSerializationErrorDomain code:NSURLErrorCannotDecodeContentData userInfo:userInfo];
+            if (completion) {
+                completion(nil, error);
+            }
+            return nil;
         }
-                    
-                                            }
-                                       completionHandler:^(NSURLResponse *response, id responseObject, NSError *error) {
-        
-        __strong __typeof(weakSelf)strongSelf = weakSelf;
-        [strongSelf handleResponseResult:response
-                            object:responseObject
-                             error:error
-                           request:request
-                              completion:completion
-         ];
-                                           
-                }];
-    return uploadTask;
+        NSData *jsonData = [NSJSONSerialization dataWithJSONObject:[request parameters] options:NSJSONWritingPrettyPrinted error:&error];
+        if (!jsonData || error) {
+            if (!error) {
+                NSDictionary *userInfo = @{NSLocalizedFailureReasonErrorKey: NSLocalizedStringFromTable(@"The `parameters` argument JSON serialization error.", NSStringFromClass([self class]), nil)};
+                error = [[NSError alloc] initWithDomain:LNRequestSerializationErrorDomain code:NSURLErrorCannotDecodeContentData userInfo:userInfo];
+            }
+            if (completion) {
+                completion(nil, error);
+            }
+            return nil;
+        }
+        NSString *jsonString = [[NSString alloc]initWithData:jsonData encoding:NSUTF8StringEncoding];
+        [httpRequest setHTTPBody:[jsonString dataUsingEncoding:NSUTF8StringEncoding]];
+    }
+    return httpRequest;
+}
+
+
+- (NSMutableURLRequest *)httpUploadWithRequest:(nonnull LNHTTPRequest *)requestAdapter
+{
+    NSURL *url = [NSURL URLWithString:requestAdapter.urlPath];
+    NSMutableURLRequest *request = [NSMutableURLRequest requestWithURL:url];
+    request.HTTPMethod = [requestAdapter method];
+    //设置请求实体
+    NSMutableData *body = [NSMutableData data];
+    NSData *paramsData = [NSJSONSerialization dataWithJSONObject:[requestAdapter parameters] options:NSJSONWritingPrettyPrinted error:nil];
+    NSString*paramsDataString = [[NSString alloc]initWithData:paramsData encoding:NSUTF8StringEncoding];
+     NSMutableString *paramsDataMutiString = [NSMutableString stringWithString:paramsDataString];
+    NSRange range = {0,paramsDataString.length};
+    //去掉字符串中的空格
+    [paramsDataMutiString replaceOccurrencesOfString:@"" withString:@"" options:NSLiteralSearch range:range];
+    NSRange range2 = {0, paramsDataMutiString.length};
+    //去掉字符串中的换行符
+    [paramsDataMutiString replaceOccurrencesOfString:@"\n" withString:@"" options:NSLiteralSearch range:range2];
+    //普通参数
+    [body appendData:[self getDataWithString:@"--BOUNDARY\r\n" ]];
+    //上传参数需要key： （相应参数，在这里是_myModel.personID）
+    NSString *dispositions = [NSString stringWithFormat:@"Content-Disposition: form-data; name=\"%@\"\r\n",@"content"];
+    [body appendData:[self getDataWithString: dispositions]];
+    [body appendData:[self getDataWithString: @"\r\n"]];
+    [body appendData:[self getDataWithString: paramsDataMutiString]];
+    [body appendData:[self getDataWithString: @"\r\n"]];
+
+    for (LNMutiFormData *multiData in [requestAdapter formDatas]) {
+        //文件参数
+        NSString *imageFormat = @"";
+        imageFormat = [NSString stringWithFormat:@"Content-Type: %@ \r\n", multiData.mimeType];
+        [body appendData:[self getDataWithString:@"--BOUNDARY\r\n" ]];
+        NSString *disposition = [NSString stringWithFormat:@"Content-Disposition: form-data; name=\"%@\"; filename=\"%@\"\r\n", multiData.name, multiData.fileName];
+        [body appendData:[self getDataWithString:disposition ]];
+
+        [body appendData:[self getDataWithString:imageFormat]];
+        [body appendData:[self getDataWithString:@"\r\n"]];
+        [body appendData:multiData.fileData];
+        [body appendData:[self getDataWithString:@"\r\n"]];
+    }
+
+    //参数结束
+    [body appendData:[self getDataWithString:@"--BOUNDARY--\r\n"]];
+    request.HTTPBody = body;
+    //设置请求体长度
+    NSInteger length = [body length];
+    [request setValue:[NSString stringWithFormat:@"%ld",length] forHTTPHeaderField:@"Content-Length"];
+    //设置 POST请求文件上传
+    [request setValue:@"multipart/form-data; boundary=BOUNDARY" forHTTPHeaderField:@"Content-Type"];
+    return request;
+}
+
+
+- (NSData *)getDataWithString:(NSString *)str
+{
+    NSData *data =[str dataUsingEncoding:NSUTF8StringEncoding];
+    return data;
 }
 
 
 
-- (AFHTTPRequestSerializer *)requestSerializerForRequest:(LNHTTPRequest *)request
+- (NSString *)deleteAllEmptyCharFromStr:(NSString *)str
 {
-    AFHTTPRequestSerializer *requestSerializer = nil;
-    if (request.requestSerializerType == LNRequestSerializerHTTP) {
-        requestSerializer = [AFHTTPRequestSerializer serializer];
-    }else if(request.requestSerializerType == LNRequestSerializerJSON){
-        requestSerializer = [AFJSONRequestSerializer serializer];
-    }
-    requestSerializer.timeoutInterval = request.timeoutInterval;
-    if (request.headers.count > 0) {
-        [request.headers enumerateKeysAndObjectsUsingBlock:^(id field, id value, BOOL * __unused stop) {
-            [requestSerializer setValue:value forHTTPHeaderField:field];
-        }];
-    }
-    
-    return requestSerializer;
+    NSString *result = [str copy];
+    result = [result stringByTrimmingCharactersInSet:[NSCharacterSet whitespaceAndNewlineCharacterSet]];
+    result = [result stringByReplacingOccurrencesOfString:@"\r" withString:@""];
+    result = [result stringByReplacingOccurrencesOfString:@"\n" withString:@""];
+    result = [result stringByReplacingOccurrencesOfString:@" " withString:@""];
+    return result;
 }
 
 #pragma mark - response
-
-- (AFHTTPResponseSerializer *)responseSerializerForRequest:(LNHTTPRequest *)request{
-    if (request.responseSerializerType == LNResponseSerializerJSON) {
-        return self.jsonResponseSerializer;
-    }else if(request.responseSerializerType == LNResponseSerializerXMLParser){
-        return self.xmlParserResponseSerializer;
+- (void)handleResponse:(NSURLResponse *)response
+                  data:(id)data
+                 error:(NSError *)error
+               request:(nonnull LNHTTPRequest *)request
+            completion:(LNRequestCompletionBlock)completion
+                                
+{
+    if (error) {
+        if (completion) {
+            completion(nil, error);
+        }
+    }else if(data){
+        [self handleResponse:response data:data request:request completion:completion];
     }else{
-        return nil;
+        NSInteger statusCode = -111;
+        if ([response isKindOfClass:[NSHTTPURLResponse class]]) {
+            NSHTTPURLResponse *httpResponse = (NSHTTPURLResponse *)response;
+            statusCode = httpResponse.statusCode;
+        }
+        NSDictionary *userInfo = @{NSLocalizedFailureReasonErrorKey: NSLocalizedStringFromTable(@"The response `data` nil.", NSStringFromClass([self class]), nil)};
+        statusCode = statusCode == -111 ? NSURLErrorCannotDecodeContentData: statusCode;
+        error = [[NSError alloc] initWithDomain:LNResponseSerializationErrorDomain code:statusCode  userInfo:userInfo];
+        if (completion) {
+            completion(nil, error);
+        }
     }
 }
 
-- (void)handleResponseResult:(NSURLResponse *)response
-                      object:(id)responseObject
-                       error:(NSError *)error
-                     request:(LNHTTPRequest *)request
-                  completion:(LNRequestCompletionBlock)completion
+- (void)handleResponse:(NSURLResponse *)response
+                  data:(id)data
+               request:(nonnull LNHTTPRequest *)request
+            completion:(LNRequestCompletionBlock)completion
 {
-    
-    if (!error) {
-        if (responseObject) {
-            NSError *responseError = nil;
-            if (request.responseSerializerType != LNResponseSerializerHTTP) {
-                AFHTTPResponseSerializer *responseSerializer = [self responseSerializerForRequest:request];
-                responseObject = [responseSerializer responseObjectForResponse:response data:responseObject error:&responseError];
-            }
-            error = responseError;
-        }else{
-            NSDictionary *userInfo = @{NSLocalizedFailureReasonErrorKey: NSLocalizedStringFromTable(@"The `responseObject`  is nil.", NSStringFromClass([self class]), nil)};
-            error = [NSError errorWithDomain:LNResponseSerializationErrorDomain code:LNRequestLocalErrorInvalidResponseData userInfo:userInfo];
+   
+    if (request.responseSerializerType != LNResponseSerializerJSON) {
+        NSDictionary *userInfo = @{NSLocalizedFailureReasonErrorKey: NSLocalizedStringFromTable(@"This LNResponseSerializerType is not support, you can overwrite this method to  support.", NSStringFromClass([self class]), nil)};
+        NSError *error = [[NSError alloc] initWithDomain:LNResponseSerializationErrorDomain code:0 userInfo:userInfo];
+        if (completion) {
+            completion(nil, error);
         }
-
+        return;
+    }
+    NSDictionary *jsonData = nil;
+    NSError *error = nil;
+    NSInteger statusCode = 0;
+    if ([response isKindOfClass:[NSHTTPURLResponse class]]) {
+        NSHTTPURLResponse *httpResponse = (NSHTTPURLResponse *)response;
+        statusCode = httpResponse.statusCode;
+    }
+    if ([data isKindOfClass:[NSData class]]) {
+        jsonData = [NSJSONSerialization JSONObjectWithData:data options:NSJSONReadingMutableContainers error:&error];
+        if (error) {
+            NSDictionary *userInfo = @{NSLocalizedFailureReasonErrorKey: NSLocalizedStringFromTable(@"The response `data` not valid json data.", NSStringFromClass([self class]), nil)};
+            error = [[NSError alloc] initWithDomain:LNResponseSerializationErrorDomain code:NSURLErrorCannotDecodeContentData userInfo:userInfo];
+        }else{
+            if (!jsonData) {
+                NSDictionary *userInfo = @{NSLocalizedFailureReasonErrorKey: NSLocalizedStringFromTable(@"The response `jsonData` nil.", NSStringFromClass([self class]), nil)};
+                error = [[NSError alloc] initWithDomain:LNResponseSerializationErrorDomain code:NSURLErrorCannotDecodeContentData userInfo:userInfo];
+            }
+        }
+       
+    }else{
+        NSDictionary *userInfo = @{NSLocalizedFailureReasonErrorKey: NSLocalizedStringFromTable(@"The response `data` nil.", NSStringFromClass([self class]), nil)};
+        error = [[NSError alloc] initWithDomain:LNResponseSerializationErrorDomain code:NSURLErrorCannotDecodeContentData userInfo:userInfo];
     }
     if (completion) {
-        completion(responseObject, error);
+        completion(jsonData, error);
     }
+
 }
 
 
 @end
+
 

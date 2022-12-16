@@ -70,7 +70,7 @@
     if (self.currentPage > 1) {
         self.currentPage -= 1;
     }
-    [LNRequestManager cancelRequest:self.request];
+    [LNNetworkManager cancelRequest:self.request];
 }
 
 - (void)clearData

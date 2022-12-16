@@ -6,6 +6,7 @@
 //
 
 #import "LNBaseDataProvider.h"
+
 @interface LNBaseDataProvider ()
 
 @property(nonatomic, weak) id<LNChildDataProviderDelegate> child;
@@ -78,7 +79,7 @@
  */
 - (void)cancelRequestIfNeed
 {
-    [LNRequestManager cancelRequest:self.request];
+    [LNNetworkManager cancelRequest:self.request];
 }
 
 

@@ -9,10 +9,11 @@
 #define LNCommonKit_h
 
 
-#import "LNRouter.h"
-#import "UIViewController+Router.h"
-#import "LNFoundationKit.h"
-#import "LNBaseMVC.h"
-#import "LNCustomUIKit.h"
-#import "LNConsttant.h"
+#import <LNCommonKit/LNRouter.h>
+#import <LNCommonKit/UIViewController+Router.h>
+#import <LNCommonKit/LNFoundationKit.h>
+#import <LNCommonKit/LNBaseMVC.h>
+#import <LNCommonKit/LNCustomUIKit.h>
+#import <LNCommonKit/LNConsttant.h>
+
 #endif /* LNCommonKit_h */

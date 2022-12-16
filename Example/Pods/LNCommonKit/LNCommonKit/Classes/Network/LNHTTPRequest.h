@@ -1,6 +1,6 @@
 //
 //  LNHTTPRequest.h
-//  LNAccountModule
+//  LNCommonKit
 //
 //  Created by Lenny on 2021/11/7.
 //
@@ -9,10 +9,6 @@
 #import "LNNetworkConst.h"
 
 NS_ASSUME_NONNULL_BEGIN
-
-
-extern NSString *LNHTTPMethodWithType(LNHTTPMethodType type);
-extern NSString *LNURLPathWithBaseURLAppendPath(NSString *host, NSString *path);
 
 @interface LNMutiFormData : NSObject
 
@@ -24,8 +20,6 @@ extern NSString *LNURLPathWithBaseURLAppendPath(NSString *host, NSString *path);
 
 @end
 
-
-typedef void(^ParametersCreator)(NSMutableDictionary *params);
 
 @interface LNHTTPRequest : NSObject
 
@@ -46,7 +40,6 @@ typedef void(^ParametersCreator)(NSMutableDictionary *params);
 - (void)createParameters:(ParametersCreator)parameterCreator;
 
 + (instancetype)request;
-
 
 
 @end

@@ -1,32 +1,18 @@
 //
-//  LNFeedHTTPClient.h
-//  LNFeedModule
+//  LNHTTPClient.h
+//  LNCommonKit
 //
-//  Created by Lenny on 2021/11/8.
+//  Created by Lenny on 2022/11/30.
 //
 
+#import <Foundation/Foundation.h>
+#import "LNNetworkConst.h"
+
+NS_ASSUME_NONNULL_BEGIN
 
 
-#import "LNHTTPRequest.h"
-
-
-typedef void(^LNRequestCompletionBlock)(id _Nullable data, NSError * _Nullable error);
-typedef void(^LNRequestProgressBlock)(NSProgress * _Nonnull progress);
-
-
-@protocol LNHTTPClientDelegate <NSObject>
-@optional
-/** 子类根据需要可以重写自定义 NSURLSessionDataTask*/
-- (NSURLSessionDataTask *_Nullable)dataTaskWithRequest:(nonnull LNHTTPRequest *)request
-                                     progress:(LNRequestProgressBlock _Nullable )progress
-                                   completion:(nonnull LNRequestCompletionBlock)completion;
-                    
-@end
-
-
-@interface LNHTTPClient : NSObject
-
-+ (LNHTTPClient *_Nonnull)client;
+@interface LNHTTPClient : NSObject<LNHTTPClientDelegate>
 
 @end
 
+NS_ASSUME_NONNULL_END

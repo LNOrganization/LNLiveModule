@@ -7,6 +7,7 @@
 
 #ifndef LNBaseMVC_h
 #define LNBaseMVC_h
+
 // M
 #import "LNBaseModel.h"
 #import "LNBaseDataProvider.h"
@@ -23,8 +24,6 @@
 #import "LNBaseNavigationController.h"
 #import "LNBaseTableViewController.h"
 #import "LNBaseCollectionViewController.h"
-
-
 
 
 #endif /* LNBaseMVC_h */

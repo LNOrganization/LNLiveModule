@@ -1,6 +1,6 @@
 {
   "name": "LNLiveModule",
-  "version": "0.1.1",
+  "version": "0.1.3",
   "summary": "直播组件",
   "description": "直播组件，开发和维护直播相关功能模块",
   "homepage": "https://github.com/NoNameOrganazation/LNLiveModule",
@@ -13,19 +13,22 @@
   },
   "source": {
     "git": "https://github.com/NoNameOrganazation/LNLiveModule.git",
-    "tag": "0.1.1"
+    "tag": "0.1.3"
   },
   "platforms": {
     "ios": "10.0"
   },
-  "source_files": "LNLiveModule/Classes/**/*",
+  "source_files": "LNLiveModule/Classes/*",
   "public_header_files": "LNLiveModule/Classes/*.h",
   "dependencies": {
     "LNModuleProtocol": [
-      "0.1.5"
+
     ],
     "LNCommonKit": [
-      "0.1.8"
+
+    ],
+    "SDWebImage": [
+      "~>5.9.0"
     ]
   },
   "subspecs": [
@@ -43,12 +46,6 @@
       "name": "Feature",
       "source_files": "LNLiveModule/Classes/Feature/**/*.{h,m}",
       "public_header_files": "LNLiveModule/Classes/Feature/**/*.h",
-      "resource_bundles": {
-        "LNLiveModule": [
-          "LNLiveModule/Classes/Feature/**/*.xib",
-          "LNLiveModule/Classes/**/*.{png,jpg,jpeg}"
-        ]
-      },
       "dependencies": {
         "LNLiveModule/Common": [
 
