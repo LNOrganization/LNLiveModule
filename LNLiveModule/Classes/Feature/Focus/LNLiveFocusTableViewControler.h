@@ -5,7 +5,7 @@
 //  Created by Lenny on 2022/12/9.
 //
 
-//#import <LNCommonKit/LNBaseMVC.h>
+//#import <LNCommonKit/LNBase.h>
 #import "LNBaseTableViewController.h"
 
 NS_ASSUME_NONNULL_BEGIN

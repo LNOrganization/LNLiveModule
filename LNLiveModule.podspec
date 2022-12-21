@@ -21,11 +21,11 @@ Pod::Spec.new do |s|
 直播组件，开发和维护直播相关功能模块
                        DESC
 
-  s.homepage         = 'https://github.com/NoNameOrganazation/LNLiveModule'
+  s.homepage         = 'https://github.com/LNOrganization/LNLiveModule'
   # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
   s.author           = { 'dongjianxiong' => 'jianxiong20090919@126.com' }
-  s.source           = { :git => 'https://github.com/NoNameOrganazation/LNLiveModule.git', :tag => s.version.to_s }
+  s.source           = { :git => 'https://github.com/LNOrganization/LNLiveModule.git', :tag => s.version.to_s }
   # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
 
   s.ios.deployment_target = '10.0'
@@ -42,7 +42,10 @@ Pod::Spec.new do |s|
     base.source_files = 'LNLiveModule/Classes/Common/**/*'
     base.public_header_files = 'LNLiveModule/Classes/Common/*.h'
   end
-  
+  s.subspec 'Data' do |base|
+    base.source_files = 'LNLiveModule/Classes/Data/**/*'
+    base.public_header_files = 'LNLiveModule/Classes/Data/*.h'
+  end
   s.subspec 'Feature' do |feature|
     feature.source_files = 'LNLiveModule/Classes/Feature/**/*.{h,m}'
     feature.public_header_files = 'LNLiveModule/Classes/Feature/**/*.h'
@@ -51,6 +54,7 @@ Pod::Spec.new do |s|
 #    }
     feature.dependency 'LNLiveModule/Common'
     feature.dependency 'LNLiveModule/Network'
+    feature.dependency 'LNLiveModule/Data'
   end
   
   s.subspec 'Mediator' do |mediator|

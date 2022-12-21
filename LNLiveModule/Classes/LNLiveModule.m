@@ -12,10 +12,7 @@
 
 __attribute__((constructor)) void addModuleVideoModule(void){
     
-    static dispatch_once_t onceToken;
-    dispatch_once(&onceToken, ^{
-        [[LNModuleManager sharedInstance] addImpClassName:@"LNLiveModule" protocolName:@"LNLiveModuleProtocol"];
-    });
+    [[LNModuleManager sharedInstance] addImpClassName:@"LNLiveModule" protocolName:@"LNLiveModuleProtocol"];
 }
 
 

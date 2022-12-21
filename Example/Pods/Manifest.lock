@@ -14,30 +14,74 @@ PODS:
   - AFNetworking/Serialization (4.0.1)
   - AFNetworking/UIKit (4.0.1):
     - AFNetworking/NSURLSession
-  - LNCommonKit (1.0.0):
-    - LNCommonKit/BaseMVC (= 1.0.0)
-    - LNCommonKit/Consttant (= 1.0.0)
-    - LNCommonKit/CustomUIKit (= 1.0.0)
-    - LNCommonKit/Foundation (= 1.0.0)
-    - LNCommonKit/Log (= 1.0.0)
-    - LNCommonKit/Network (= 1.0.0)
-    - LNCommonKit/Router (= 1.0.0)
-  - LNCommonKit/BaseMVC (1.0.0):
+  - JSONModel (1.8.0)
+  - LNCommonKit (1.0.4):
+    - LNCommonKit/Base (= 1.0.4)
+    - LNCommonKit/Consttant (= 1.0.4)
+    - LNCommonKit/CustomUIKit (= 1.0.4)
+    - LNCommonKit/Foundation (= 1.0.4)
+    - LNCommonKit/ImgLoopScroll (= 1.0.4)
+    - LNCommonKit/Log (= 1.0.4)
+    - LNCommonKit/Network (= 1.0.4)
+    - LNCommonKit/Router (= 1.0.4)
+  - LNCommonKit/Base (1.0.4):
+    - LNCommonKit/Base/BaseVC (= 1.0.4)
+    - LNCommonKit/Base/CollectionVC (= 1.0.4)
+    - LNCommonKit/Base/Core (= 1.0.4)
+    - LNCommonKit/Base/DataModel (= 1.0.4)
+    - LNCommonKit/Base/Provider (= 1.0.4)
+    - LNCommonKit/Base/TableVC (= 1.0.4)
+    - LNCommonKit/Consttant
+    - LNCommonKit/Log
+  - LNCommonKit/Base/BaseVC (1.0.4):
+    - LNCommonKit/Consttant
     - LNCommonKit/CustomUIKit
-    - LNCommonKit/Network
+    - LNCommonKit/Log
+  - LNCommonKit/Base/CollectionVC (1.0.4):
+    - LNCommonKit/Base/BaseVC
+    - LNCommonKit/Base/Core
+    - LNCommonKit/Consttant
+    - LNCommonKit/Log
     - MJRefresh (~> 3.7.2)
-  - LNCommonKit/Consttant (1.0.0)
-  - LNCommonKit/CustomUIKit (1.0.0):
-    - LNCommonKit/CustomUIKit/ImgLoopScroll (= 1.0.0)
-  - LNCommonKit/CustomUIKit/ImgLoopScroll (1.0.0)
-  - LNCommonKit/Foundation (1.0.0)
-  - LNCommonKit/Log (1.0.0)
-  - LNCommonKit/Network (1.0.0):
+  - LNCommonKit/Base/Core (1.0.4):
+    - LNCommonKit/Consttant
+    - LNCommonKit/Log
+  - LNCommonKit/Base/DataModel (1.0.4):
+    - JSONModel (~> 1.8.0)
+    - LNCommonKit/Consttant
+    - LNCommonKit/Log
+  - LNCommonKit/Base/Provider (1.0.4):
+    - LNCommonKit/Base/Core
+    - LNCommonKit/Base/DataModel
+    - LNCommonKit/Consttant
+    - LNCommonKit/Log
+    - LNCommonKit/Network
+  - LNCommonKit/Base/TableVC (1.0.4):
+    - LNCommonKit/Base/BaseVC
+    - LNCommonKit/Base/Core
+    - LNCommonKit/Consttant
+    - LNCommonKit/Log
+    - MJRefresh (~> 3.7.2)
+  - LNCommonKit/Consttant (1.0.4)
+  - LNCommonKit/CustomUIKit (1.0.4)
+  - LNCommonKit/Foundation (1.0.4)
+  - LNCommonKit/ImgLoopScroll (1.0.4)
+  - LNCommonKit/Log (1.0.4)
+  - LNCommonKit/Network (1.0.4):
+    - LNCommonKit/Network/AFHTTPClient (= 1.0.4)
+    - LNCommonKit/Network/Core (= 1.0.4)
+    - LNCommonKit/Network/LNHTTPClient (= 1.0.4)
+  - LNCommonKit/Network/AFHTTPClient (1.0.4):
     - AFNetworking (~> 4.0.1)
-  - LNCommonKit/Router (1.0.0)
+    - LNCommonKit/Network/Core
+  - LNCommonKit/Network/Core (1.0.4)
+  - LNCommonKit/Network/LNHTTPClient (1.0.4):
+    - LNCommonKit/Network/Core
+  - LNCommonKit/Router (1.0.4)
   - LNLiveModule (0.1.3):
     - LNCommonKit
     - LNLiveModule/Common (= 0.1.3)
+    - LNLiveModule/Data (= 0.1.3)
     - LNLiveModule/Feature (= 0.1.3)
     - LNLiveModule/Mediator (= 0.1.3)
     - LNLiveModule/Network (= 0.1.3)
@@ -47,9 +91,14 @@ PODS:
     - LNCommonKit
     - LNModuleProtocol
     - SDWebImage (~> 5.9.0)
+  - LNLiveModule/Data (0.1.3):
+    - LNCommonKit
+    - LNModuleProtocol
+    - SDWebImage (~> 5.9.0)
   - LNLiveModule/Feature (0.1.3):
     - LNCommonKit
     - LNLiveModule/Common
+    - LNLiveModule/Data
     - LNLiveModule/Network
     - LNModuleProtocol
     - SDWebImage (~> 5.9.0)
@@ -62,8 +111,8 @@ PODS:
     - LNCommonKit
     - LNModuleProtocol
     - SDWebImage (~> 5.9.0)
-  - LNModuleCore (0.1.9)
-  - LNModuleProtocol (1.0.0):
+  - LNModuleCore (1.0.0)
+  - LNModuleProtocol (1.0.1):
     - LNModuleCore
   - MJRefresh (3.7.5)
   - SDWebImage (5.9.5):
@@ -76,9 +125,10 @@ DEPENDENCIES:
 SPEC REPOS:
   https://github.com/CocoaPods/Specs.git:
     - AFNetworking
+    - JSONModel
     - MJRefresh
     - SDWebImage
-  https://github.com/NoNameOrganazation/LNSpec.git:
+  https://github.com/LNOrganization/LNSpec.git:
     - LNCommonKit
     - LNModuleCore
     - LNModuleProtocol
@@ -89,13 +139,14 @@ EXTERNAL SOURCES:
 
 SPEC CHECKSUMS:
   AFNetworking: 7864c38297c79aaca1500c33288e429c3451fdce
-  LNCommonKit: 632a5ecb084048c3742f35bf108e5b7a6ec8c172
-  LNLiveModule: 6769c57c23137f54d269f817a16a4fc854f706f2
-  LNModuleCore: d37faf840963a9ccc7e6830331e1f340d86ac866
-  LNModuleProtocol: 8fc489749fc2d6d3df1a3be70c1cff817ae5a143
+  JSONModel: 02ab723958366a3fd27da57ea2af2113658762e9
+  LNCommonKit: c9fc5119f1c83b9d0e8b0861218d2934f7cd7964
+  LNLiveModule: 50efcfa2e137e9aa25c4beb0dacc92e2c8818aa6
+  LNModuleCore: 29c56ccca0d7386575d591b56c432f288da21e64
+  LNModuleProtocol: 0c7c20e98b1c6006c7fdbe753aa6862b1d8c9765
   MJRefresh: fdf5e979eb406a0341468932d1dfc8b7f9fce961
   SDWebImage: 0b2ba0d56479bf6a45ecddbfd5558bea93150d25
 
-PODFILE CHECKSUM: 51ae6cd8a3f446ac9eaba3b759cfc948345919d4
+PODFILE CHECKSUM: b0f502da6e9a1dcc55b3620c2d4085323b59ea20
 
 COCOAPODS: 1.11.3

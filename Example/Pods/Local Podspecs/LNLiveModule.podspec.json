@@ -3,7 +3,7 @@
   "version": "0.1.3",
   "summary": "直播组件",
   "description": "直播组件，开发和维护直播相关功能模块",
-  "homepage": "https://github.com/NoNameOrganazation/LNLiveModule",
+  "homepage": "https://github.com/LNOrganization/LNLiveModule",
   "license": {
     "type": "MIT",
     "file": "LICENSE"
@@ -12,7 +12,7 @@
     "dongjianxiong": "jianxiong20090919@126.com"
   },
   "source": {
-    "git": "https://github.com/NoNameOrganazation/LNLiveModule.git",
+    "git": "https://github.com/LNOrganization/LNLiveModule.git",
     "tag": "0.1.3"
   },
   "platforms": {
@@ -43,6 +43,11 @@
       "public_header_files": "LNLiveModule/Classes/Common/*.h"
     },
     {
+      "name": "Data",
+      "source_files": "LNLiveModule/Classes/Data/**/*",
+      "public_header_files": "LNLiveModule/Classes/Data/*.h"
+    },
+    {
       "name": "Feature",
       "source_files": "LNLiveModule/Classes/Feature/**/*.{h,m}",
       "public_header_files": "LNLiveModule/Classes/Feature/**/*.h",
@@ -51,6 +56,9 @@
 
         ],
         "LNLiveModule/Network": [
+
+        ],
+        "LNLiveModule/Data": [
 
         ]
       }

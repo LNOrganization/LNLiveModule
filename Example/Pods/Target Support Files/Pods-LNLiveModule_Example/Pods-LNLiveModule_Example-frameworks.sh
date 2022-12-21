@@ -177,6 +177,7 @@ code_sign_if_enabled() {
 
 if [[ "$CONFIGURATION" == "Debug" ]]; then
   install_framework "${BUILT_PRODUCTS_DIR}/AFNetworking/AFNetworking.framework"
+  install_framework "${BUILT_PRODUCTS_DIR}/JSONModel/JSONModel.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/LNCommonKit/LNCommonKit.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/LNLiveModule/LNLiveModule.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/LNModuleCore/LNModuleCore.framework"
@@ -186,6 +187,7 @@ if [[ "$CONFIGURATION" == "Debug" ]]; then
 fi
 if [[ "$CONFIGURATION" == "Release" ]]; then
   install_framework "${BUILT_PRODUCTS_DIR}/AFNetworking/AFNetworking.framework"
+  install_framework "${BUILT_PRODUCTS_DIR}/JSONModel/JSONModel.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/LNCommonKit/LNCommonKit.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/LNLiveModule/LNLiveModule.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/LNModuleCore/LNModuleCore.framework"
