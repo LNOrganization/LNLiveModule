@@ -47,8 +47,28 @@ Pod::Spec.new do |s|
     base.public_header_files = 'LNLiveModule/Classes/Data/*.h'
   end
   s.subspec 'Feature' do |feature|
-    feature.source_files = 'LNLiveModule/Classes/Feature/**/*.{h,m}'
-    feature.public_header_files = 'LNLiveModule/Classes/Feature/**/*.h'
+    feature.source_files = 'LNLiveModule/Classes/Feature/*.{h,m}'
+    feature.public_header_files = 'LNLiveModule/Classes/Feature/*.h'
+    
+    feature.subspec 'Base' do |s1|
+      s1.source_files = 'LNLiveModule/Classes/Feature/Base/**/*'
+      s1.public_header_files = 'LNLiveModule/Classes/Feature/Base/*.h'
+    end
+    feature.subspec 'Focus' do |s1|
+      s1.source_files = 'LNLiveModule/Classes/Feature/Focus/**/*'
+      s1.public_header_files = 'LNLiveModule/Classes/Feature/Focus/*.h'
+      s1.dependency 'LNLiveModule/Feature/Base'
+    end
+    feature.subspec 'LiveRoom' do |s1|
+      s1.source_files = 'LNLiveModule/Classes/Feature/LiveRoom/**/*'
+      s1.public_header_files = 'LNLiveModule/Classes/Feature/LiveRoom/*.h'
+      s1.dependency 'LNLiveModule/Feature/Base'
+    end
+    feature.subspec 'Recommend' do |s1|
+      s1.source_files = 'LNLiveModule/Classes/Feature/Recommend/**/*'
+      s1.public_header_files = 'LNLiveModule/Classes/Feature/Recommend/*.h'
+      s1.dependency 'LNLiveModule/Feature/Base'
+    end
 #    feature.resource_bundles = {
 #      'LNLiveModule' => ['LNLiveModule/Classes/Feature/**/*.xib', 'LNLiveModule/Classes/Resource/**/*.{png,jpg,jpeg}']
 #    }
